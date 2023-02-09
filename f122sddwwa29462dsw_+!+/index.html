@@ -3,9 +3,7 @@
 <!-- عشان يرندر الصفحه في الستاندر مود -->
 <html>
   <head>           <!-- ده الترميز العالمي الي بعد الكاركتر سيت-->
-    <meta charset ="utf-8">
-    <!-- <meta name="viewport" content="width=device-widht,initial-scale=1" -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset ="UTF-8"/>
     
     <meta name="description" content="this well show up in the 
     shearch result"/>
@@ -15,6 +13,7 @@
     <script></script>
  </head>
   <body>
+    <a download=" source code copy"  href="index.html"> click here to download the source code</a>
     <a href="view-source:http://127.0.0.1:5500/html/index.html#a" target="_blank">click to view source not workin idont know why</a>
     <a href="#a" >click here to go down</a>
    <h1 id="ali" style="text-align: center; font-size: 50px; ">hello world</h1><a href="https://youtu.be/XxkX8wnRq3s">شرح الهيدنج</a>
@@ -695,12 +694,12 @@ These attributes provide a way to enhance the user experience when embedding vid
       <hr>
       <div>|<!--important-->
         <label for="f">date</label>
-        <input id="f" type="date">
+        <input id="f" type="date" value="2004-08-12">
       </div>
       <hr>
       <div>
         <label for="212">mounth</label>
-        <input id="212" type="month">
+        <input id="212" type="month" value="2004-08">
       </div>
       
       <h4>some form attribute no validete and target:_blank</h4>
@@ -754,16 +753,56 @@ These attributes provide a way to enhance the user experience when embedding vid
 
 
      </form>
-
-    
-  
-
-
-
-  
-
-
 </form>
+<h3>
+  some elmetns
+</h3>
+<q>this elment add quots  and its inline </q>
+<blockquote>this add quots to but ists block</blockquote>
+<button>click</button>
+tthis button elment usualy used with java script
+<div style="width:100px;">
+  https://www.youtube.com/<wbr>watch?v=6QAELgirvjs/<wbr>&list=PLDoPjvoNmBAw_t_XWUF/<Wbr>bBX-c9MafPk9ji
+</div>
+<p>the word break oppertoynity &lt;wbr&gt; elment controls the piont the line well brake when there is no space in the line
+  in the example below i told him to make a preak after the slashes the diffrent beten it an br is wbr only happend when there is no space
+</p>
+<p>
+  the be dirfctional iso lation &lt;bdi&gt; this amazing elment isolate a word from the content for exaplme i can <bdi>استخدمه</bdi><bdi>في</bdi><bdi>كتابه</bdi><bdi>عربي
+  </bdi><bdi>مع</bdi><bdi> انجليزي </bdi><bdi>من غير</bdi><bdi>ما يخشو </bdi><bdi> في</bdi><bdi>بعض</bdi><bdi></bdi>
+</p>
+<p>
+ <bdi> school </bdi>ذهبت الي
+</p>
+<h3>so useful elments</h3>
+<P>the &lt;code&gt;is a elment you can write a programing code in it
+  and there is &lt;pre&gt;  stand for pre format this elment keep the formating in your text
+</P>
+<code>
+  <pre>
+    "Name: Osama"
+    "Age: 38"
+    "Country: Egypt"
+
+  </pre>
+</code>
+<p>the  &lt;code&gt; elment you can <bdi>تستدعي</bdi> some website dont allow it website from the internert like this</p>
+<iframe src="https://elzero.org/" frameborder="1" width="600px" height="460px"></iframe>
 
 
+<h4>devloper tools light house to check acsses ability for disabled users</h4>
+<h4>contarc ratio developer tools must be hight</h4>
+<h4>\suppoe yo made a plan with css and java script that do the  same jop as check box</h4>
+you wiill use some attrbutes or screen reader accses ablilty
+<!--this is th defult-->
+<label for="skill1">Skill One</label>
+      <input id="skill1" type="checkbox" checked />
+      <label for="skill2">Skill Two</label>
+      <input id="skill2" type="checkbox" />
+
+         <!--this is th coustomized one the role attrbute define what is the div act as here it wil act as a check box aria checke attrbute telss the scrren readers that is this option checked by defult tab index atttrbuite make the option select able aria labeld by hrere you tube the id for the label label this div-->
+      <div role="checkbox" aria-checked="true" tabindex="0" aria-labelledby="plan1">Plan One</div>
+    <label id="plan1">Plan One Label</label>
+    <div role="checkbox"  tabindex="0">Plan Two</div>
+    <div role="checkbox" tabindex="0">Plan Three</div>
 </html>
