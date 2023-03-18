@@ -3,15 +3,14 @@
   box-sizing: border-box;
   transition: 0.3s ease;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0px;
 }
 body {
-  background-color: #000;
-  /* -webkit-height: 100vh;
+  background-image: url(pexels-christian-heitz-842711.jpg);
   height: 100vh;
-  -webkit-width: 100vw;
-  width: 100vw; */
-  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
 }
 .loginbox {
   width: 280px;
@@ -20,8 +19,11 @@ body {
   left: 50%;
   transform: translate(-50%,-50%);
   background-color: #5454549c;
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
+  background-color: rgb(53 48 48 / 48%);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
 }
 h2 {
@@ -29,7 +31,9 @@ h2 {
   text-align: center;
   margin: 10px 10px 30px  ;
 }
-
+label:hover{
+  cursor: text;
+}
 label {
   display: block;
   color: white;
@@ -39,7 +43,7 @@ label {
 .user,.pass {
   background: transparent;
   padding: 10px 2px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ffffff3b;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -74,19 +78,20 @@ a {
 }
 .usernamelabel {
   position: absolute;
-  top: 16px;
-  left: 55px;
+  top: 50%;
+  left: 50%;
   letter-spacing: 8px;
   color: #ffffff3b;
-  pointer-events: none;
+  transform: translate(-50% ,-50%);
+
 }
 .passwordlabel {
   position: absolute;
-  top: 14px;
-  left: 58px;
+  top: 50%;
+  left: 50%;
   letter-spacing: 8px;
   color: #ffffff3b;
-  pointer-events: none;
+  transform: translate(-50% ,-50%);
   /* text-align: center;*/
 }
 .fieldholder1{
@@ -118,8 +123,8 @@ a {
 input:focus + label ,
 input:valid + label {
   font-size: 15px;
-  top:-10px;
-  left: 0px;
+  top:15%;
+  left: 16%;
   letter-spacing: 2px;
   color: white;
 } 
@@ -129,25 +134,14 @@ border-bottom: 2px solid white;
 } 
 
 a:hover {
-  -webkit-border-radius: 10px;
-  
   border-radius: 10px;
-  -webkit-color: #1f1f1f;
-  color: #1f1f1f;
-  -webkit-background-color: antiquewhite;
-   background-color: antiquewhite;
+  color: #000;
+  background-color: antiquewhite;
   /* border-bottom: 3px solid white; */
-  -webkit-box-shadow:
-   0px 0px 5px #ddd 
-  , 0px 0px 25px #ddd
-  , 0px 0px 50px #ddd
-  , 0px 0px 100px #ddd;
-  box-shadow:
-   0px 0px 5px #ddd 
-  , 0px 0px 25px #ddd
-  , 0px 0px 50px #ddd
-  , 0px 0px 100px #ddd;
-
+  box-shadow: 0px 0px 5px #ddd;
+  box-shadow: 0px 0px 25px #ddd;
+  box-shadow: 0px 0px 50px #ddd;
+  box-shadow: 0px 0px 100px #ddd;
 }
 
 input:focus ~ .fieldholder2 ,
