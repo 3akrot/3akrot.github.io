@@ -4,6 +4,7 @@
   transition: 0.3s ease;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
+  text-transform: capitalize;
 }
 body {
   background-image: url(pexels-eberhard-grossgasteiger-1624496.jpg);
@@ -165,6 +166,7 @@ footer {
 footer p {
   margin: 0;
   font-size: 14px;
+  letter-spacing: 3px;
 }
 
 
