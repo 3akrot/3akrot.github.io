@@ -155,7 +155,7 @@ input:valid ~ .fieldholder2 {
 } 
 footer {
   position: absolute;
-  bottom: -2;
+  bottom: 0;
   width: 100%;
   text-align: center;
   background-color: transparent;
