@@ -127,7 +127,7 @@ a {
 input:focus + label ,
 input:valid + label {
   font-size: 15px;
-  top:15%;
+  top:10%;
   left: 16%;
   letter-spacing: 2px;
   color: white;
