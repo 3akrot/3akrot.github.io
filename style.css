@@ -169,6 +169,7 @@ footer p {
   letter-spacing: 3px;
 }
 input:-webkit-autofill {
+  -webkit-background-color: transparent;
   background-color: transparent;
 }
 input {
