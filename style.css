@@ -152,6 +152,21 @@ input:valid ~ .fieldholder2 {
 
   margin-top: 140px;
 } 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
 
 
 
