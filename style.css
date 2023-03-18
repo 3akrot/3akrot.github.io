@@ -3,9 +3,10 @@
   box-sizing: border-box;
   transition: 0.3s ease;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 body {
-  background-image: url(pexels-christian-heitz-842711.jpg);
+  background-image: url(pexels-eberhard-grossgasteiger-1624496.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +24,7 @@ body {
   padding: 15px;
   border-radius: 8px;
   background-color: rgb(53 48 48 / 48%);
-  backdrop-filter: blur(3px);
+  
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 
