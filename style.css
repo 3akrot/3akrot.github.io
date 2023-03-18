@@ -168,15 +168,18 @@ footer p {
   font-size: 14px;
   letter-spacing: 3px;
 }
-
-
-
-
 input:-webkit-autofill {
-  -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
-  -webkit-animation-name: autofill;
-  -webkit-animation-fill-mode: both;
+  background-color: transparent;
 }
+input {
+  background-color: transparent;
+}
+
+
+
+
+
+
 
 
 
