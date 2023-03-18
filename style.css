@@ -10,6 +10,7 @@ body {
   height: 100vh;
   -webkit-width: 100vw;
   width: 100vw;
+  overflow: hidden;
 }
 .loginbox {
   width: 280px;
@@ -130,8 +131,8 @@ a:hover {
   -webkit-border-radius: 10px;
   
   border-radius: 10px;
-  -webkit-color: #000;
-  color: #000;
+  -webkit-color: #1f1f1f;
+  color: #1f1f1f;
   -webkit-background-color: antiquewhite;
    background-color: antiquewhite;
   /* border-bottom: 3px solid white; */
