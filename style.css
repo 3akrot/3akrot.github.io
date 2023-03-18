@@ -6,7 +6,9 @@
 }
 body {
   background-color: #000;
+  -webkit-height: 100vh;
   height: 100vh;
+  -webkit-width: 100vw;
   width: 100vw;
 }
 .loginbox {
