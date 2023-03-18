@@ -11,6 +11,7 @@ body {
   background-size: cover;
   background-position: center;
   width: 100vw;
+  overflow: hidden;
 }
 .loginbox {
   width: 280px;
@@ -24,6 +25,7 @@ body {
   background-color: rgb(53 48 48 / 48%);
   backdrop-filter: blur(3px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 
 }
 h2 {
