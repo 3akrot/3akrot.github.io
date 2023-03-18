@@ -10,8 +10,7 @@ body {
   height: 100vh;
   -webkit-width: 100vw;
   width: 100vw;
-  -webkit-overflow: hidden;
-  overflow: hidden;
+  
 }
 .loginbox {
   width: 280px;
