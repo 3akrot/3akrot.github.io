@@ -78,7 +78,8 @@ a {
   top: 16px;
   left: 55px;
   letter-spacing: 8px;
-  color: #ffffff3b
+  color: #ffffff3b;
+  pointer-events: none;
 }
 .passwordlabel {
   position: absolute;
@@ -86,6 +87,7 @@ a {
   left: 58px;
   letter-spacing: 8px;
   color: #ffffff3b;
+  pointer-events: none;
   /* text-align: center;*/
 }
 .fieldholder1{
