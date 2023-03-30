@@ -78,14 +78,14 @@ body {
   padding-top: 35px;
   padding-bottom: 45px;
 }
-.soical div {
+.soical a {
   padding: 10px;
   width: 100%;
-  display: flex;
+  display: block;
   justify-content: center;
   text-align: center;
   background-color: #7b7b6a8f;
-  width: 85%;
+  width: 150px;
   border-radius: 15px;
   
   
