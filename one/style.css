@@ -1,0 +1,101 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+body {
+  background-image:url(pexels-irina-iriser-1366957.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  /* position: relative; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.countainer {
+ padding-top: 20px;
+ background:#0905055e;
+ /* position: absolute; */
+ /* top: 50%;
+ left: 50%;
+ transform: translate(-50%,50%); */
+ width: 300px;
+ color: #CBE4DE;
+ position: relative;
+ /* -webkit-transform: translate(-50%,-50%);
+ -moz-transform: translate(-50%,50%);
+ -ms-transform: translate(-50%,50%);
+ -o-transform: translate(-50%,50%); */
+ border-radius: 9px;
+ -webkit-border-radius: 9px;
+ -moz-border-radius: 9px;
+ -ms-border-radius: 9px;
+ -o-border-radius: 9px;
+ backdrop-filter: blur(1px);
+}
+.my-image{
+  
+  display: flex;
+  justify-content: center;
+  width: auto;
+ 
+}
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.my-image img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.soical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 20px;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 45px;
+}
+.soical div {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #7b7b6a8f;
+  width: 85%;
+  border-radius: 15px;
+  
+  
+}
+.soical div:hover {
+  scale: 1.1;
+  
+}
+.soical div a {
+  text-decoration: none;
+  color: #CBE4DE;
+  
+}
