@@ -193,7 +193,7 @@ body {
   -o-border-radius: inherit;
 }
 .soical a:hover {
-  scale: 1.1;
+
 }
 .soical a::selection {
   background-color: inherit;
@@ -203,6 +203,5 @@ body {
   -ms-border-radius: inherit;
   -o-border-radius: inherit;
 }
-*:focus {
-  outline: none;
-}
+
+
