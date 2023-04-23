@@ -212,12 +212,19 @@ header nav .nav-links a:hover::after{
   }
   .container{
     min-height: 170vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
     
   }
   .content{
     flex-direction: column;
     margin-top: 300px;
     align-items: center;
+  }
+  .content h1{
+    margin-bottom: 30px;
   }
   .content p,h1,span{
     width: 100%;
@@ -237,11 +244,7 @@ header nav .nav-links a:hover::after{
   .social-link{
     position: inherit;
     flex-direction: row;
-    transform: translateY(120vh);
-    -webkit-transform: translateY(120vh);
-    -moz-transform: translate(0,143vh);
-    -ms-transform: translateY(120vh);
-    -o-transform: translateY(120vh);
+ 
 } 
 .social-link span{
   flex: 1;
