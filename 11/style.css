@@ -9,6 +9,7 @@
 
 table{
   width: 100%;
+  min-height:100vh;
 }
 body{
   background-color: rgb(124, 119, 132);
@@ -26,6 +27,12 @@ th{
   /* background-color: hsl(179, 71%, 40%); */
   color: white;
   background: linear-gradient(to right,hsl(274, 71%, 40%),hsl(239, 71%, 40%),hsl(292.5, 70.6%, 40%));
+}
+.std{
+  background-color: hsl(196, 85%, 40%);
+}
+.skill{
+  background-color: gold;
 }
 
 td{
