@@ -20,7 +20,7 @@ span{
   align-items: center;
   text-align: center;
   animation: hiddennn 20s forwards;
-  color: rgba(128, 128, 128, 0.8);
+  color: rgba(128, 128, 128);
   /*color: black;
   */font-size: 30px;
   opacity: .1;
