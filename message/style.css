@@ -2,7 +2,7 @@ body{
   min-height: 100vh;
   max-width: 100vw;
   /*overflow: hidden;
-  */animation: flash  .08s 10s  infinite ;
+  */animation: flash  .08s 20s  infinite ;
   -webkit-animation: flash  .08s 20s  infinite ;
   display: flex;
   justify-content: center;
@@ -19,13 +19,13 @@ span{
   */justify-content: center;
   align-items: center;
   text-align: center;
-  animation: hiddennn 10s forwards;
-  color: rgba(128, 128, 128, 0.37);
+  animation: hiddennn 20s forwards;
+  color: rgba(128, 128, 128, 0.58);
   /*color: black;
   */font-size: 30px;
   opacity: .1;
   letter-spacing: 5px;
-  -webkit-animation: hiddennn 10s forwards;
+  -webkit-animation: hiddennn 20s forwards;
 }
 div{
   visibility: hidden;
