@@ -19,32 +19,36 @@ span{
   */justify-content: center;
   align-items: center;
   text-align: center;
-  animation: hiddennn 20s forwards;
+  animation:hiddennn 20s forwards;
   color: rgba(128, 128, 128);
   /*color: black;
   */font-size: 30px;
   opacity: .1;
   letter-spacing: 5px;
-  -webkit-animation: hiddennn 20s forwards;
+  -webkit-animation:hiddennn 20s forwards;
 }
 div{
   visibility: hidden;
   position: absolute;
   width: 10px;
   height: 10px;
+  animation: hiddennnn 20s forwards;
   background-color: black;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  -webkit-animation: hiddennnn 20s forwards;
 }
 
 img{
   width: 400px;
   visibility: hidden;
-  /* animation:rotate 1.8s 20s infinite linear forwards ;
-  -webkit-animation:rotate 1.8s 20s infinite linear forwards ; */
+  animation: hiddennnn 3s 20s linear infinite forwards;
+  /*animation:rotate 1.8s 20s infinite linear forwards ;
+  -webkit-animation: hiddennnn 3s 20s linear infinite forwards;
+  */:;
 }
 @keyframes flash {
   0%,100%{
@@ -76,6 +80,23 @@ img{
   100%{
     visibility: hidden;
   }
+ 
+  
+}
+@keyframes hiddennnn {
+
+  0%{
+    visibility: hidden;
+    
+  }
+  100%{
+    visibility: visible;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
  
   
 }
