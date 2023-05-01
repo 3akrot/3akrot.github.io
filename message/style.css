@@ -2,7 +2,7 @@
   height: fit-content;
 }
 body{
-  height: 150vh;
+  height: 200vh;
   overflow-y: auto;
   max-width: 100vw;
   /*overflow: hidden;
@@ -36,20 +36,21 @@ div{
   position: absolute;
   width: 10px;
   height: 10px;
-  animation: hiddennnn 20s forwards;
-  background-color: black;
+  /*animation: hiddennnn 20s forwards;
+  */background-color: black;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  -webkit-animation: hiddennnn 20s forwards;
+  /*-webkit-animation: hiddennnn 20s forwards;
+  */
 }
 
 img{
   width: 400px;
   visibility: hidden;
-  animation: hiddennnn 3s 20s linear infinite forwards;
+  /* animation: hiddennnn 3s 20s linear infinite forwards; */
   /*animation:rotate 1.8s 20s infinite linear forwards ;
   -webkit-animation: hiddennnn 3s 20s linear infinite forwards;
   */;
