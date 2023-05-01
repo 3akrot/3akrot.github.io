@@ -48,7 +48,7 @@ img{
   animation: hiddennnn 3s 20s linear infinite forwards;
   /*animation:rotate 1.8s 20s infinite linear forwards ;
   -webkit-animation: hiddennnn 3s 20s linear infinite forwards;
-  */:;
+  */;
 }
 @keyframes flash {
   0%,100%{
