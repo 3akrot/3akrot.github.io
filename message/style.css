@@ -37,23 +37,23 @@ body{
   height: 100vh;
   text-align: center;
   animation:hiddennn 20s forwards;
-  /* color: rgba(128, 128, 128); */
-  color: white;
+  color: rgba(128, 128, 128);
+  /* color: white; */
   /*color: black;
   */font-size: 1em;
   word-break: break-word;
   max-width: 100%;
   
 
-  /* opacity: .1; */
-  opacity: 1;
+  opacity: .1;
+  /* opacity: 1; */
 
   /* -webkit-animation:hiddennn 20s forwards; */
 }
 
 
 
-/* @keyframes flash {
+@keyframes flash {
   0%,100%{
     background-color: black;
   }
@@ -61,7 +61,7 @@ body{
     background-color: white;
   }
   
-} */
+}
 
 @keyframes hiddennn {
 
