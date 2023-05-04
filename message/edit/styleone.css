@@ -9,6 +9,7 @@
 .cont{
   width: 95%;
   height: 800px;
+  padding-top: 100px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -52,14 +53,20 @@
   width: 80%;
   margin: auto;
   justify-content: space-around;
+  align-items: center;
 }
-span{
+.input span:first-child{
+  text-align: center;
+}
+.prev span{
+ 
   padding-top: 50px;
   width: 90%;
 height: 100%;
 display: block;
 word-break: break-all;
 margin: auto;
+line-height: 18px;
 }
 input[type="text"] {
   padding: 8px;

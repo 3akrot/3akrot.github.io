@@ -33,7 +33,7 @@ body{
   background: transparent;
   display: none;
 }
-span{
+#outputSpan{
   flex-direction: column;
   position: absolute;
   height: 100vh;
