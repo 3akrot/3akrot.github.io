@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editable Span Example</title>
+</head>
+<body>
+	<h1>Editable Span Example</h1>
+	<label for="text-input">Enter Text:</label>
+	<input type="text" id="text-input">
+	<button id="set-text-btn">Set Text</button>
+	<br><br>
+	<span contenteditable="true" id="editable-span">This text can be edited by users.</span>
+
+	<script>
+		// Get references to the input field and button
+		const textInput = document.getElementById("text-input");
+		const setTextBtn = document.getElementById("set-text-btn");
+
+		// Get a reference to the editable span
+		const editableSpan = document.getElementById("editable-span");
+
+		// Add an event listener to the button that sets the span's content to the input value
+		setTextBtn.addEventListener("click", () => {
+			editableSpan.textContent = textInput.value;
+		});
+	</script>
+</body>
+</html>
