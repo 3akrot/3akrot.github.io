@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+}
+
+.cont{
+  width: 95%;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid black;
+  border-radius: 10px;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 0px 0px;
+}
+.text,.input{
+  flex: 1;
+
+}
+.text h1{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#saveButton {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+span{
+  padding-top: 50px;
+  width: 90%;
+height: 100%;
+display: block;
+word-break: break-all;
+margin: auto;
+}
+input[type="text"] {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.prev{
+  flex: 3;
+}
