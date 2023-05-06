@@ -1,0 +1,42 @@
+* {
+margin: 0px;
+}
+body {
+  font-size: 24px;
+  color: black;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.flex-header {
+  background-color: blue;
+  padding: 20px 0;
+}
+.felxnav {
+  background-color: orange;
+  flex: 1;
+
+}
+.flexmain {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  
+}
+.flexarticle {
+  background-color: brown;
+  flex: 3 1 ;
+
+ 
+}
+.flexfooter {
+  background-color: blue;
+  padding: 20px 0;
+}
+.flexaside {
+  background-color: orange;
+  flex: 1;
+ 
+
+}

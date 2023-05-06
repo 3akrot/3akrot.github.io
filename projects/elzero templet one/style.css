@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap');
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  min-width: 0px;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
+.icon{
+  width: 50px;
+  margin: 20px auto;
+  
+}
+.icon img{
+  color: #10cab7;
+}
+/* Header */
+header{
+  width: 80%;
+  margin: 0 auto;
+ 
+}
+header .header-container {
+  position: relative;
+  display: flex;
+  padding: 0px 5px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  background-color: #Fff;
+  z-index: 99;
+}
+header .header-container .logo {
+  width: 60px;
+}
+
+header .header-container .nav{
+  width:30px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30px;
+  position: relative;
+}
+header .header-container .nav span{
+  width:100% ;
+  background-color: black;
+  height: 2px;
+}
+header .header-container .nav span:nth-child(2){
+  width: 60%;
+  position: absolute;
+  right: 0px;
+  transition: .3s linear width;
+  -webkit-transition: .3s linear width;
+  -moz-transition: .3s linear width;
+  -ms-transition: .3s linear width;
+  -o-transition: .3s linear width;
+}
+header .header-container .nav:hover span:nth-child(2){
+  width: 100%;
+}
+
+header .header-container ul{
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: -215px;
+  right: 3px;
+
+}
+header .header-container ul li{
+  
+  list-style: none;
+  padding: 15px;
+  background-color: #f6f6f6;
+  transition: .3s ease padding;
+  -webkit-transition: .3s ease padding;
+  -moz-transition: .3s ease padding;
+  -ms-transition: .3s ease padding;
+  -o-transition: .3s ease padding;
+}
+header .header-container .nav:hover  ul{
+  display: block;
+}
+header .header-container ul li:not(:last-child){
+ border-bottom: 1px solid #ddd;
+  
+}
+header .header-container ul li:hover{
+  padding-left: 25px;
+}
+header .header-container ul li:first-child{
+  position: relative;
+  
+}
+header .header-container ul li:first-child::after{
+  display: inherit;
+  content: '';
+  position: absolute;
+  border: 10px solid ;
+  border-color: transparent transparent #f6f6f6 transparent ;
+  top: -20px;
+  right: 2px;
+}
+/* Header ends */
+/* landing  */
+.landing{
+  min-height:calc(100vh - 64px);
+  background-image: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_One/images/landing.jpg);
+  background-size: cover;
+  background-position: center center ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hello{
+  width: 350px;
+  text-align: center;
+}
+.hello h1 {
+  color: #10cab7;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.hello p{
+  font-size: 20px;
+  line-height: 35px;
+}
+/* landing ends */
+/* future start */
+.fut-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  width: 80%;
+  margin: auto;
+  gap: 20px;
+  place-items: center;
+  
+}
+.fut{
+  padding: 80px 0px;
+  background-color: #f6f6f6;
+}
+.fut-container .card{
+  text-align: center;
+}
+.fut-container .card .icon{
+  color: #10cab7;
+}
+.fut-container .card h1{
+  margin-bottom: 30px;
+  font-size: 18px;
+
+}
+.card{
+  width: 250px;
+}
+/* future ends */
+/* services start */
+.services{
+  padding: 50px 0px 50px;
+ 
+}
+.container-services{
+  min-height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+.heading{
+  text-align: center;
+}
+.heading h1{
+  font-size: 80px;
+  color: #ebeced;
+}
+.heading p{
+  margin-top: -25px;
+  margin-bottom: 50px;
+  color: #7e7e7e;
+}
+.items{
+  display: grid;
+  height: 80vh;
+  place-items: center;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+}
+.items .card-ser{
+  display: flex;
+  margin-bottom: 30px;
+  min-height: 160px;
+  
+}
+.items .card-ser h1{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.items .card-ser p{
+  color: #8a8a8a;
+  font-size: 14px;
+line-height: 20px;
+}
+.items .card-ser .icon{
+  color: #10cab7;
+  margin: 0px 30px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.image{
+  position: relative;
+}
+.image img{
+  width: 250px;
+}
+.image::before{
+  content: '';
+  height: 130%;
+  width:90px ;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  background-color: #2c4755;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: -1;
+}
+/* services end */
+@media screen and (max-width:1200px) {
+  .image{
+    display: none;
+  }
+  .items .card-ser{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .items .card-ser .icon{
+    margin: 0px 0px 10px;
+  }
+  
+  
+}
+@media screen and (min-width:0px) and (max-width:450px) {
+  .container-services {
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    padding: 0px 10px;
+  }
+  .fut-container {
+    width: 100%;
+    padding: 0px 10px;
+
+  }
+}

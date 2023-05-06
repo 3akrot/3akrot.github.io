@@ -1,0 +1,50 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.page {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 10% 80% 10% ;
+  grid-template-areas: "logo logo nav nav nav nav nav nav nav nav"
+  "cont cont cont cont cont cont cont cont sidebar sidebar"
+  "foot foot foot foot foot foot foot foot foot foot";
+}
+.logo {
+  background-color: aqua;
+  grid-area: logo;
+}
+.logo h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+section {
+  background-color: tomato;
+  grid-area: cont;
+}
+aside {
+  background-color: navy;
+  grid-area: sidebar;
+}
+footer {
+  background-color: red;
+  grid-area: foot;
+}
+nav {
+  background-color: blue;
+  grid-area: nav;
+  padding-right: 20px;
+}
+nav ul {
+  gap: 50px;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  
+}
