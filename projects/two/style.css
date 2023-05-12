@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  
+}
+body{
+  overflow: hidden;
+}
+header {
+  height: 100vh;
+  width: 100%;
+  background: url(imaes/background.png) no-repeat;
+  background-position: center;
+  
+  
+  
+}
+
+header nav {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 2000;
+  
+}
+nav .navbar{
+  margin:20px auto;
+  
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+nav .navbar .logo {
+  height: 80px;
+  width: 150px;
+
+}
+.navbar .logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+
+}
+nav .navbar .menu {
+  display: flex;
+}
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 10px;
+}
+nav .navbar .menu li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #2c3e50;
+  font-weight: 500;
+ 
+}
+nav .navbar .menu li a:hover {
+  color: black;
+
+ 
+}
+nav .navbar .search{
+  position: relative;
+  height: 50px;
+  width: 250px;
+
+}
+.search input[type="text"] {
+  position: absolute;
+  left: 0px;
+  height: 0px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  color: #2c3e50;
+  font-size: 18px;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 0 10px 0px 40px;
+}
+.search a {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  font-size: 20px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-right: 2px solid #2c3e50;
+  padding: 0 5px 0 0;
+  color: #2c3e50;
+}
+.content {
+  position: absolute;
+  top: 33%;
+  left: 7%;
+  z-index: 99999;
+}
+::selection{
+  background-color: #1de2d178;
+}
+.content .text{
+  font-size: 27px;
+  color: #2c3e50;
+}
+.content .name {
+  font-size: 75px;
+  color: #2c3e50;
+  margin: -20px 0 0 -3px;
+}
+.content .jop {
+  font-size: 40px;
+  color: #2c3e50;
+  display: flex;
+}
+.content .jop .typing {
+  color: #1de2d1;
+  margin-left: 10px;
+  animation: typing 5s steps(19);
+  -webkit-animation: typing 5s steps(19) infinite;
+ 
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #1de2d1;
+}
+@keyframes typing {
+  0%{
+    width:0ch;
+  }
+  50%{
+    width: 15ch;
+  }
+  100%{
+    width: 0ch;
+  }
+}
+.buttons {
+  margin: 20px 0 0 50px;
+}
+.buttons button {
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  outline: none;
+  background: linear-gradient(135deg,#2afac2 10%,#c346c2 100%);
+  transition: all 0.3 ease;
+  -webkit-transition: all 0.3 ease;
+  -moz-transition: all 0.3 ease;
+  -ms-transition: all 0.3 ease;
+  -o-transition: all 0.3 ease;
+}
+button:hover{
+ transform: scale(0.98);
+
+ -webkit-transform: scale(0.98);
+ -moz-transform: scale(0.98);
+ -ms-transform: scale(0.98);
+ -o-transform: scale(0.98);
+}
+header .girl img {
+  height: 90%;
+  position: absolute;
+  right: 80px;
+  bottom: 0px;
+  
+}
+
+header .media{
+  height: fit-content;
+  width: 50px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0px;
+  right: 20px;
+
+  
+}
+.media a {
+  color: #2c3e50;
+  font-size: 25px;
+
+}
+.media a:hover {
+  color: #000;
+
+}

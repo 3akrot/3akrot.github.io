@@ -1,0 +1,63 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.top {
+ background-color: #e4f9f5;
+  position: relative;
+  height: 85vh;
+  padding-top: 110px;
+  width: 100vw;
+  height:100vh;
+  overflow: hidden;
+  
+  
+}
+.topcloud{
+  position: absolute;
+  top: 18px;
+  right: 20%;
+}
+.bottomcloud{
+  position: absolute;
+  bottom: 230px;
+  left: 20%;
+  transition: 3s ease ;
+  -webkit-transition: 3s ease ;
+  -moz-transition: 3s ease ;
+  -ms-transition: 3s ease ;
+  -o-transition: 3s ease ;
+}
+.bottomcloud:hover {
+  left: 80%;
+}
+h1{
+  text-align: center;
+  color: #66BFBF;
+    font-size: 5.625em;
+    margin: -50px auto;
+    font-family: 'Sacramento';
+}
+h2 {
+  text-align: center;
+  color: #66BFBF;
+    font-size: 2.625em;
+    margin: 50px auto;
+    font-family: 'Sacramento';
+
+}
+.moun {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.middle {
+  height: 100vh;
+}
