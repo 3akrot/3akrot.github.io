@@ -6,9 +6,14 @@
   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
   min-width: 0px;
+  scroll-behavior: smooth;
   /* outline: 2px dotted red; */
 }
-
+ul li a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: initial;
+}
 img{
   height: 100%;
   width: 100%;
@@ -107,10 +112,14 @@ header .header-container ul li:first-child::after{
   display: inherit;
   content: '';
   position: absolute;
-  border: 10px solid ;
-  border-color: transparent transparent #f6f6f6 transparent ;
-  top: -20px;
-  right: 2px;
+  border: 10px solid;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+  border-color: transparent transparent #f6f6f6 transparent;
+  top: -19px;
+  right: 0px;
 }
 /* Header ends */
 /* landing  */
