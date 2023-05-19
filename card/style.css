@@ -13,6 +13,10 @@ ul li a{
   text-decoration: none;
   text-transform: capitalize;
   color: initial;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
 }
 img{
   height: 100%;
@@ -86,7 +90,7 @@ header .header-container ul{
 header .header-container ul li{
   
   list-style: none;
-  padding: 15px;
+ 
   background-color: #f6f6f6;
   transition: .3s ease padding;
   -webkit-transition: .3s ease padding;
