@@ -1,0 +1,50 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@200;300;400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+table {
+
+  table-layout:fixed;
+  width: 100%;
+  border-collapse: collapse;
+  /* border: 3px solid #a2a2a2; */
+}
+thead th:first-child {
+  width: 200px;
+}
+th,
+td {
+  padding: 20px;
+  border:1px solid gray;
+}
+td {
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+}
+th {
+  font-family: 'Amiri', serif;
+}
+caption {
+  padding: 10px 40px;
+  font-family: 'Cairo', sans-serif;
+}
+tbody tr:nth-child(odd) {
+  background-color: #2e2d2e;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #151515;
+  color: white;
+}
+@media (max-width:768px) {
+  thead th:first-child {
+    width: initial;
+  }
+  table {
+    font-size: 0.7em;
+  }
+  th,
+  td {
+    padding: 0.3em;
+  }
+}
