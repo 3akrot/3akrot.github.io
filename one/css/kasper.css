@@ -591,6 +591,61 @@ img {
 .skills .container > div > h3 {
   text-transform: uppercase;
 }
+.our-skill .content .skill .bar {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: #ccc;
+}
+.our-skill .content .skill .bar span {
+  position: relative;
+  display: block;
+  height: 100%;
+  background-color: var(--main-color);
+}
+.our-skill .content .skill .bar span::after {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  content: attr(data-progress);
+  position: absolute;
+  right: -18px;
+  border-radius: 10%;
+  bottom: calc(100% + 20px);
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+.our-skill .content .skill .bar span::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -5px;
+  height: 0px;
+  width: 0px;
+  border: 8px solid;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+  border-color: black transparent transparent transparent;
+}
+
+.our-skill .content .skill h3 {
+  margin: initial;
+  text-align: left;
+  margin-bottom: 15px;
+  font-weight:400;
+  text-transform: uppercase;
+  font-size: medium;
+}
+.our-skill .content .skill {
+  margin-bottom: 40px;
+}
 /* end skils */
 /* Media */
 @media (min-width:768px) {
