@@ -604,7 +604,8 @@ img {
   background-color: var(--main-color);
 }
 .our-skill .content .skill .bar span::after {
-  padding: 5px;
+  padding: 5px 0px;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -612,7 +613,7 @@ img {
   color: white;
   content: attr(data-progress);
   position: absolute;
-  right: -18px;
+  right: -20px;
   border-radius: 10%;
   bottom: calc(100% + 20px);
   -webkit-border-radius: 10%;
@@ -624,7 +625,7 @@ img {
   content: "";
   position: absolute;
   top: -20px;
-  right: -5px;
+  right: -8px;
   height: 0px;
   width: 0px;
   border: 8px solid;
