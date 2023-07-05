@@ -699,7 +699,7 @@ q::after {
 }
 .pricing .plans {
  display: grid;
- grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+ grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
  gap: 30px;
 }
 .pricing .plan {
@@ -707,7 +707,6 @@ q::after {
   border-top: 1px solid var(--main-color);
   flex-basis: 23%;
   background-color: #fcfcfc;
-  box-shadow: 0px 0px 10px #c2c2d0;
 }
 .pricing .plan h2:first-child {
   margin: 30px 0px;
@@ -766,7 +765,7 @@ content: none;
 .pricing .plan .btn {
   display: block;
   width: 100px;
-  margin: 30px auto 30px;
+  margin: 30px auto 0;
   padding: 20px 10px;
   color: #551a8b;
   border: 1px solid var(--main-color);
@@ -789,7 +788,21 @@ background: var(--main-color);
 
 }
 
-
+.pricing .plan h2:nth-child(3) {
+  position: relative;
+border-top: 1px solid var(--main-color);
+padding: 20px 0px;
+font-weight: normal;
+font-size: 17px;
+}
+.pricing .plan h2:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+}
+.pricing .plan h2 {
+  margin:
+}
 /* pricing end  */
 /* Media */
 @media (min-width:768px) {
