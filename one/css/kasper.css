@@ -765,12 +765,28 @@ content: none;
 .pricing .plan .btn {
   display: block;
   width: 100px;
-  margin: 30px auto 0;
+  margin: 30px auto ;
   padding: 20px 10px;
   color: #551a8b;
   border: 1px solid var(--main-color);
   text-decoration: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
+.pricing .plan .btn:hover {
+  background-color: #19c8fa;
+  color: black;
+  box-shadow:
+  0 0 5px #19c8fa,
+  0 0 20px #19c8fa,
+  0 0 35px #19c8fa,
+  0 0 50px #19c8fa
+  ;
+}
+
 .pricing .con p{
   margin: 50px 0px 25px;
   text-align: center;
@@ -786,6 +802,8 @@ padding: 15px 30px;
 margin: 0px auto;
 background: var(--main-color);
 word-break: keep-all;
+min-width: 139px;
+text-align: center;
 
 }
 
