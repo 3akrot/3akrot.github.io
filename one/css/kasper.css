@@ -709,7 +709,7 @@ q::after {
   flex-basis: 23%;
   /*background-color: #fcfcfc;
   */box-shadow: 0px 0px 10px #c2c2d0;
-  background-image: url(../../images/peakpx.jpg);
+  background-image: url(../images/peakpx.jpg);
   background-size: cover;
   color: white;
   transform-style: preserve-3d;
