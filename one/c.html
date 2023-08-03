@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1" />
+    <title>Elzero Template 3</title>
+    <!-- =======font awesome======= -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- =======normalise======= -->
+    <link rel="stylesheet" href="css/norm.css" />
+    <!-- =======Google fonts======= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- =======Style======= -->
+    <link rel="stylesheet" href="css/elzero.css" />
+  </head>
+  <body>
+    <!-- 
+      
+░██████╗████████╗░█████╗░██████╗░████████╗  ██╗░░██╗███████╗░█████╗░██████╗░███████╗██████╗░
+██╔════╝╚══██╔══╝██╔══██╗██╔══██╗╚══██╔══╝  ██║░░██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗
+╚█████╗░░░░██║░░░███████║██████╔╝░░░██║░░░  ███████║█████╗░░███████║██║░░██║█████╗░░██████╔╝
+░╚═══██╗░░░██║░░░██╔══██║██╔══██╗░░░██║░░░  ██╔══██║██╔══╝░░██╔══██║██║░░██║██╔══╝░░██╔══██╗
+██████╔╝░░░██║░░░██║░░██║██║░░██║░░░██║░░░  ██║░░██║███████╗██║░░██║██████╔╝███████╗██║░░██║
+╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░  ╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝
+      -->
+    <header>
+      <div class="container">
+        <div class="logo">Elzero</div>
+        <div class="nav">
+          <ul>
+            <li><a href="#Articles">Articles</a></li>
+            <li><a href="#Gallary">Gallary</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#Other links">Other links</a>
+              <div class="mega-menu">
+                <div class="image">
+                  <img src="images/megamenu.png">
+                </div>
+                
+                <div class="col-1">
+                  <ul>
+                    <li><a href="#"><i class="far fa-comments fa-fw"></i>Testimonials</a></li>
+                    <li><a href="#"><i class="far fa-user fa-fw"></i>Team Members</a></li>
+                    <li><a href="#"><i class="far fa-building fa-fw"></i>Services</a></li>
+                    <li><a href="#"><i class="far fa-check-circle fa-fw"></i>Our Skills</a></li>
+                    <li><a href="#"><i class="far fa-clipboard fa-fw"></i>How It Works</a></li>
+                  </ul>
+                </div>
+                <div class="col-2">
+                  <ul> 
+                    <li><a href="#"><i class="far fa-calendar-alt fa-fw"></i>Events</a></li>
+                    <li><a href="#"><i class="fas fa-server fa-fw"></i>Pricing Plans</a></li>
+                    <li><a href="#"><i class="far fa-play-circle fa-fw"></i>Top Videos</a></li>
+                    <li><a href="#"><i class="far fa-chart-bar fa-fw"></i>Stats</a></li>
+                    <li><a href="#"><i class="fas fa-percent fa-fw"></i>Request A Discount</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- 
+      
+███████╗███╗░░██╗██████╗░  ██╗░░██╗███████╗░█████╗░██████╗░███████╗██████╗░
+██╔════╝████╗░██║██╔══██╗  ██║░░██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗
+█████╗░░██╔██╗██║██║░░██║  ███████║█████╗░░███████║██║░░██║█████╗░░██████╔╝
+██╔══╝░░██║╚████║██║░░██║  ██╔══██║██╔══╝░░██╔══██║██║░░██║██╔══╝░░██╔══██╗
+███████╗██║░╚███║██████╔╝  ██║░░██║███████╗██║░░██║██████╔╝███████╗██║░░██║
+╚══════╝╚═╝░░╚══╝╚═════╝░  ╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝
+      -->
+    <!-- 
+
+░██████╗████████╗░█████╗░██████╗░████████╗  ██╗░░░░░░█████╗░███╗░░██╗██████╗░██╗███╗░░██╗░██████╗░
+██╔════╝╚══██╔══╝██╔══██╗██╔══██╗╚══██╔══╝  ██║░░░░░██╔══██╗████╗░██║██╔══██╗██║████╗░██║██╔════╝░
+╚█████╗░░░░██║░░░███████║██████╔╝░░░██║░░░  ██║░░░░░███████║██╔██╗██║██║░░██║██║██╔██╗██║██║░░██╗░
+░╚═══██╗░░░██║░░░██╔══██║██╔══██╗░░░██║░░░  ██║░░░░░██╔══██║██║╚████║██║░░██║██║██║╚████║██║░░╚██╗
+██████╔╝░░░██║░░░██║░░██║██║░░██║░░░██║░░░  ███████╗██║░░██║██║░╚███║██████╔╝██║██║░╚███║╚██████╔╝
+╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░  ╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░╚═╝╚═╝░░╚══╝░╚═════╝░
+      -->
+    <section class="landing-2">
+      <div class="container">
+        <div class="text">
+          <h2>Welcome, To Elzero World</h2>
+          <p>Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing, Stories and Events</p>
+        </div>
+        <div class="image">
+          <img src="images/landing-image.png" alt="" >
+        </div>
+        <a href="#article" class="go-down"><i class="fas fa-angle-double-down fa-2x"></i></a>
+      </div>
+    </section>
+    <!-- 
+      
+███████╗███╗░░██╗██████╗░  ██╗░░░░░░█████╗░███╗░░██╗██████╗░██╗███╗░░██╗░██████╗░
+██╔════╝████╗░██║██╔══██╗  ██║░░░░░██╔══██╗████╗░██║██╔══██╗██║████╗░██║██╔════╝░
+█████╗░░██╔██╗██║██║░░██║  ██║░░░░░███████║██╔██╗██║██║░░██║██║██╔██╗██║██║░░██╗░
+██╔══╝░░██║╚████║██║░░██║  ██║░░░░░██╔══██║██║╚████║██║░░██║██║██║╚████║██║░░╚██╗
+███████╗██║░╚███║██████╔╝  ███████╗██║░░██║██║░╚███║██████╔╝██║██║░╚███║╚██████╔╝
+╚══════╝╚═╝░░╚══╝╚═════╝░  ╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░╚═╝╚═╝░░╚══╝░╚═════╝░
+      -->
+    <!-- 
+░██████╗████████╗░█████╗░██████╗░████████╗  ░█████╗░██████╗░████████╗██╗░█████╗░██╗░░░░░███████╗
+██╔════╝╚══██╔══╝██╔══██╗██╔══██╗╚══██╔══╝  ██╔══██╗██╔══██╗╚══██╔══╝██║██╔══██╗██║░░░░░██╔════╝
+╚█████╗░░░░██║░░░███████║██████╔╝░░░██║░░░  ███████║██████╔╝░░░██║░░░██║██║░░╚═╝██║░░░░░█████╗░░
+░╚═══██╗░░░██║░░░██╔══██║██╔══██╗░░░██║░░░  ██╔══██║██╔══██╗░░░██║░░░██║██║░░██╗██║░░░░░██╔══╝░░
+██████╔╝░░░██║░░░██║░░██║██║░░██║░░░██║░░░  ██║░░██║██║░░██║░░░██║░░░██║╚█████╔╝███████╗███████╗
+╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░  ╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚══════╝╚══════╝ -->
+    <section id="article" class="article">
+      <h2 class="title">Articles</h2>
+      <div class="container">
+        <div class="card">
+          
+          <img   src="images/cat-01.jpg" alt="">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <a href="#"><span>R</span><span>e</span><span>a</span><span>d</span><span>m</span><span>o</span><span>r</span><span>e</span><i class="fas fa-long-arrow-alt-right"></i></a>        </div>
+        <div class="card">
+          <img src="images/cat-02.jpg" alt="">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <a href="#"><span>R</span><span>e</span><span>a</span><span>d</span><span>m</span><span>o</span><span>r</span><span>e</span><i class="fas fa-long-arrow-alt-right"></i></a>        </div>
+        <div class="card">
+          <img src="images/cat-03.jpg" alt="">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <a href="#"><span>R</span><span>e</span><span>a</span><span>d</span><span>m</span><span>o</span><span>r</span><span>e</span><i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="card">
+          <img src="images/cat-04.jpg" alt="">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <a href="#"><span>R</span><span>e</span><span>a</span><span>d</span><span>m</span><span>o</span><span>r</span><span>e</span><i class="fas fa-long-arrow-alt-right"></i></a>        </div>
+        <div class="card">
+          <img src="images/cat-05.jpg" alt="">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <a href="#"><span>R</span><span>e</span><span>a</span><span>d</span><span>m</span><span>o</span><span>r</span><span>e</span><i class="fas fa-long-arrow-alt-right"></i></a>        </div>
+        <div class="card">
+          <img src="images/cat-06.jpg" alt="">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <a href="#"><span>R</span><span>e</span><span>a</span><span>d</span><span>m</span><span>o</span><span>r</span><span>e</span><i class="fas fa-long-arrow-alt-right"></i></a>        </div>
+        <div class="card">
+          <img src="images/cat-07.jpg" alt="">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <a href="#"><span>R</span><span>e</span><span>a</span><span>d</span><span>m</span><span>o</span><span>r</span><span>e</span><i class="fas fa-long-arrow-alt-right"></i></a>        </div>
+        <div class="card">
+          <img src="images/cat-08.jpg" alt="">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <a href="#"><span>R</span><span>e</span><span>a</span><span>d</span><span>m</span><span>o</span><span>r</span><span>e</span><i class="fas fa-long-arrow-alt-right"></i></a>        </div>
+      </div>
+
+    </section>
+    <!-- 
+      
+███████╗███╗░░██╗██████╗░  ░█████╗░██████╗░████████╗██╗░█████╗░██╗░░░░░███████╗
+██╔════╝████╗░██║██╔══██╗  ██╔══██╗██╔══██╗╚══██╔══╝██║██╔══██╗██║░░░░░██╔════╝
+█████╗░░██╔██╗██║██║░░██║  ███████║██████╔╝░░░██║░░░██║██║░░╚═╝██║░░░░░█████╗░░
+██╔══╝░░██║╚████║██║░░██║  ██╔══██║██╔══██╗░░░██║░░░██║██║░░██╗██║░░░░░██╔══╝░░
+███████╗██║░╚███║██████╔╝  ██║░░██║██║░░██║░░░██║░░░██║╚█████╔╝███████╗███████╗
+╚══════╝╚═╝░░╚══╝╚═════╝░  ╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚══════╝╚══════╝
+     -->
+    <!--
+      
+░██████╗████████╗░█████╗░██████╗░████████╗  ░██████╗░░█████╗░██╗░░░░░██╗░░░░░░█████╗░██████╗░██╗░░░██╗
+██╔════╝╚══██╔══╝██╔══██╗██╔══██╗╚══██╔══╝  ██╔════╝░██╔══██╗██║░░░░░██║░░░░░██╔══██╗██╔══██╗╚██╗░██╔╝
+╚█████╗░░░░██║░░░███████║██████╔╝░░░██║░░░  ██║░░██╗░███████║██║░░░░░██║░░░░░███████║██████╔╝░╚████╔╝░
+░╚═══██╗░░░██║░░░██╔══██║██╔══██╗░░░██║░░░  ██║░░╚██╗██╔══██║██║░░░░░██║░░░░░██╔══██║██╔══██╗░░╚██╔╝░░
+██████╔╝░░░██║░░░██║░░██║██║░░██║░░░██║░░░  ╚██████╔╝██║░░██║███████╗███████╗██║░░██║██║░░██║░░░██║░░░
+╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░  ░╚═════╝░╚═╝░░╚═╝╚══════╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░
+      -->
+    <section class="gallary">
+      <h2 class="title">Gallary</h2>
+      <div class="container">
+        <div class="box">
+          <div class="image">
+            <img src="images/gallery-01.png" alt="">
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/gallery-02.png" alt="">
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/gallery-03.jpg" alt="">
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/gallery-04.png" alt="">
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/gallery-05.jpg" alt="">
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/gallery-06.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+      
+███████╗███╗░░██╗██████╗░  ░██████╗░░█████╗░██╗░░░░░██╗░░░░░░█████╗░██████╗░██╗░░░██╗
+██╔════╝████╗░██║██╔══██╗  ██╔════╝░██╔══██╗██║░░░░░██║░░░░░██╔══██╗██╔══██╗╚██╗░██╔╝
+█████╗░░██╔██╗██║██║░░██║  ██║░░██╗░███████║██║░░░░░██║░░░░░███████║██████╔╝░╚████╔╝░
+██╔══╝░░██║╚████║██║░░██║  ██║░░╚██╗██╔══██║██║░░░░░██║░░░░░██╔══██║██╔══██╗░░╚██╔╝░░
+███████╗██║░╚███║██████╔╝  ╚██████╔╝██║░░██║███████╗███████╗██║░░██║██║░░██║░░░██║░░░
+╚══════╝╚═╝░░╚══╝╚═════╝░  ░╚═════╝░╚═╝░░╚═╝╚══════╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░
+      -->
+    <!-- 
+
+░██████╗████████╗░█████╗░██████╗░████████╗  ███████╗███████╗░█████╗░████████╗██╗░░░██╗██████╗░███████╗░██████╗
+██╔════╝╚══██╔══╝██╔══██╗██╔══██╗╚══██╔══╝  ██╔════╝██╔════╝██╔══██╗╚══██╔══╝██║░░░██║██╔══██╗██╔════╝██╔════╝
+╚█████╗░░░░██║░░░███████║██████╔╝░░░██║░░░  █████╗░░█████╗░░███████║░░░██║░░░██║░░░██║██████╔╝█████╗░░╚█████╗░
+░╚═══██╗░░░██║░░░██╔══██║██╔══██╗░░░██║░░░  ██╔══╝░░██╔══╝░░██╔══██║░░░██║░░░██║░░░██║██╔══██╗██╔══╝░░░╚═══██╗
+██████╔╝░░░██║░░░██║░░██║██║░░██║░░░██║░░░  ██║░░░░░███████╗██║░░██║░░░██║░░░╚██████╔╝██║░░██║███████╗██████╔╝
+╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░  ╚═╝░░░░░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚═╝░░╚═╝╚══════╝╚═════╝░
+      -->
+    <section class="feat">
+      <h2 class="title">Features</h2>
+      <div class="container">
+        <div class="box red">
+          <div class="image">
+            <img src="images/features-01.jpg" alt="">
+          </div>
+          <div class="text">
+            <h2>Quality</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+              <a href="#">More</a>
+            
+          </div>
+        </div>
+        <div class="box green">
+          <div class="image">
+            <img src="images/features-02.jpg" alt="">
+          </div>
+          <div class="text">
+            <h2>Time</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+            <a href="#">More</a>
+          </div>
+        </div>
+        <div class="box blue">
+          <div class="image">
+            <img src="images/features-03.jpg" alt="">
+          </div>
+          <div class="text">
+            <h2>Passion</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+            <a href="#">More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+      
+███████╗███╗░░██╗██████╗░  ███████╗███████╗░█████╗░████████╗██╗░░░██╗██████╗░███████╗░██████╗
+██╔════╝████╗░██║██╔══██╗  ██╔════╝██╔════╝██╔══██╗╚══██╔══╝██║░░░██║██╔══██╗██╔════╝██╔════╝
+█████╗░░██╔██╗██║██║░░██║  █████╗░░█████╗░░███████║░░░██║░░░██║░░░██║██████╔╝█████╗░░╚█████╗░
+██╔══╝░░██║╚████║██║░░██║  ██╔══╝░░██╔══╝░░██╔══██║░░░██║░░░██║░░░██║██╔══██╗██╔══╝░░░╚═══██╗
+███████╗██║░╚███║██████╔╝  ██║░░░░░███████╗██║░░██║░░░██║░░░╚██████╔╝██║░░██║███████╗██████╔╝
+╚══════╝╚═╝░░╚══╝╚═════╝░  ╚═╝░░░░░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚═╝░░╚═╝╚══════╝╚═════╝░
+      -->
+      <!-- 
+
+░██████╗████████╗░█████╗░██████╗░████████╗
+██╔════╝╚══██╔══╝██╔══██╗██╔══██╗╚══██╔══╝
+╚█████╗░░░░██║░░░███████║██████╔╝░░░██║░░░
+░╚═══██╗░░░██║░░░██╔══██║██╔══██╗░░░██║░░░
+██████╔╝░░░██║░░░██║░░██║██║░░██║░░░██║░░░
+╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░
+
+████████╗███████╗░██████╗████████╗██╗███╗░░░███╗░█████╗░███╗░░██╗██╗░█████╗░██╗░░░░░░██████╗
+╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██║████╗░████║██╔══██╗████╗░██║██║██╔══██╗██║░░░░░██╔════╝
+░░░██║░░░█████╗░░╚█████╗░░░░██║░░░██║██╔████╔██║██║░░██║██╔██╗██║██║███████║██║░░░░░╚█████╗░
+░░░██║░░░██╔══╝░░░╚═══██╗░░░██║░░░██║██║╚██╔╝██║██║░░██║██║╚████║██║██╔══██║██║░░░░░░╚═══██╗
+░░░██║░░░███████╗██████╔╝░░░██║░░░██║██║░╚═╝░██║╚█████╔╝██║░╚███║██║██║░░██║███████╗██████╔╝
+░░░╚═╝░░░╚══════╝╚═════╝░░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═╝╚═╝░░╚═╝╚══════╝╚═════╝░
+        -->
+        <section class="test">
+          <div class="container">
+            <h2 class="title">Testimonials</h2>
+            <div class="content">
+              <div class="card">
+                <img src="images/avatar-01.png" alt="">
+                <h2>Ali Sayed</h2>
+                <p>Full stack developer</p>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
+                </p>
+              </div>
+              <div class="card">
+                <img src="images/avatar-01.png" alt="">
+                <h2>Ali Sayed</h2>
+                <p>Full stack developer</p>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
+                </p>
+              </div>
+              <div class="card">
+                <img src="images/avatar-01.png" alt="">
+                <h2>Ali Sayed</h2>
+                <p>Full stack developer</p>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
+                </p>
+              </div>
+              <div class="card">
+                <img src="images/avatar-01.png" alt="">
+                <h2>Ali Sayed</h2>
+                <p>Full stack developer</p>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
+                </p>
+              </div>
+              <div class="card">
+                <img src="images/avatar-01.png" alt="">
+                <h2>Ali Sayed</h2>
+                <p>Full stack developer</p>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
+                </p>
+              </div>
+              <div class="card">
+                <img src="images/avatar-01.png" alt="">
+                <h2>Ali Sayed</h2>
+                <p>Full stack developer</p>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+          
+███████╗███╗░░██╗██████╗░
+██╔════╝████╗░██║██╔══██╗
+█████╗░░██╔██╗██║██║░░██║
+██╔══╝░░██║╚████║██║░░██║
+███████╗██║░╚███║██████╔╝
+╚══════╝╚═╝░░╚══╝╚═════╝░
+
+████████╗███████╗░██████╗████████╗██╗███╗░░░███╗░█████╗░███╗░░██╗██╗░█████╗░██╗░░░░░░██████╗
+╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██║████╗░████║██╔══██╗████╗░██║██║██╔══██╗██║░░░░░██╔════╝
+░░░██║░░░█████╗░░╚█████╗░░░░██║░░░██║██╔████╔██║██║░░██║██╔██╗██║██║███████║██║░░░░░╚█████╗░
+░░░██║░░░██╔══╝░░░╚═══██╗░░░██║░░░██║██║╚██╔╝██║██║░░██║██║╚████║██║██╔══██║██║░░░░░░╚═══██╗
+░░░██║░░░███████╗██████╔╝░░░██║░░░██║██║░╚═╝░██║╚█████╔╝██║░╚███║██║██║░░██║███████╗██████╔╝
+░░░╚═╝░░░╚══════╝╚═════╝░░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═╝╚═╝░░╚═╝╚══════╝╚═════╝░
+          -->
+  <!-- Start gallary -->
+  <section class="team-members">
+    <h2 class="title">Team Members</h2>
+    <div class="container">
+      <div class="flex">
+        <div class="mem">
+          <div class="holder">
+            <div class="image">
+              <img src="images/team-01.jpg" alt="">
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-solid fa-x"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="text">
+            <h2>ALi Sayed</h2>
+            <p>Hello world</p>
+          </div>
+        </div>
+        <div class="mem">
+          <div class="holder">
+            <div class="image">
+              <img src="images/team-02.jpg" alt="">
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-solid fa-x"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="text">
+            <h2>ALi Sayed</h2>
+            <p>Hello world</p>
+          </div>
+        </div>
+        <div class="mem">
+          <div class="holder">
+            <div class="image">
+              <img src="images/team-03.jpg" alt="">
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-solid fa-x"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="text">
+            <h2>ALi Sayed</h2>
+            <p>Hello world</p>
+          </div>
+        </div>
+        <div class="mem">
+          <div class="holder">
+            <div class="image">
+              <img src="images/team-04.jpg" alt="">
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-solid fa-x"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="text">
+            <h2>ALi Sayed</h2>
+            <p>Hello world</p>
+          </div>
+        </div>
+        <div class="mem">
+          <div class="holder">
+            <div class="image">
+              <img src="images/team-05.png" alt="">
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-solid fa-x"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="text">
+            <h2>ALi Sayed</h2>
+            <p>Hello world</p>
+          </div>
+        </div>
+        <div class="mem">
+          <div class="holder">
+            <div class="image">
+              <img src="images/team-06.png" alt="">
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-solid fa-x"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="text">
+            <h2>ALi Sayed</h2>
+            <p>Hello world</p>
+          </div>
+        </div>
+        <div class="mem">
+          <div class="holder">
+            <div class="image">
+              <img src="images/team-07.jpg" alt="">
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-solid fa-x"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="text">
+            <h2>ALi Sayed</h2>
+            <p>Hello world</p>
+          </div>
+        </div>
+        <div class="mem">
+          <div class="holder">
+            <div class="image">
+              <img src="images/team-08.jpg" alt="">
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-solid fa-x"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="text">
+            <h2>ALi Sayed</h2>
+            <p>Hello world</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end gallary -->
+  </body>
+</html>
