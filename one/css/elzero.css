@@ -134,10 +134,10 @@ img {
     gap: 20px;
     flex-wrap: wrap;
 }
-/* section:not(:first-of-type){
+section:not(:first-of-type){
     padding: var(--section-padding) 0px;
     z-index: 1;
-} */
+}
 .grid {
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 30px;
@@ -631,7 +631,7 @@ flex-wrap: wrap;
 }
 .feat .image::before {
     position: absolute;
-   -moz-position: absolute;
+    -moz-position: absolute;
     content: "";
     -moz-content: "";
     height: 0px;
