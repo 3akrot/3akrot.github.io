@@ -623,8 +623,8 @@ flex-wrap: wrap;
 
 .feat .container .box .image {
 
-    -moz-overflow: hidden;
-    overflow: hidden;
+    /* -moz-overflow: hidden;
+    overflow: hidden; */
     -moz-position: relative;
     position: relative;
     height: fit-content;
@@ -636,11 +636,11 @@ flex-wrap: wrap;
     -moz-position: absolute;
     content: "";
     -moz-content: "";
-    height: 300px;
-    width: 150%;
+    height: 327px;
+    width: 100%;
     background-color: white;
     z-index: 1;
-    bottom: -10px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     clip-path: polygon(100% 34%, 0% 100%, 100% 100%);
@@ -690,11 +690,12 @@ flex-wrap: wrap;
 .feat .container .red .image::after {
     content: "";
     position: absolute;
-    top: 0px;
+    top: -1px;
     left: 0px;
-    background-color: rgb(244 64 54 / 60%);
-    height: 100%;
+
+    height: 99%;
     width: 100%;
+    background-color: rgb(244 64 54 / 60%);
 }
 .feat .container .red h2::after {
     content: "";
@@ -737,11 +738,13 @@ flex-wrap: wrap;
 .feat .container .green .image::after {
     content: "";
     position: absolute;
-    top: 0px;
+    top: -1px;
     left: 0px;
-    background-color: rgb(0 150 136 / 60%);
-    height: 100%;
+    height: 99%;
     width: 100%;
+
+    background-color: rgb(0 150 136 / 60%);
+  
 }
 .feat .container .green h2::after {
     content: "";
@@ -782,11 +785,13 @@ flex-wrap: wrap;
 .feat .container .blue .image::after {
     content: "";
     position: absolute;
-    top: 0px;
+    top: -1px;
     left: 0px;
-    background-color: rgb(3 169 244 / 60%);
+    height: 99%;
     width: 100%;
-    height: 100%;
+
+    background-color: rgb(3 169 244 / 60%);
+
 }
 .feat .container .blue h2::after {
     content: "";
