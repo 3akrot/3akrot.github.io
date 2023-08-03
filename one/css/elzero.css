@@ -622,6 +622,7 @@ flex-wrap: wrap;
 } 
 
 .feat .container .box .image {
+
     -moz-overflow: hidden;
     overflow: hidden;
     -moz-position: relative;
@@ -630,44 +631,28 @@ flex-wrap: wrap;
     -moz-height: fit-content;
 }
 .feat .image::before {
+    
     position: absolute;
     -moz-position: absolute;
     content: "";
     -moz-content: "";
-    height: 0px;
-    width: 0px;
-    -moz-border: 200px solid;
-    border: 200px solid;
+    height: 300px;
+    width: 150%;
+    background-color: white;
     z-index: 1;
-    bottom: -1px;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    border-color: #fa0606 white white #0000;
-    -moz-border-left-width: 500px;
-    border-left-width: 500px;
+    clip-path: polygon(100% 34%, 0% 100%, 100% 100%);
     transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    border-right-width: 0px;
-    -moz-border-right-width: 0px;
-    border-top-width: 0px;
-    -moz-border-top-width: 0px;
-    -moz-border-right-color: transparent;
-    border-right-color: transparent;
 
 
 }
 .feat .box:hover .image::before {
-    border-right-width:500px ;
-    -moz-border-right-width:500px ;
-    border-right-color: transparent;
-    -moz-border-right-color: transparent;
-    -moz-border-left-width: 0px;
-    border-left-width: 0px;
+    clip-path: polygon(0 33%, 0% 100%, 100% 100%);
     
 }
-.box .image img {
-    display: block;
-}
+
 .feat .container .box h2 {
     position: relative;
     margin: 50px 0px 60px;
