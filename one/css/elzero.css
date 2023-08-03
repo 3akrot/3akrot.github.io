@@ -648,6 +648,9 @@ flex-wrap: wrap;
 
 
 }
+.feat .image img {
+    /* display:block; */
+}
 .feat .box:hover .image::before {
     clip-path: polygon(0 33%, 0% 100%, 100% 100%);
     
