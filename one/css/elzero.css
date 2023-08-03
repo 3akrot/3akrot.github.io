@@ -134,10 +134,10 @@ img {
     gap: 20px;
     flex-wrap: wrap;
 }
-section:not(:first-of-type){
+/* section:not(:first-of-type){
     padding: var(--section-padding) 0px;
     z-index: 1;
-}
+} */
 .grid {
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 30px;
@@ -622,40 +622,45 @@ flex-wrap: wrap;
 } 
 
 .feat .container .box .image {
-
-    /* -moz-overflow: hidden;
-    overflow: hidden; */
-    -moz-position: relative;
+    overflow: hidden;
     position: relative;
     height: fit-content;
-    -moz-height: fit-content;
 }
 .feat .image::before {
-    
     position: absolute;
-    -moz-position: absolute;
     content: "";
-    -moz-content: "";
-    height: 327px;
-    width: 100%;
-    background-color: white;
+    height: 0px;
+    width: 0px;
+    border: 200px solid;
+      border-top-color: currentcolor;
+      border-top-width: 200px;
+      border-right-color: currentcolor;
+      border-right-width: 200px;
+      border-bottom-color: currentcolor;
+      border-left-color: currentcolor;
+      border-left-width: 200px;
     z-index: 1;
-    bottom: 0px;
+    bottom: -1px;
     left: 50%;
     transform: translateX(-50%);
-    clip-path: polygon(100% 34%, 0% 100%, 100% 100%);
+    border-color: #fa0606 white white #0000;
+    border-left-width: 500px;
     transition: var(--main-transition);
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-right-color: transparent;
 
 
-}
-.feat .image img {
-    /* display:block; */
 }
 .feat .box:hover .image::before {
-    clip-path: polygon(0 33%, 0% 100%, 100% 100%);
+    border-right-width:500px ;
+    border-right-color: transparent;
+    border-left-width: 0px;
     
 }
-
+.box .image img {
+    display: block;
+}
 .feat .container .box h2 {
     position: relative;
     margin: 50px 0px 60px;
@@ -690,12 +695,11 @@ flex-wrap: wrap;
 .feat .container .red .image::after {
     content: "";
     position: absolute;
-    top: -1px;
+    top: 0px;
     left: 0px;
-
-    height: 99%;
-    width: 100%;
     background-color: rgb(244 64 54 / 60%);
+    height: 100%;
+    width: 100%;
 }
 .feat .container .red h2::after {
     content: "";
@@ -738,13 +742,11 @@ flex-wrap: wrap;
 .feat .container .green .image::after {
     content: "";
     position: absolute;
-    top: -1px;
+    top: 0px;
     left: 0px;
-    height: 99%;
-    width: 100%;
-
     background-color: rgb(0 150 136 / 60%);
-  
+    height: 100%;
+    width: 100%;
 }
 .feat .container .green h2::after {
     content: "";
@@ -785,13 +787,11 @@ flex-wrap: wrap;
 .feat .container .blue .image::after {
     content: "";
     position: absolute;
-    top: -1px;
+    top: 0px;
     left: 0px;
-    height: 99%;
-    width: 100%;
-
     background-color: rgb(3 169 244 / 60%);
-
+    width: 100%;
+    height: 100%;
 }
 .feat .container .blue h2::after {
     content: "";
