@@ -637,7 +637,7 @@ flex-wrap: wrap;
     height: 0px;
     width: 0px;
     -moz-border: 200px solid;
-
+    border: 200px solid;
     z-index: 1;
     bottom: -1px;
     left: 50%;
