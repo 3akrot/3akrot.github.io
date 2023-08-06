@@ -1101,7 +1101,8 @@ flex-wrap: wrap;
     /* flex-basis: clamp(20rem , calc(100% / 3.2 ), 100%); */
     /* flex-basis: min(22rem,21rem,);
     flex-basis: max(calc(100% / 3) , 0rem); */
-    flex-basis :18rem;
+    /* flex-basis :18rem; */
+    flex: 1 0 19rem;
     
     padding: 10px 0px 0px 0px;
     position: relative;
