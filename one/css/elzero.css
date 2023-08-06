@@ -7,6 +7,8 @@
     --main-transition: .3s;
     --section-padding:100px;
     --section-background:#ebebeb;
+    --white:#fff ;
+    --white-in: ;
 }
 .tall {
     height: 100vh;
@@ -61,7 +63,7 @@ Components
 
 }
 .title:hover {
- color: white;
+ color: var(--white);
  transition-delay: 0.8s;
 }
 .title:hover::before {
@@ -119,7 +121,7 @@ img {
     width: 100%;
     top: 0px;
     left: -100%;
-    background-image:linear-gradient(rgba(255, 255, 255, 0) , white 50% , rgba(255, 255, 255, 0)) ;
+    background-image:linear-gradient(rgba(255, 255, 255, 0) , var(--white) 50% , rgba(255, 255, 255, 0)) ;
     animation: skel 2s linear infinite;
 }
 @keyframes skel {
@@ -134,10 +136,10 @@ img {
     gap: 20px;
     flex-wrap: wrap;
 }
-section:not(:first-of-type){
+/* section:not(:first-of-type){
     padding: var(--section-padding) 0px;
     z-index: 1;
-}
+} */
 .grid {
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 30px;
@@ -170,7 +172,7 @@ header {
     position: relative;
     box-shadow: 0px 0px 10px #ddd;
     min-height: 74.7px;
-    background-color: white;
+    background-color: var(--white);
 }
 .logo {
     color: var(--main-color);
@@ -238,7 +240,7 @@ header .mega-menu {
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
-    background-color: white;
+    background-color: var(--white);
     z-index: -1;
 }
 
@@ -547,7 +549,7 @@ right: 15px;
 }
 .gallary .box {
     padding: 15px;
-    background-color: white;
+    background-color: var(--white);
 }
 .gallary .box .image {
     position: relative;
@@ -643,8 +645,8 @@ flex-wrap: wrap;
     bottom: -1px;
     left: 50%;
     transform: translateX(-50%);
-    border-color: #fa0606 white white #0000;
-    border-left-width: 500px;
+    border-color: #fa0606 var(--white) var(--white) #0000;
+    border-left-width: 600px;
     transition: var(--main-transition);
     border-right-width: 0px;
     border-top-width: 0px;
@@ -653,7 +655,7 @@ flex-wrap: wrap;
 
 }
 .feat .box:hover .image::before {
-    border-right-width:500px ;
+    border-right-width:600px ;
     border-right-color: transparent;
     border-left-width: 0px;
     
@@ -731,7 +733,7 @@ flex-wrap: wrap;
 
 
 .feat .container .red:hover a {
-    color: white;
+    color: var(--white);
 }
 .feat .container .red:hover a::after {
     width: 100%;
@@ -777,7 +779,7 @@ flex-wrap: wrap;
     z-index: -1;
 }
 .feat .container .green:hover a {
-    color: white;
+    color: var(--white);
 }
 .feat .container .green:hover a::after {
     width: 100%;
@@ -821,7 +823,7 @@ flex-wrap: wrap;
     z-index: -1;
 }
 .feat .container .blue:hover a {
-    color: white;
+    color: var(--white);
 }
 .feat .container .blue:hover a::after {
     width: 100%;
@@ -871,7 +873,7 @@ flex-wrap: wrap;
 .test .card {
     position: relative;
     padding: 20px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 8px;
 }
 .test .card img {
@@ -952,6 +954,9 @@ flex-wrap: wrap;
 ░░░██║░░░███████╗██║░░██║██║░╚═╝░██║  ██████╔╝░░░██║░░░██║░░██║██║░░██║░░░██║░░░
 ░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝  ╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░
  */
+ .team-members {
+    padding: var(--section-padding) 0px;
+ }
 .mem {
     position: relative;
     width: 278px;
@@ -1079,6 +1084,114 @@ flex-wrap: wrap;
 ░░░██║░░░███████╗██║░░██║██║░╚═╝░██║  ███████╗██║░╚███║██████╔╝
 ░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝  ╚══════╝╚═╝░░╚══╝╚═════╝░
 */
+/* start Services */
+.services {
+    padding: var(--section-padding) 0px;
+    background-color: var(--section-background);
+}
+.services .container {
+    display:flex;
+    flex-wrap:wrap;
+    gap: 30px;
+    justify-content: center;
+    counter-reset: num;
+
+}
+.services .box {
+    /* flex-basis: clamp(20rem , calc(100% / 3.2 ), 100%); */
+    /* flex-basis: min(22rem,21rem,);
+    flex-basis: max(calc(100% / 3) , 0rem); */
+    flex-basis :22rem;
+    
+    padding: 10px 0px 0px 0px;
+    position: relative;
+    background-color: #ffffff;
+    transition: var(--main-transition);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 25%);
+  
+
+}
+.services .box::after {
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 0px;
+    top: 0;
+    left:50%;
+    background: var(--main-color);
+    transition: var(--main-transition);
+}
+.box i { 
+    display: block;
+    font-size: 50px;
+    margin: 20px auto 50px;
+    width: fit-content;
+    color: #d5d5d5;
+    
+}
+.box h2 {
+    text-align: center;
+    margin-top: -30px;
+    color: var(--main-color);
+}
+.services .box:hover::after {
+    width: 100%;
+}
+.services .box:hover {
+    transform: translateY(-5px);
+}
+.services .box .content {
+    margin-bottom:35px;
+    margin-top: 10px;
+}
+
+.services .box .foot {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 15px 15px 10px;
+    overflow: hidden;
+
+
+    
+    background-color: #f9f9f9;
+}
+.services .box .foot::after {
+    content: "0" counter(num);
+    counter-increment: num;
+
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 100px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: var(--white);
+    left: -10px;
+}
+.services .box .foot::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 105%;
+    transform: skew(-24deg);
+    background-color: #d5d5d5;
+    top: 0px;
+    left: 75px;
+    z-index: 1;
+}
+.services .box a {
+    text-decoration: none;
+    color: var(--main-color);
+    
+}
+/* end Services */
 /*  media */
 @media (min-width:768px) {
     .container {
@@ -1323,3 +1436,30 @@ flex-wrap: wrap;
     }
 
 }
+
+@media (prefer-color-scheme : dark ) {
+body {
+background-color: black;
+}
+body div {
+    background-color: rgb(40, 40, 40);
+
+}
+}
+@media (prefer-color-scheme : dark)
+{
+    body {
+        background-color: black;
+        }
+        body div {
+            background-color: rgb(40, 40, 40);
+        
+}
+}
+@media (prefer-color-scheme : dark) {  body {
+    background-color: black;
+    }
+    body div {
+        background-color: rgb(40, 40, 40);
+    
+} }
