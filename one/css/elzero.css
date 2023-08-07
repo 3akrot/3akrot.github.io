@@ -1101,8 +1101,10 @@ flex-wrap: wrap;
     /* flex-basis: clamp(20rem , calc(100% / 3.2 ), 100%); */
     /* flex-basis: min(22rem,21rem,);
     flex-basis: max(calc(100% / 3) , 0rem); */
-    /* flex-basis :18rem; */
+    /* flex-basis :22rem; */
     flex: 1 0 19rem;
+    /* flex: 1 0 clamp(0px , 22rem , 30rem);
+    flex: 1 1 clamp(0px , 19rem, 30rem); */
     
     padding: 10px 0px 0px 0px;
     position: relative;
@@ -1180,10 +1182,10 @@ flex-wrap: wrap;
     content: "";
     position: absolute;
     width: 50px;
-    height: 105%;
+    height: 120%;
     transform: skew(-24deg);
     background-color: #d5d5d5;
-    top: 0px;
+    top: -5px;
     left: 75px;
     z-index: 1;
 }

@@ -160,6 +160,8 @@ img {
 /* landing start */
 .landing {
   background-image: url(../images/landing\ -\ Copy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   height: calc(100vh - 64px);
   display: flex;
   justify-content: center;
