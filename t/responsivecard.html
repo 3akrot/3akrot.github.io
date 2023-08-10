@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            document
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="page description">
+        <style>
+            .image {
+                background: blue;
+                height: 200px;
+            }
+            .container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: #ddd;
+                border-radius: 10px;
+            }
+            .image {
+                flex-basis: 200px;
+                flex-grow: 1;
+            }
+            .content {
+                padding:20px ;
+                flex-basis: 400px;
+                flex-grow: 2;
+            }
+            .content h2 {
+                font-size:40px;
+            }
+        .wrapper {
+            margin: 0px auto;
+            width: 100%;
+            padding: 0px 15px;
+        }
+        .p {
+            width: 80%;
+            margin: 0px auto;
+
+        }
+        @media (min-width:768px) {
+            .wrapper {
+            width: 750px;
+            }
+        }
+        @media (min-width:992px) {
+            .wrapper {
+            width: 970px;
+            }
+        }
+        @media (min-width:1200px) {
+            .wrapper {
+            width: 1170px;
+            }
+        }
+
+
+    </style>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="p">
+                <div class="container">
+                    <div class="image">
+        
+                    </div>
+                    <div class="content">
+                        <h2>test</h2>
+                        <p>test</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
+

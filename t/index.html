@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>test</title>
+
+    <style>
+        html::-webkit-scrollbar {
+            width: 0px;
+            display: none;
+        }
+        img {
+            max-width: 100%;
+
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(37, 36, 36);
+            flex-wrap: wrap;
+            /* padding: 30px 0px 0px 0px; */
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            /* overflow: hidden; */
+        }
+        .image img {
+            border-radius: 10px;
+        }
+        .info {
+            flex: 1 1 300px;
+            color: white;
+            text-align: center;
+        }
+        
+        .gallary::-webkit-scrollbar {
+        width: 10px;
+        }
+        .gallary::-webkit-scrollbar-thumb {
+        background: #b90b0b;
+        background: #c0b7b7;
+        border-radius: 7px;
+        }
+        .gallary::-webkit-scrollbar-track {
+            padding: 2px;
+            background: #47473e;
+        }
+        
+        
+        .gallary {
+        flex: 1 1 500px;
+        scroll-snap-type: mandatory;
+        
+        gap: 30px;
+        width: 500px;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        overflow-y: scroll;
+        max-height:390px ;
+        }
+        .col-1,.col-2 {
+            flex: 1 1 14rem;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+        }
+        .col-2  {
+            
+            /* margin-top: 80px; */
+        }
+        @media (max-width: 493px) { 
+            .col-2 {
+                margin-top: initial;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="info">
+        <model-viewer src="source/r34int.glb" alt="VR Headset" auto-rotate camera-controls ar ios-src="source/r34int.glb"></model-viewer>
+    </div>
+    <div class="gallary">
+        <div class="col-1">
+            <div class="image">
+                <img src="close-up-hand-holding-delicious-burger.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="full-shot-woman-eating-ice-cream.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="beautiful-delicious-fast-food.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="portrait-people-outdoors-holding-ice-cream-cones.jpg" alt="">
+            </div>
+
+
+
+        </div>
+        <div class="col-2">
+
+            <div class="image">
+                <img src="top-view-hot-dog-with-pickles-veggies.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="side-view-woman-eating-ice-cream.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="still-life-fast-food-dishes.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="beautiful-delicious-asian-food.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="top-view-hot-dog-with-pickles-veggies.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="beautiful-delicious-asian-food.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    
+</body>
+
+</html>
