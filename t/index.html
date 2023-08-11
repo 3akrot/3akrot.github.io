@@ -23,7 +23,8 @@
             /* padding: 30px 0px 0px 0px; */
             margin: 0px;
             font-family: Arial, Helvetica, sans-serif;
-            height: 100vh;
+            gap: 30px;
+            padding: 30px 0px;
             /* overflow: hidden; */
         }
         .image img {
@@ -59,8 +60,6 @@
         display: flex;
         flex-wrap: wrap;
         border-radius: 10px;
-        overflow-y: scroll;
-        max-height:390px ;
         }
         .col-1,.col-2 {
             flex: 1 1 14rem;
@@ -82,8 +81,37 @@
 </head>
 
 <body>
-    <div class="info">
-        <model-viewer src="source/r34int.glb" alt="VR Headset" auto-rotate camera-controls ar ios-src="source/r34int.glb"></model-viewer>
+    <div class="gallary">
+        <div class="col-1">
+            <div class="image">
+                <img src="full-shot-couple-looking-moon.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="cute-cat-laying-grass.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="full-shot-people-beach.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="full-shot-old-people-sitting-bench.jpg" alt="">
+            </div>
+            
+        </div>
+        <div class="col-2">
+            <div class="image">
+                <img src="collage-with-mountains-planet.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="collage-with-cars-seaside.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="collage-with-mountains-planet.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="collage-with-people-hiking-full-shot.jpg" alt="">
+            </div>
+
+        </div>
     </div>
     <div class="gallary">
         <div class="col-1">
@@ -91,22 +119,18 @@
                 <img src="close-up-hand-holding-delicious-burger.jpg" alt="">
             </div>
             <div class="image">
-                <img src="full-shot-woman-eating-ice-cream.jpg" alt="">
+                <img src="collage-with-people-hiking-full-shot.jpg" alt="">
             </div>
             <div class="image">
-                <img src="beautiful-delicious-fast-food.jpg" alt="">
+                <img src="full-shot-man-looking-waterfall.jpg" alt="">
             </div>
-            <div class="image">
-                <img src="portrait-people-outdoors-holding-ice-cream-cones.jpg" alt="">
-            </div>
-
-
-
-        </div>
-        <div class="col-2">
-
             <div class="image">
                 <img src="top-view-hot-dog-with-pickles-veggies.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="image">
+                <img src="collage-with-van-moon.jpg" alt="">
             </div>
             <div class="image">
                 <img src="side-view-woman-eating-ice-cream.jpg" alt="">
@@ -117,13 +141,6 @@
             <div class="image">
                 <img src="beautiful-delicious-asian-food.jpg" alt="">
             </div>
-            <div class="image">
-                <img src="top-view-hot-dog-with-pickles-veggies.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="beautiful-delicious-asian-food.jpg" alt="">
-            </div>
-
         </div>
     </div>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
