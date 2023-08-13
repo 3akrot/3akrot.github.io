@@ -1290,6 +1290,7 @@ flex-wrap: wrap;
 }
 .how .container {
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     gap: 40px;
 }
@@ -1299,6 +1300,7 @@ flex-wrap: wrap;
 }
 .how .container .col-2  {
     flex: 1 1 29rem;
+    justify-content: center;
 }
 .how .container .col-1 { 
     justify-content: center;
@@ -1313,7 +1315,7 @@ flex-wrap: wrap;
     padding: 20px 10px;
     border: 1px solid white;
     background-color: #f6f5f5;
-    padding-left: 20px;
+    padding-right: 20px;
     overflow: hidden;
     position: relative;
     border-radius: 8px;
