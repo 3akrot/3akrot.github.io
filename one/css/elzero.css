@@ -1493,7 +1493,7 @@ flex-wrap: wrap;
 @media (max-width: 467px) { 
     .events .container .countdown h3 { 
         padding: 5px 20px;
-        font-size: x-large;
+        font-size: xx-large;
     }
     .events .container .countdown h5 { 
         padding: 5px 0px;
@@ -1536,6 +1536,12 @@ flex-wrap: wrap;
 
     }
 }
+@media (max-width:350px) {
+    .events .container .countdown h3 { 
+        padding: 5px 20px;
+        font-size: x-large;
+    }
+}
 
 /* end events */
 /*  media */
@@ -1552,6 +1558,7 @@ flex-wrap: wrap;
         display: inline;
         }
 }
+
 @media (min-width:1200px) {
     .container {
         width: 1170px;
