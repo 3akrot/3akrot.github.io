@@ -74,6 +74,15 @@ Components
     animation:move-left-and-grow .7s linear forwards ;
     -webkit-animation:move-left-and-grow .7s linear forwards ;
 }
+
+.flex- {
+    display: flex;
+    align-items: center;
+    
+ }
+ .m5-l-r{
+    margin: 0 5px;
+  }
 /*  global rules */
 :focus {
     outline: none;
@@ -132,6 +141,7 @@ img {
     }
     
 }
+
 .flex {
     display: flex;
     justify-content: center;
@@ -1347,7 +1357,7 @@ flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 20px;
 }
-@media (max-width: 508px) {
+@media (max-width: 498px) {
     .how .box  {
         text-align: center;
     }
@@ -1356,15 +1366,178 @@ flex-wrap: wrap;
     }
     
 }
-@media (min-width: 992px) and (max-width:1027px) {
+/* @media (min-width: 992px) and (max-width:1027px) {
     .how .box  {
         text-align: center;
     }
     .how .box h2 {
         text-align: center;
     }
-}
+} */
 /* end how */
+/* start events */
+.events .container {
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .events .container .right { 
+    flex: 2 1 450px;
+ }
+ .events .container img { 
+    flex: 1 1 200px;
+    max-width: 470px;
+ }
+ .events .container .countdown { 
+    justify-content: center;
+    margin: 30px 0px;
+ }
+ .events .container .countdown .box {
+    position: relative; 
+    /* padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #d4d4d4;
+    transition: var(--main-transition);
+ }
+ .events .container .countdown .box:hover {
+    border: 1px solid var(--main-color);
+  }
+ /* .events .container .countdown .box::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: 30px;
+    width: 100%;
+ } */
+
+
+.events .container .countdown h3 { 
+    padding: 10px 25px;
+    font-size: xx-large;
+    color: var(--main-color);
+}
+.events .container .countdown h5 { 
+    padding: 10px 0px;
+    text-align: center;
+    border-top: 1px solid #d4d4d4;
+    transition: var(--main-transition);
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.events .container .countdown .box:hover h5 {
+    border-top: 1px solid var(--main-color);
+
+}
+
+
+.events .container .email {
+    /* flex: 1 1 800px; */
+    justify-content: center;
+}
+.events .container .text {
+    text-align: center;
+}
+.events .container .text h2 {
+    margin: 20px 0px;
+    font-size: xx-large;
+}
+.events .container .text p {
+    line-height: 2;
+    color: #777;
+    font-size: 1.2rem;
+}
+
+.events .email {
+    width: clamp(600px , 300px , 0px  );
+    margin: 50px 0px 0px;
+    padding: 30px 40px;
+    border-radius: 50px;
+    background-color: #f6f5f5;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.email input[type="email"] {
+    flex: 1 1 310px;
+    background-color: transparent;
+    border: none;
+    background-color: white;
+    padding: 20px ;
+    border-radius: 100px;
+    min-width: 0px;
+    caret-color: var(--main-color);
+
+}
+.email button[type="submit"] {
+    flex: 1 1 20px;
+    background-color: var(--main-color);
+    border: none;
+    padding: 20px 10px;
+    border-radius: 100px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.email button[type="submit"]:hover {
+    background-color: var(--main-color-alt);
+
+}
+::placeholder {
+    text-transform: capitalize;
+}
+@media (max-width: 467px) { 
+    .events .container .countdown h3 { 
+        padding: 5px 20px;
+        font-size: x-large;
+    }
+    .events .container .countdown h5 { 
+        padding: 5px 0px;
+    
+    }
+    .m10-l-r{
+        margin: 0 3px;
+    }
+    .events .container img { 
+        max-width: 300px;
+    }
+    .events .container .text h2 {
+        margin: 20px 0px;
+        font-size: x-large;
+    }
+    .events .container .text p {
+        line-height: 2;
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: x-large;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .events .email {
+        padding: 25px 30px;
+        gap: 15px;
+        border-radius: 50px;
+    }
+    .email input[type="email"] {
+        padding: 15px 10px ;
+        border-radius: 50px;
+
+    
+    }
+    .email button[type="submit"] {
+        padding: 15px 10px;
+        border-radius: 60px;
+
+    }
+}
+
+/* end events */
 /*  media */
 @media (min-width:768px) {
     .container {
