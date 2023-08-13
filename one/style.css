@@ -8,6 +8,7 @@
   -moz-transition: 0.2s linear;
   -ms-transition: 0.2s linear;
   -o-transition: 0.2s linear;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   /* background-image:url(pexels-irina-iriser-1366957.jpg);

@@ -469,14 +469,14 @@ flex: 1;
     font-weight: bold;
     width: 100%;
     position: relative;
-    padding-left: 15px;
+    padding-right: 15px;
     
 }
 .article .container .card i {
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
-right: 15px;
+left: 15px;
  
 }
 .article .container .card:hover i { 
@@ -906,7 +906,7 @@ flex-wrap: wrap;
 }
 .test .card img {
     position: absolute;
-    right: -5px;
+    left: -5px;
     top: -40px;
     width: 90px;
     height: 90px;
@@ -989,6 +989,7 @@ flex-wrap: wrap;
     position: relative;
     width: 278px;
     display: flex;
+
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -1012,7 +1013,7 @@ flex-wrap: wrap;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 0px;
+    left: 0px;
     width: 80%;
     height: 110%;
     border-radius: 10px;
@@ -1025,7 +1026,7 @@ flex-wrap: wrap;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 0px;
+    left: 0px;
     width: 0;
     height: 110%;
     background-color: #e4e4e4;
@@ -1096,7 +1097,7 @@ flex-wrap: wrap;
 }
 .team-members .text {
     align-self: center;
-    padding-left: 25%;
+    padding-right: 25%;
     position: relative;
     width: 100%;
 }
@@ -1770,10 +1771,10 @@ flex-wrap: wrap;
 
 @keyframes right {
     0%{
-        right: 15px;
+        left: 15px;
     }
     100% {
-        right: 10px;
+        left: 10px;
     }
 }
 @keyframes flash {
