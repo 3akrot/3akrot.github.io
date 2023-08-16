@@ -13,15 +13,32 @@
     <!-- =======Google fonts======= -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <!-- =======Style======= -->
     <link rel="stylesheet" href="css/cA.css" />
-    <link rel="icon" href="Capture.PNG"/>
-</head>
+    <link rel="icon" href="Capture.PNG" />
+    <style>
+    .a {
+        position: fixed;
+        padding: 10px 20px;
+        background-color: #2196f3;
+        color: white;
+        bottom: 30px;
+        right: 10px;
+        z-index: 999;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+</style>
 </head>
 
 <body>
-    <header>
+    <a class="a" href="#h">عوده للاعلي</a>
+
+    <header id="h">
         <div class="container">
             <div class="logo">الزيرو<a href="c.html" class="lang"><i class="fa-solid fa-language"></i></a></div>
             <div class="nav">
@@ -47,7 +64,7 @@
                             <div class="col-2">
                                 <ul>
                                     <li><a href="#events"><i class="far fa-calendar-alt fa-fw"></i>الأحداث</a></li>
-                                    <li><a href="#"><i class="fas fa-server fa-fw"></i>خطط الأسعار</a></li>
+                                    <li><a href="#plans"><i class="fas fa-server fa-fw"></i>خطط الأسعار</a></li>
                                     <li><a href="#"><i class="far fa-play-circle fa-fw"></i>أفضل الفيديوهات</a></li>
                                     <li><a href="#"><i class="far fa-chart-bar fa-fw"></i>إحصائيات</a></li>
                                     <li><a href="#"><i class="fas fa-percent fa-fw"></i>طلب خصم</a></li>
@@ -413,7 +430,7 @@
                     </div>
                 </div>
                 <!-- يمكنك ترجمة المزيد من العناصر هنا -->
-                
+
             </div>
         </div>
     </section>
@@ -567,6 +584,57 @@
             <div class="email flex-">
                 <input type="email" name="email" id="" placeholder="أدخل بريدك الإلكتروني">
                 <button type="submit">اشتراك</button>
+            </div>
+        </div>
+    </section>
+    <!-- start plans -->
+    <section class="plans" id="plans">
+        <h2 class="title">خطط الأسعار</h2>
+        <div class="container">
+            <div class="plan">
+                <h1>أساسي</h1>
+                <img src="images/hosting-basic.png" alt="">
+                <span>$15</span>
+                <h2>شهريا</h2>
+                <ul class="pros">
+                    <li>10GB HDD مساحة تخزين</li>
+                    <li>5 عناوين بريد إلكتروني</li>
+                    <li>2 نطاقات فرعية</li>
+                    <li>4 قواعد بيانات</li>
+                    <li>دعم أساسي</li>
+                </ul>
+                <a href="#" class="chose">اختر الخطة</a>
+            </div>
+            <div class="plan">
+                <div class="bookmarked">
+                    الأكثر شعبية
+                </div>
+                <h1>متقدم</h1>
+                <img src="images/hosting-advanced.png" alt="">
+                <span>$25</span>
+                <h2>شهريا</h2>
+                <ul class="pros">
+                    <li>20GB HDD مساحة تخزين</li>
+                    <li>10 عناوين بريد إلكتروني</li>
+                    <li>4 نطاقات فرعية</li>
+                    <li>8 قواعد بيانات</li>
+                    <li>دعم متقدم</li>
+                </ul>
+                <a href="#" class="chose">اختر الخطة</a>
+            </div>
+            <div class="plan">
+                <h1>احترافي</h1>
+                <img src="images/hosting-professional.png" alt="">
+                <span>$45</span>
+                <h2>شهريا</h2>
+                <ul class="pros">
+                    <li>40GB HDD مساحة تخزين</li>
+                    <li>20 عناوين بريد إلكتروني</li>
+                    <li>8 نطاقات فرعية</li>
+                    <li>16 قواعد بيانات</li>
+                    <li>دعم احترافي</li>
+                </ul>
+                <a href="#" class="chose">اختر الخطة</a>
             </div>
         </div>
     </section>

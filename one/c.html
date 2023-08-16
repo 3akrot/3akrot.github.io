@@ -16,8 +16,24 @@
     <!-- =======Style======= -->
     <link rel="stylesheet" href="css/elzero.css" />
     <link rel="icon" href="Capture.PNG"/>
+    <style>
+      .a {
+        position: fixed;
+        padding: 10px 20px;
+        background-color: #2196f3;
+        color: white;
+        bottom: 30px;
+        right: 10px;
+        z-index: 999;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
+    </style>
   </head>
   <body>
+    <a class="a" href="#h">Go Top</a>
     <!-- 
       
 ░██████╗████████╗░█████╗░██████╗░████████╗  ██╗░░██╗███████╗░█████╗░██████╗░███████╗██████╗░
@@ -27,7 +43,7 @@
 ██████╔╝░░░██║░░░██║░░██║██║░░██║░░░██║░░░  ██║░░██║███████╗██║░░██║██████╔╝███████╗██║░░██║
 ╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░  ╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝
       -->
-    <header>
+    <header id="h">
       <div class="container">
         <div class="logo">Elzero<a href="cA.html" class="lang"><i class="fa-solid fa-language"></i></a></div>
         <div class="nav">
@@ -54,7 +70,7 @@
                 <div class="col-2">
                   <ul> 
                     <li><a href="#events"><i class="far fa-calendar-alt fa-fw"></i>Events</a></li>
-                    <li><a href="#"><i class="fas fa-server fa-fw"></i>Pricing Plans</a></li>
+                    <li><a href="#plans"><i class="fas fa-server fa-fw"></i>Pricing Plans</a></li>
                     <li><a href="#"><i class="far fa-play-circle fa-fw"></i>Top Videos</a></li>
                     <li><a href="#"><i class="far fa-chart-bar fa-fw"></i>Stats</a></li>
                     <li><a href="#"><i class="fas fa-percent fa-fw"></i>Request A Discount</a></li>
@@ -728,6 +744,58 @@
     </div>
   </section>
     <!-- end events -->
+    <!-- start plans -->
+    <section class="plans" id="plans">
+      <h2 class="title">Pricing Plans</h2>
+      <div class="container">
+        <div class="plan">
+          <h1>Basic</h1>
+          <img src="images/hosting-basic.png" alt="">
+          <span>$15</span>
+          <h2>Per Month</h2>
+          <ul class="pros">
+            <li>10GB HDD Space</li>
+            <li>5 Email Addresses</li>
+            <li>2 Subdomains</li>
+            <li>4 Databases</li>
+            <li>Basic Support</li>
+          </ul>
+          <a href="#" class="chose">Choose Plan</a>
+        </div>
+        <div class="plan">
+          <div class="bookmarked">
+            Most Popular
+          </div>
+          <h1>Advanced</h1>
+          <img src="images/hosting-advanced.png" alt="">
+          <span>$25</span>
+          <h2>Per Month</h2>
+          <ul class="pros">
+            <li>20GB HDD Space</li>
+            <li>10 Email Addresses</li>
+            <li>4 Subdomains</li>
+            <li>8 Databases</li>
+            <li>Advanced Support</li>
+          </ul>
+          <a href="#" class="chose">Choose Plan</a>
+        </div>
+        <div class="plan">
+          <h1>Professional</h1>
+          <img src="images/hosting-professional.png" alt="">
+          <span>$45</span>
+          <h2>Per Month</h2>
+          <ul class="pros">
+            <li>40GB HDD Space</li>
+            <li>20 Email Addresses</li>
+            <li>8 Subdomains</li>
+            <li>16 Databases</li>
+            <li>Professional Support</li>
+          </ul>
+          <a href="#" class="chose">Choose Plan</a>
+        </div>
+        
+      </div>
+    </section>
 
     <script src="https://kit.fontawesome.com/4b0768c77c.js" crossorigin="anonymous"></script>
   </body>
