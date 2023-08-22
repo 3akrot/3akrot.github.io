@@ -1722,13 +1722,15 @@ font-size: x-large;
     font-weight: bold;
     background-color: #f4f4f4;
 }
-.video ul li {
+.video ul a {
     padding: 20px 10px;
+    display: block;
+    width: 100%;
 }
 .video ul li:not(:last-child) {
     border-bottom: 1px solid #ddd;
 }
-.video ul li a {
+.video ul a {
     text-decoration: none;
     color: black;
     transition: var(--main-transition);
@@ -1747,6 +1749,7 @@ font-size: x-large;
     background-color: white;
     padding: 20px 10px;
 }
+
 
 /* end video */
 /*  media */
