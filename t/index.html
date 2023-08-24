@@ -12,23 +12,31 @@
         }
         img {
             max-width: 100%;
+            border-radius: 10px;
+            max-width: 100%;
+            margin-bottom: 20px;
 
         }
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: grid;
             background-color: rgb(37, 36, 36);
-            flex-wrap: wrap;
             /* padding: 30px 0px 0px 0px; */
             margin: 0px;
             font-family: Arial, Helvetica, sans-serif;
             gap: 30px;
             padding: 30px 0px;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
             /* overflow: hidden; */
         }
+        .image {
+            flex: 1 1 250px;
+        }
+        .col-1 img {
+            max-width: 100%;
+        }
         .image img {
-            border-radius: 10px;
+
+
         }
         .info {
             flex: 1 1 300px;
@@ -64,85 +72,106 @@
         .col-1,.col-2 {
             flex: 1 1 14rem;
             display: flex;
+            flex-wrap: wrap;
             gap: 30px;
-            flex-direction: column;
+        }
+        .col-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
         }
         .col-2  {
             
             /* margin-top: 80px; */
         }
-        @media (max-width: 493px) { 
-            .col-2 {
-                margin-top: initial;
+        /* .wrapper {
+            display: grid;
+            gap: 10px;
+        } */
+        @media (max-width: 809px) { 
+            .wrapper:nth-child(4),.wrapper:nth-child(3){
+                display: none;
             }
+
         }
+
 
     </style>
 </head>
 
 <body>
-    <div class="gallary">
-        <div class="col-1">
-            <div class="image">
+    
+        
+            <div class="wrapper">
                 <img src="full-shot-couple-looking-moon.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="cute-cat-laying-grass.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="full-shot-people-beach.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="full-shot-old-people-sitting-bench.jpg" alt="">
-            </div>
             
-        </div>
-        <div class="col-2">
-            <div class="image">
-                <img src="collage-with-mountains-planet.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="collage-with-cars-seaside.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="collage-with-mountains-planet.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="collage-with-people-hiking-full-shot.jpg" alt="">
-            </div>
-
-        </div>
-    </div>
-    <div class="gallary">
-        <div class="col-1">
-            <div class="image">
+            
+                <img src="cute-cat-laying-grass.jpg" alt="">
+            
+            
+                <img src="full-shot-people-beach.jpg" alt="">
+            
+            
+                <img src="full-shot-old-people-sitting-bench.jpg" alt="">
+            
+            
                 <img src="close-up-hand-holding-delicious-burger.jpg" alt="">
             </div>
-            <div class="image">
+            
+                
+            <div class="wrapper">
+                <img src="full-shot-old-people-sitting-bench.jpg" alt="">
+            
+            
+            <img src="close-up-hand-holding-delicious-burger.jpg" alt="">
+            
                 <img src="collage-with-people-hiking-full-shot.jpg" alt="">
-            </div>
-            <div class="image">
+            
+            
                 <img src="full-shot-man-looking-waterfall.jpg" alt="">
-            </div>
-            <div class="image">
+            
+            
                 <img src="top-view-hot-dog-with-pickles-veggies.jpg" alt="">
+            
             </div>
-        </div>
-        <div class="col-2">
-            <div class="image">
+            
+        <div class="wrapper">
+            
+                <img src="collage-with-mountains-planet.jpg" alt="">
+    
+            
+                <img src="collage-with-cars-seaside.jpg" alt="">
+    
+            
+                <img src="collage-with-mountains-planet.jpg" alt="">
+    
+            
+                <img src="collage-with-people-hiking-full-shot.jpg" alt="">
+    
+            
                 <img src="collage-with-van-moon.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="side-view-woman-eating-ice-cream.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="still-life-fast-food-dishes.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="beautiful-delicious-asian-food.jpg" alt="">
-            </div>
+
         </div>
-    </div>
+        <!-- <div class="wrapper">
+            
+                <img src="side-view-woman-eating-ice-cream.jpg" alt="">
+    
+            
+                <img src="still-life-fast-food-dishes.jpg" alt="">
+    
+            
+                <img src="top-view-hot-dog-with-pickles-veggies.jpg" alt="">
+    
+            
+                <img src="collage-with-people-hiking-full-shot.jpg" alt="">
+    
+            
+                <img src="collage-with-van-moon.jpg" alt="">
+    
+        </div> -->
+            
+
+    
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     
