@@ -1749,6 +1749,9 @@ font-size: x-large;
     background-color: white;
     padding: 20px 10px;
 }
+.video video { 
+    aspect-ratio: 16 / 9;
+}
 
 
 /* end video */

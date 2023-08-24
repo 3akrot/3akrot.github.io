@@ -809,6 +809,7 @@ flex-wrap: wrap;
 .feat .container .green:hover a {
     color: var(--white);
 }
+
 .feat .container .green:hover a::after {
     width: 100%;
 }
@@ -1750,7 +1751,9 @@ font-size: x-large;
     background-color: white;
     padding: 20px 10px;
 }
-
+.video video { 
+    aspect-ratio: 16 / 9;
+}
 /* end video */
 /*  media */
 @media (min-width:768px) {
