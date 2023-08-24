@@ -9,14 +9,21 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          background-color: rgb(40, 37, 37);
         }
         .imageholder {
           width: 22rem;
           display: flex;
           overflow-x: scroll;
+          scroll-snap-type: x mandatory;
         }
+        .imageholder::-webkit-scrollbar {
+          display: none;
+        }
+
         img {
           max-width: 100%;
+          scroll-snap-align: center;
         }
       </style>
     </head>
