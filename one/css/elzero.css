@@ -1710,6 +1710,7 @@ font-size: x-large;
     justify-content: space-between;
     padding:10px;
     background-color: #e2e2e2;
+    
 }
 .video .wrapper video 
 {
@@ -1751,6 +1752,14 @@ font-size: x-large;
 }
 .video video { 
     aspect-ratio: 16 / 9;
+}
+.v {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.v video {
+    scroll-snap-align: center;
 }
 
 

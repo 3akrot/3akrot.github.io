@@ -1754,6 +1754,14 @@ font-size: x-large;
 .video video { 
     aspect-ratio: 16 / 9;
 }
+.v {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.v video {
+    scroll-snap-align: center;
+}
 /* end video */
 /*  media */
 @media (min-width:768px) {
