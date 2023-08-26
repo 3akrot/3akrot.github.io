@@ -1854,6 +1854,100 @@ font-size: x-large;
     font-size: 1.2rem;
     font-weight: bold;
 }
+/* end stats  */
+/* start discount */
+section.disc {
+    display: flex;
+    padding: initial;
+    flex-wrap: wrap;
+}
+.disc .image-hold { 
+    flex:492px 1 1;
+    padding: 70px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    color: white;
+    position: relative;
+    background-image: url(../images/discount-background1.jpg);
+    /* background-position: top left; */
+    background-size: cover;
+    z-index: 1;
+    animation: 9s linear change-background infinite;
+}
+.disc .image-hold::after { 
+    content: "";
+    position: absolute;
+    background-color: #2196f3f7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.disc .image-hold h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.disc .image-hold h2 + p {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    max-width: 500px;
+    font-weight: 400;
+    padding: 0px 10px;
+}
+.disc .image-hold img {
+    max-width: 300px;
+}
+.disc .form {
+    flex:500px 1 1;
+    text-align: center;
+    padding: 40px 0px;
+}
+.disc .form h2 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+
+.disc .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.disc .form input {
+    padding: 15px 20px;
+    width: 300px;
+    caret-color: var(--main-color);
+    border: none;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #cccccc;
+    text-align: right;
+}
+.disc .form textarea {
+    padding: 15px 20px;
+    width: 300px;
+    caret-color: var(--main-color);
+    border: none;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #cccccc;
+    resize: none;
+}
+.disc .form input[type = "submit"] { 
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color var(--main-transition);
+}
+.disc .form input[type = "submit"]:hover {
+    background-color: var(--main-color-alt);
+}
+/* end discount */
 /*  media */
 @media (min-width:768px) {
     .container {
