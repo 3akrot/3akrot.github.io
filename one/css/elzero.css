@@ -2192,6 +2192,11 @@ section.disc {
     }
 
 }
+@keyframes change-background {
+    100% {
+        background-image: url(../images/discount-background2.jpg);
+    }
+}
 
 @media (prefer-color-scheme : dark ) {
 body {
