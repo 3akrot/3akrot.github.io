@@ -1948,6 +1948,85 @@ section.disc {
     background-color: var(--main-color-alt);
 }
 /* end discount */
+section.footer {
+    padding: 70px 0px 0px;
+    background-color: #191919;
+    color: #b9b9b9;
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 35px;
+}
+.footer img {
+    width: 73px;
+    margin: 3px;
+}
+.footer h2 {
+    padding: 26px 0px;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    border-top: 1px solid #444444;
+    text-transform: capitalize;
+}
+
+
+.footer .col-1 h1 {
+    font-size: 3rem;
+    color: white;
+    margin: 0px 0px 20px;
+}
+.footer .col-1 .scoial {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+.footer .col-1 .scoial a {
+    padding: 16px;
+    background-color: #313131;
+    color: #b9b9b9;
+    width: 48.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: var(--main-transition);
+}
+.footer .col-1 .scoial a:nth-child(1):hover {
+    background-color:#1877f2 ;
+}
+.footer .col-1 .scoial a:nth-child(2):hover {
+    background-color:#121213 ;
+
+}
+.footer .col-1 .scoial a:nth-child(3):hover {
+    background-color:#ff0000 ;
+
+}
+.col-1 p {
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+@media (max-width:768px) {
+    .footer .col-1 {
+        text-align: center;
+    }
+    .footer  {
+        text-align: center;
+    }
+    .footer .col-1 .scoial {
+        justify-content: center;
+    }
+    .col-4 {
+        margin-bottom: 20px;
+    }
+}
 /*  media */
 @media (min-width:768px) {
     .container {
