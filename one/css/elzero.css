@@ -1955,12 +1955,14 @@ section.footer {
 }
 .footer .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 35px;
+    grid-template-columns: repeat(auto-fit,minmax(257.5px,1fr));
+    gap: 25px;
+    padding-bottom: 50px;
 }
 .footer img {
-    width: 73px;
+    width: 78px;
     margin: 3px;
+    border: 3px solid white;
 }
 .footer h2 {
     padding: 26px 0px;
@@ -2012,10 +2014,66 @@ section.footer {
 .col-1 p {
     line-height: 1.9;
     margin-bottom: 20px;
+    max-width: 245px;
+}
+
+.footer .col-2 li{
+    display:block;
+    padding: 15px 17px 17px 0px;
+    text-decoration: none;
+    color: #b9b9b9;
+    transition: var(--main-transition);
+    flex: 1;
+
+}
+.footer .col-2 a {
+    color:#b9b9b9 ;
+    text-decoration: none;
+    transition: var(--main-transition);
+}
+
+.footer .col-2 li {
+    transition: var(--main-transition);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.footer .col-2 li:before {
+    content: "\f101";
+    color: var(--main-color);
+    font-size: 1rem;
+    margin-right: 5px;
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+}
+.footer .col-2 li:not(:last-child) {
+    border-bottom: 1px solid #444444;
+}
+.footer .col-2 li:hover {
+    padding-left: 10px;
+    color: white;
+}
+.footer .col-2 li:hover a {
+    color: white;
+}
+.footer .col-3 .ad {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 15px 10px;
+    line-height: 1.6;
+}
+.footer .col-3 .ad i {
+    color: var(--main-color);
+    font-size: 1.6em;
 }
 @media (max-width:768px) {
     .footer .col-1 {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .footer  {
         text-align: center;
@@ -2025,6 +2083,18 @@ section.footer {
     }
     .col-4 {
         margin-bottom: 20px;
+    }
+    .footer .col-2 li {
+        justify-content: center;
+    }
+    .footer .col-3 .ad {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .col-3 .ad i {
+        color: var(--main-color);
+        font-size: 1.6em;
     }
 }
 /*  media */
