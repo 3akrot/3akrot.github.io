@@ -12,6 +12,10 @@
 .bg-red {
     background-color: red;
 }
+.bg-main {
+    background-color: #f1f5f9;
+}
+
 /* position */
 .position-relative { 
     position: relative;
@@ -52,6 +56,12 @@
 .p-inline-10px {
     padding-inline: 10px;
 }
+.p-inline-15px {
+    padding-inline: 15px;
+}
+.p-inline-20px {
+    padding-inline: 20px;
+}
 
 /* padding */
 /* margin */
@@ -75,6 +85,12 @@
 }
 .flex {
     display: flex;
+}
+.justifiy-spacebetween {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
 }
 
 /* display */
@@ -103,12 +119,63 @@
     text-transform: uppercase;
 }
 /* text */
+/* width */
+.width-10px {
+    width: 10px;
+}
+.width-15px {
+    width: 15px;
+}
+.width-20px {
+    width: 20px;
+}
+.width-30px {
+    width: 30px;
+}
+.width-35px {
+    width: 35px;
+}
+.width-40px {
+    width: 40px;
+}
+.width-60px {
+    width: 60px;
+}
+/* width */
+/* height */
+.height-5vh{
+    height: 5vh;
+}
+.height-10vh{
+    height: 10vh;
+}
+.height-15vh{
+    height: 15vh;
+}
+/* height */
+/* border */
+.border-radius-circle {
+    border-radius: 50%;
+}
+.border-radius-10 {
+    border-radius: 10px;
+}
+.border-color-gray {
+    border: 1px solid #888;
+}
+.border-none {
+    border: none;
+}
 
+/* border */
 
 
 
 .color-black {
     color: black;
+}
+.color-gray-main {
+    color: #888888;
 }
 .font-size-14 {
     font-size: 14px;

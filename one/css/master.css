@@ -4,8 +4,9 @@
   margin: 0px;
   box-sizing: border-box;
   text-transform: capitalize;
+  min-width: 0px;
 }
-*:hover {
+* {
   outline: none;
 }
 body {
@@ -43,7 +44,6 @@ a {
 }
 .content {
   flex-basis:84%;
-  padding: 0px 15px;
 }
 .aside-title {
   text-align: center;
