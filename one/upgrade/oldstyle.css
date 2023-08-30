@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    /* background-image:url(pexels-irina-iriser-1366957.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom; */
+    background-color: #282525;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.countainer {
+    padding-top: 20px;
+    background: #474343;
+    /* position: absolute; */
+    /* top: 50%;
+left: 50%;
+transform: translate(-50%,50%); */
+    width: 300px;
+    color: #CBE4DE;
+    position: relative;
+    /* -webkit-transform: translate(-50%,-50%);
+-moz-transform: translate(-50%,50%);
+-ms-transform: translate(-50%,50%);
+-o-transform: translate(-50%,50%); */
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    backdrop-filter: blur(1px);
+}
+
+.my-image {
+
+    display: flex;
+    justify-content: center;
+    width: auto;
+
+
+}
+
+.text {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 35px;
+    color: white;
+}
+
+.my-image img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.soical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+.soical a {
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px;
+    width: 75%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    text-decoration: none;
+    color: #CBE4DE;
+    position: relative;
+
+    border-radius: 15px;
+
+
+}
+
+.soical a img {
+    position: absolute;
+
+    right: 20px;
+    top: 50%;
+    transform: translatey(-50%);
+
+
+}
+
+.tiktok {
+    color: white;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.soical .facbook:hover {
+    color: white;
+    background-color: #4460a0;
+    box-shadow: 0px 0px 5px #4460a0,
+        0px 0px 25px #4460a0,
+        0px 0px 50px #4460a0,
+        0px 0px 100px #4460a0;
+    outline: 1px solid #4460a0;
+
+
+}
+
+.soical .facbook::selection {
+    background-color: transparent;
+    color: initial;
+
+}
+
+.soical .tmp:hover {
+    color: white;
+    background-color: #29b6f6;
+    box-shadow: 0px 0px 5px #29b6f6,
+        0px 0px 25px #29b6f6,
+        0px 0px 50px #29b6f6,
+        0px 0px 100px #29b6f6;
+    outline: 1px solid #29b6f6;
+
+
+}
+
+.soical .tmp::selection {
+    background-color: transparent;
+    color: initial;
+
+
+}
+
+.soical .whatsapp:hover {
+    color: white;
+    background-color: #40c351;
+    box-shadow: 0px 0px 5px #40c351,
+        0px 0px 25px #40c351,
+        0px 0px 50px #40c351,
+        0px 0px 100px #40c351;
+    outline: 1px solid #40c351;
+
+
+}
+
+.soical .whatsapp::selection {
+    background-color: transparent;
+    color: initial;
+
+}
+
+.soical .tik:hover {
+    color: white;
+    background-color: #1f1f1f;
+    box-shadow: 0px 0px 5px #1f1f1f,
+        0px 0px 25px #1f1f1f,
+        0px 0px 50px #1f1f1f,
+        0px 0px 100px #1f1f1f;
+    outline: 1px solid #1f1f1f;
+
+
+}
+
+.soical .tik::selection {
+    background-color: transparent;
+    color: initial;
+
+}
