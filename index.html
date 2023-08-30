@@ -1,32 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>contact me</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali sayed</title>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        -webkit-tap-highlight-color: transparent;
+    }
+    body {
+        min-height: 100vh;
+        background-color: #1e1e1e;
+        font-family: 'Rubik', sans-serif;
+    }
+    .container {
+        margin: 180px auto 90px;
+        position: relative;
+    }
+    a{
+        display: flex;
+        outline: 5px solid #1e1e1e;
+        border-radius: 10px;
+        transition: 0.5s;
+        flex: 0 1 365px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    a:hover {
+        transform: translateY(-10px);
+    }
+    a img {
+        display: block;
+    }
+    a p {
+        border-top: 1px solid #1e1e1e;
+        background-color: white;
+        text-align: center;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 56px;
+    }
+    img {
+        max-width: 100%;
+    }
+    .content > img:first-child {
+        position: absolute;
+        width: 250px;
+        border-radius: 50%;
+        top: -125px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .content {
+        padding: 250px 60px 100px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #353232;
+        gap: 20px;
+        border-radius: 20px;
+    }
+    .content h2 {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 6px;
+    white-space: nowrap;
+    color: white;
+    }
+    @media (max-width:768px) {
+        .content > img:first-child {
+        position: absolute;
+        width: 130px;
+        border-radius: 50%;
+        top: -65px;
+        }
+        .content {
+            padding-top: 135px;
+        }
+        .content h2 {
+        top: 70px;
+        left: 50%;
+        }
+        .container {
+            margin-top: 60px;
+            padding-top: 50px;
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            padding-inline: 20px;
+        }
+    }
+    @media (min-width: 768px) { 
+        .container {
+            width: 750px;
+        }
+    }
+    @media (min-width: 992px) { 
+        .container {
+            width: 970px;
+        }
+    }
+    @media (min-width: 1200px) { 
+        .container {
+            width: 1170px;
+        }
+    }
+</style>
 <body>
-  <div class="countainer">
-    
-    <div class="child">
-      <div class="my-image">
-        <img width="150px" height="150" src="photo.jpg" alt="">
-      </div>
-      <div class="text">
-        Ali sayed
-      </div>
+    <div class="container">
+
+
+    <div class="content">
+        <img src="one/photo.jpg" alt="">
+        <h2>Ali sayed</h2>
+        <a href="one/a.html">
+            <img src="one/Capture.PNG" alt="">
+            <p>Elzero template 1</p>
+        </a>
+        <a href="one/b.html">
+            <img src="one/Capture2.PNG" alt="">
+            <p>Elzero template 2</p>
+        </a>
+        <a href="one/c.html">
+            <img src="one/Capture3.PNG" alt="">
+            <p>Elzero template 3<br></p>
+        </a>
+        <a href="one/dashboard.html">
+            <img src="one/Capture4.PNG" alt="">
+            <p>Elzero template 4<br>(In progress)</p>
+        </a>
     </div>
-    <div class="soical">
-      <a class="facbook" target="_blank" href="/11/index.html">facbook <img height="20px" width="20px" src="facebook.svg"></a>
-      <a class="telegram" target="_blank" href="/card/index.html">telegram<img height="20px" width="20px" src="icons8-telegram-app.svg"></a>
-      <a class="whatsapp" target="_blank" href="/nine/index.html">whatsapp<img height="20px" width="20px" src="icons8-whatsapp.svg"></a>
-      <a class="tik" target="_blank" href="/my-design/index.html">tiktok<img class="tiktok" height="20px" width="20px" src="tiktok.svg"></a>
-      
+
     </div>
-    
-  </div>
-  
 </body>
 </html>
