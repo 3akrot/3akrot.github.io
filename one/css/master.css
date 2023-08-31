@@ -148,7 +148,7 @@ header input[type="search"]:focus {
       margin: 0px auto;
   }
   header input[type="search"] {
-    width: 100px;
+    width: 105px;
     padding: initial;
   }
   header input[type="search"]:focus {
