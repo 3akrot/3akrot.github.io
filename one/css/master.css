@@ -148,14 +148,14 @@ header input[type="search"]:focus {
       margin: 0px auto;
   }
   header .profile-icon {
-    min-width: 70px;
+    min-width: 66.25px;
   }
   header input[type="search"] {
     width: 110px;
     padding: initial;
   }
   header input[type="search"]:focus {
-    width:137px ;
+    width:140px ;
   }
 }
 
