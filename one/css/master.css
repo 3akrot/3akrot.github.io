@@ -152,7 +152,7 @@ header input[type="search"]:focus {
     padding: initial;
   }
   header input[type="search"]:focus {
-    width: 130px;
+    width: 140px;
   }
 }
 
