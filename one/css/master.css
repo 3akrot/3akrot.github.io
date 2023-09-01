@@ -48,7 +48,7 @@ a {
   flex-basis:84%;
 }
 .aside-title {
-  text-align: center;
+  /* text-align: center; */
   margin: 15px 0px 40px;
   position: relative;
   padding: 10px 0px 20px;
@@ -168,7 +168,19 @@ header input[type="search"]:focus {
     top: -180px;
     transform: translateX(-50%);
     left: 50%;
-    letter-spacing: 6;
+    letter-spacing: 4;
+  }
+  @media (height <= 560px) {
+    .aside .wrapper {
+      position: static;
+    }
+    .aside {
+      min-width: 60px;
+    }
+    .aside-title {
+      position: relative;
+      top: 10px;
+    }
   }
   .aside-title::after { 
       width: 30px;
