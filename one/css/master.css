@@ -161,10 +161,19 @@ header input[type="search"]:focus {
       align-items: center;
   }
   .aside-title {
-      font-size: 1.3rem;
+    font-size: 1.3rem;
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: -231px;
+    transform: translateX(-50%);
+    left: 50%;
+    letter-spacing: 6;
   }
   .aside-title::after { 
-      width: 90%;
+      width: 30px;
+  }
+  .aside-title::before {
+    display: none;
   }
   .aside ul {
       width: 80%;
