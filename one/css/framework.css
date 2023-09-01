@@ -76,6 +76,10 @@
     margin-top:15px ;
     margin-bottom: 15px;
 }
+.m-vartical-20 {
+    margin-top:20px ;
+    margin-bottom: 20px;
+}
 .m-vartical-5 {
     margin-top:5px ;
     margin-bottom: 5px;
@@ -88,6 +92,18 @@
 }
 .flex {
     display: flex;
+}
+.grid {
+    display: grid;
+}
+.responsive-grid-4columns {
+    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+}
+.responsive-grid-3columns {
+    grid-template-columns: repeat(auto-fit , minmax(300px, 1fr));
+}
+.responsive-grid-2columns {
+    grid-template-columns: repeat(auto-fit , minmax(400px, 1fr));
 }
 .justifiy-spacebetween {
     justify-content: space-between;

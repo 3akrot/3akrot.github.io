@@ -103,7 +103,30 @@ header input[type="search"] {
 header input[type="search"]:focus {
   width: 160px;
 }
-@media (min-width: 768px) { 
+.content > h2 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.content > h2:after {
+ content: "";
+ position: absolute;
+ background-color: black;
+ bottom: -10px;
+ height: 3px;
+ width: 50px;
+ left: 15px;
+}
+.content > h2::before {
+ content: "";
+ position: absolute;
+ background-color: white;
+ bottom: -10px;
+ height: 3px;
+ width: 120px;
+ left: 15px;
+}
+/* @media (min-width: 768px) { 
   .container {
     width: 750px;
   }
@@ -115,9 +138,9 @@ header input[type="search"]:focus {
 }
 @media (min-width: 1200px) { 
   .container {
-    width: 1170px;
+    width: 100%;
   }
-}
+} */
 /* responsive media */
 @media (max-width: 767px) { 
   .aside {
