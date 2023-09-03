@@ -18,6 +18,9 @@
 .bg-white {
     background-color: #fff;
 }
+.bg-gray {
+    background-color: #eee;
+}
 
 /* position */
 .position-relative { 
@@ -70,6 +73,9 @@
 }
 .p-inline-20px {
     padding-inline: 20px;
+}
+.p-inline-30px {
+    padding-inline: 30px;
 }
 
 /* padding */
@@ -214,6 +220,9 @@
 }
 .color-gray-alt {
     color: #989898;
+}
+.color-eee {
+    color: #eee;
 }
 .font-size-14 {
     font-size: 14px;
