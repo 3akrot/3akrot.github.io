@@ -125,7 +125,7 @@ header .profile-icon ul {
 }
 header .profile-icon ul li {
   padding: 10px 5px;
-  font-size: 14px;
+  font-size: 13px;
 }
 header .profile-icon ul li:not(:last-child) {
   border-bottom: 1px solid #ddd;
