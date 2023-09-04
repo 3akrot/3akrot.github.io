@@ -253,7 +253,6 @@ header input[type="search"]:focus {
   text-align: center;
 }
 .card-foot {
-  padding: 15 0px;
   display: flex;
 }
 .welcome .btn {
@@ -325,6 +324,100 @@ header input[type="search"]:focus {
   color: #6c6c6c;
 }
 .col-1:not(.welcome .col-1) {
-  padding: 15px 20px;
+  margin-bottom: 15px;
 }
+.targets .content .target {
+  align-items: center;
+}
+
+.targets .content .image {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.targets .content .bars {
+  flex: 1;
+}
+.targets .content .bars .bar {
+  height: 3px;
+  background-color: grey;
+}
+.targets .content .target span {
+  position: relative;
+  
+  
+}
+.targets .content .target span::after {
+  width: 19px;
+  content: attr(data-progress);
+  position: absolute;
+  right: -12px;
+  top: -29px;
+  padding: 3px;
+  font-size: 10px;
+  background: red;
+  border-radius: 5px;
+  color: white;
+}
+.targets .content .target span::before {
+  content: "";
+  position: absolute;
+  border: 5px solid;
+  right: -4.5px;
+  top: -12px;
+  border-color: red transparent transparent transparent;
+}
+
+.targets .content .target:nth-child(1) .image {
+  background-color: #cce3ff;
+  color: #0075ff;
+}
+.targets .content .target:nth-child(1) span {
+  background-color: #0075ff;
+}
+.targets .content .target:nth-child(1) div.bar {
+  background-color: #cce3ff;
+}
+.targets .content .target:nth-child(1) span::after {
+  background-color: #0075ff;
+}
+.targets .content .target:nth-child(1) span::before {
+  border-color: #0075ff transparent transparent transparent;
+}
+.targets .content .target:nth-child(2) .image {
+  background-color: #fdecce;
+  color: #f59e0b;
+}
+.targets .content .target:nth-child(2) span {
+  background-color: #f59e0b;
+}
+.targets .content .target:nth-child(2) div.bar {
+  background-color: #fdecce;
+}
+.targets .content .target:nth-child(2) span::after {
+  background-color: #f59e0b;
+}
+.targets .content .target:nth-child(2) span::before {
+  border-color: #f59e0b transparent transparent transparent;
+}
+.targets .content .target:nth-child(3) .image {
+  background-color: #d2f4df;
+  color: #22c55e;
+}
+.targets .content .target:nth-child(3) span {
+  background-color: #22c55e;
+}
+.targets .content .target:nth-child(3) div.bar {
+  background-color: #d2f4df;
+}
+.targets .content .target:nth-child(3) span::after {
+  background-color: #22c55e;
+}
+.targets .content .target:nth-child(3) span::before {
+  border-color: #22c55e transparent transparent transparent;
+}
+
 

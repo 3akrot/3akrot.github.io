@@ -65,6 +65,10 @@
     padding-top:15px ;
     padding-bottom:15px ;
 }
+.p-vartical-20 {
+    padding-top:20px ;
+    padding-bottom:20px ;
+}
 .p-inline-10px {
     padding-inline: 10px;
 }
@@ -95,6 +99,12 @@
 .m-vartical-5 {
     margin-top:5px ;
     margin-bottom: 5px;
+}
+.mg-bottom-10px {
+    margin-bottom: 10px;
+}
+.mg-bottom-15px {
+    margin-bottom: 15px;
 }
 /* margin */
 
@@ -227,6 +237,12 @@
 .font-size-14 {
     font-size: 14px;
 }
+.font-size-12 {
+    font-size: 12px;
+}
+.font-size-13 {
+    font-size: 13px;
+}
 .font-size-18 {
     font-size: 18px;
 }
@@ -237,6 +253,7 @@
     font-weight: 400;
 
 }
+
 
 /* rules */
 @media (width <= 768px) {
