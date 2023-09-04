@@ -108,7 +108,8 @@ header .profile-icon i:hover + ul {
   visibility: visible;
   opacity: 1;
   top: 45px;
-  
+  transition: 0.4s;
+
 }
 header .profile-icon ul {
   /* display: none; */
@@ -120,7 +121,6 @@ header .profile-icon ul {
   background: #e8e8e8;
   border-radius: 10px;
   z-index: 1;
-  transition: 0.4s;
   opacity: 0;
 }
 header .profile-icon ul li {
