@@ -254,6 +254,9 @@ header .profile-icon ul::before {
   background-color: white;
   
 }
+.card:not(div.welcome) {
+  padding: 20px;
+}
 .content .welcome .text img {
   max-width: 200px;
 
@@ -486,6 +489,31 @@ header .profile-icon ul::before {
 }
 .targets .content .target:nth-child(3) span::before {
   border-color: #22c55e transparent transparent transparent;
+}
+.tickets .content {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+@media (width <= 475px) {
+  .tickets .content {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+.tickets .box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.tickets .box:first-child i {
+  color:#f59e0b ;
+}
+.tickets .box:nth-child(2) i {
+  color:#0075ff ;
+}
+.tickets .box:nth-child(3) i {
+  color:#22c55e ;
+}
+.tickets .box:nth-child(4) i {
+  color:#f44336;
 }
 
 
