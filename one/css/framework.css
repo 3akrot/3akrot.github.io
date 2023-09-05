@@ -125,7 +125,7 @@
     grid-template-columns: repeat(auto-fit , minmax(300px, 1fr));
 }
 .responsive-grid-2columns {
-    grid-template-columns: repeat(auto-fit , minmax(400px, 1fr));
+    grid-template-columns: repeat(2,1fr);
 }
 .justifiy-spacebetween {
     justify-content: space-between;

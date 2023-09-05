@@ -535,4 +535,8 @@ header .profile-icon ul::before {
     max-width: 200px;
   }
 }
-
+@media  (max-width:1250px) {
+  .responsive-grid-2columns {
+    grid-template-columns: 1fr;
+  }
+}
