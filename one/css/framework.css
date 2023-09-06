@@ -298,10 +298,13 @@
         width: 30%;
         padding: 8px;
         color:#f44336 ;
-        
         align-self: flex-end;
         text-align: center;
         margin-top: 10px;
+    }
+    i.trash-mob.color-gray-alt {
+        color: #888888;
+        background-color: #9898989f;
     }
 
 
