@@ -189,14 +189,14 @@ header .profile-icon ul::before {
 } */
 /* responsive media */
 @media (height <= 560px) {
-  .aside .wrapper {
-    position: static;
-    margin-top: 80px;
-  }
-  .aside-title {
-    position: relative;
-    top: 10px;
-  }
+
+  .aside ul {
+  overflow-y: scroll;
+  max-height: 67vh;
+}
+.aside ul::-webkit-scrollbar-thumb {
+  background-color: black;
+}
 }
 @media (max-width: 767px) { 
   .aside {
