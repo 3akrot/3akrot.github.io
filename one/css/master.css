@@ -6,6 +6,9 @@
   text-transform: capitalize;
   min-width: 0px;
 }
+/* ::selection {
+  color: tr;
+} */
 * {
   outline: none;
 }
@@ -548,4 +551,5 @@ header .profile-icon ul::before {
 }
 .tasks i:not(.color-gray-alt):hover {
   color: #fd1201;
+  background-color: #fb1404b5;
 }
