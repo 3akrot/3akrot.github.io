@@ -192,7 +192,7 @@ header .profile-icon ul::before {
 
   .aside ul {
   overflow-y: scroll;
-  max-height: 80vh;
+  max-height: 46vh;
 }
 .aside ul::-webkit-scrollbar-thumb {
   background-color: black;
