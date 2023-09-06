@@ -518,6 +518,9 @@ header .profile-icon ul::before {
 .news .box:not(:last-child) {
   border-bottom: 1px solid #eee;
 }
+.niceborder:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
 .news .box img {
   max-width: 100px;
 }
@@ -539,4 +542,10 @@ header .profile-icon ul::before {
   .responsive-grid-2columns {
     grid-template-columns: 1fr;
   }
+}
+.tasks i {
+  transition: 0.4s;
+}
+.tasks i:not(.color-gray-alt):hover {
+  color: #fd1201;
 }
