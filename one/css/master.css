@@ -125,6 +125,7 @@ header .profile-icon ul {
   border-radius: 10px;
   z-index: 1;
   opacity: 0;
+  min-width:45px !important;
 }
 header .profile-icon ul li {
   padding: 10px 5px;
@@ -200,7 +201,7 @@ header .profile-icon ul::before {
 ::-webkit-scrollbar-thumb {
   background: rgb(57, 57, 57);
 }
--webkit-scrol
+
 }
 @media (max-width: 767px) { 
   .aside {
