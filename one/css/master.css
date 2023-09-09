@@ -563,3 +563,9 @@ header .profile-icon ul::before {
   color: #fd1201;
   background-color: #fb1404b5;
 }
+.files .box:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.card .box:last-child {
+  padding-bottom: 0px;
+}
