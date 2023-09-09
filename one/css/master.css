@@ -114,6 +114,12 @@ header .profile-icon i:hover + ul {
   transition: 0.4s;
 
 }
+header .profile-icon i + ul:hover {
+  visibility: visible;
+  opacity: 1;
+  top: 45px;
+  transition: 0.4s;
+}
 header .profile-icon ul {
   /* display: none; */
   visibility: hidden;
@@ -193,7 +199,7 @@ header .profile-icon ul::before {
 
   .aside ul {
   overflow-y: scroll;
-  max-height: 46vh;
+  max-height: 40vh;
 }
 .aside ul::-webkit-scrollbar {
   width: 2px;
