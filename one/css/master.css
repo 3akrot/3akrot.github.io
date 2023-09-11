@@ -659,30 +659,54 @@ border: 2px solid white;
 }
 .card.rem .box:first-child::after {
   background-color: #0075ff;
-
 }
 .card.rem .box:nth-child(2) {
   border-left: 2px solid #22c55e;
 }
 .card.rem .box:nth-child(2)::after {
   background-color: #22c55e;
-
 }
 .card.rem .box:nth-child(3) {
   border-left: 2px solid #f59e0b ;
-
 }
 .card.rem .box:nth-child(3)::after {
   background-color: #f59e0b;
-
 }
 .card.rem .box:last-child {
   border-left: 2px solid #f44336;
-
-
 }
 .card.rem .box:last-child::after {
   background-color: #f44336;;
-
-
+}
+@media (width <= 450px) {
+  .card.rem .box p:first-child {
+    font-size: 0.9em;
+  }
+  .card.rem .box p:last-child {
+    font-size: 0.8em;
+  }
+}
+@media (width <= 400px) {
+  .card.rem .box p:first-child {
+    font-size: 0.8em;
+  }
+  .card.rem .box p:last-child {
+    font-size: 0.7em;
+  }
+}
+@media (width <= 370px) {
+  .card.rem .box p:first-child {
+    font-size: 0.7em;
+  }
+  .card.rem .box p:last-child {
+    font-size: 0.6em;
+  }
+}
+@media (width <= 340px) {
+  .card.rem .box p:first-child {
+    font-size: 0.6em;
+  }
+  .card.rem .box p:last-child {
+    font-size: 0.5em;
+  }
 }
