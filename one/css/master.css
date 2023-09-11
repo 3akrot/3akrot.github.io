@@ -15,6 +15,7 @@
 body {
   font-family: 'Roboto';
 }
+
 img {
   max-width: 100%;
 }
@@ -195,12 +196,13 @@ header .profile-icon ul::before {
   }
 } */
 /* responsive media */
+
 @media (height <= 560px) {
 
   .aside ul {
-  overflow-y: scroll;
-  max-height: 40vh;
-}
+    overflow-y: scroll;
+    max-height: calc(100vh - 60px);
+  }
 .aside ul::-webkit-scrollbar {
   width: 2px;
 }
@@ -568,4 +570,119 @@ header .profile-icon ul::before {
 }
 .card .box:last-child {
   padding-bottom: 0px;
+}
+.card.project-prog span {
+  padding: 15px 0px;
+  padding-left: 30px;
+  margin-left: 13px;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+.card.project-prog .content {
+  position: relative;
+}
+.card.project-prog .content::after {
+  position: absolute;
+  content: "";
+  height: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  left: 14px;
+  background-color: #0075ff;
+  
+}
+.card.project-prog span.active::before {
+content: "";
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 20px;
+height: 20px;
+left: -10px;
+background-color: #0075ff;
+border-radius: 50%;
+outline: 2px solid  #0075ff;
+border: 2px solid white;
+}
+.card.project-prog span.blink::before {
+animation: 2s blink infinite;
+}
+.card.project-prog span::before {
+content: "";
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 20px;
+height: 20px;
+left: -10px;
+background-color: white;
+border-radius: 50%;
+outline: 2px solid  #0075ff;
+border: 2px solid white;
+}
+@keyframes blink {
+  0% {
+    background: #0075ff;
+  }
+  50% {
+    background: white;
+  }
+  100% {
+    background: #0075ff;
+  }
+}
+.card.rem .content {
+  margin-top: 20px;
+}
+.card.rem .box {
+  padding: 3px 0px;
+  margin: 15px 0px;
+  padding-left: 15px;
+  margin-left: 30px;
+  position: relative;
+}
+.card.rem .box:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  left: -30px;
+}
+.card.rem .box:first-child {
+  border-left: 2px solid #0075ff;
+}
+.card.rem .box:first-child::after {
+  background-color: #0075ff;
+
+}
+.card.rem .box:nth-child(2) {
+  border-left: 2px solid #22c55e;
+}
+.card.rem .box:nth-child(2)::after {
+  background-color: #22c55e;
+
+}
+.card.rem .box:nth-child(3) {
+  border-left: 2px solid #f59e0b ;
+
+}
+.card.rem .box:nth-child(3)::after {
+  background-color: #f59e0b;
+
+}
+.card.rem .box:last-child {
+  border-left: 2px solid #f44336;
+
+
+}
+.card.rem .box:last-child::after {
+  background-color: #f44336;;
+
+
 }

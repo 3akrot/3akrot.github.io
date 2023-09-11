@@ -268,6 +268,9 @@
     font-weight: 400;
 
 }
+.font-bold {
+    font-weight: bold;
+}
 .text-transform-none {
     text-transform: none;
 }
@@ -312,9 +315,6 @@
         color: #888888;
         background-color: #9898989f;
     }
-
-
-
 }
 @media (width < 444px) {
 
