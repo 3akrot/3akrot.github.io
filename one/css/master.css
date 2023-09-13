@@ -5,7 +5,7 @@
   box-sizing: border-box;
   text-transform: capitalize;
   min-width: 0px;
-  transition: 120.5s;
+  /* transition: 120.5s; */
 }
 /* ::selection {
   color: tr;
