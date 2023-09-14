@@ -714,8 +714,13 @@ border: 2px solid white;
     font-size: 0.5em;
   }
 }
-.posts {
+div.posts.card {
   padding-bottom: 0px;
+  /* height: fit-content; */
+}
+.reactions {
+  /* margin-top: 30px; */
+  flex: 1;
 }
 .posts .post p {
   padding-top: 30px;

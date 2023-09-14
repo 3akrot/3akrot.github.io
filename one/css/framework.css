@@ -117,6 +117,10 @@
 .flex {
     display: flex;
 }
+.flex-colom{
+    display: flex;
+    flex-direction: column;
+}
 .grid {
     display: grid;
 }
