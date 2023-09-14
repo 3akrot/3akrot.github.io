@@ -580,6 +580,7 @@ header .profile-icon ul::before {
   font-weight: 400;
   position: relative;
   z-index: 1;
+  font-size: 16px;
 }
 .card.project-prog .content {
   position: relative;
