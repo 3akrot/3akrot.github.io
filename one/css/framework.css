@@ -81,7 +81,9 @@
 .p-inline-30px {
     padding-inline: 30px;
 }
-
+.p-bottom-none {
+    padding-bottom: 0px;
+}
 /* padding */
 /* margin */
 .m-vartical-10 {
