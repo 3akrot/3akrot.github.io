@@ -714,6 +714,9 @@ border: 2px solid white;
     font-size: 0.5em;
   }
 }
+.post {
+  padding-bottom: 0px;
+}
 .posts .post p {
   padding-top: 30px;
   padding-bottom: 30px;
