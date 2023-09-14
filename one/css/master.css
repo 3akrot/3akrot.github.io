@@ -197,19 +197,20 @@ header .profile-icon ul::before {
   }
 } */
 /* responsive media */
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(28, 27, 27);
 
+}
 @media (height <= 560px) {
 
   .aside ul {
     overflow-y: scroll;
     max-height: calc(100vh - 200px);
   }
-.aside ul::-webkit-scrollbar {
-  width: 2px;
-}
-::-webkit-scrollbar-thumb {
-  background: rgb(57, 57, 57);
-}
+
 
 }
 @media (max-width: 767px) { 
@@ -712,4 +713,79 @@ border: 2px solid white;
   .card.rem .box p:last-child {
     font-size: 0.5em;
   }
+}
+.posts .post p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.social .btn {
+  margin-left: initial;
+  margin-right: 10px;
+}
+
+.social .content {
+  overflow-x: auto;
+}
+.social .content::-webkit-scrollbar {
+  width: 2px;
+}
+.social .box {
+  min-width: 275px;
+}
+.social .box .icon:hover {
+  transform: rotate(5deg);
+}
+.social .box .icon {
+  color: white;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  transition: 0.4s;
+}
+.social .box:first-child {
+  background-color: #171819c7;
+  color: white;
+}
+.social .box:first-child .icon {
+  background-color: #14171a;
+}
+
+.social .box:first-child .btn {
+  background-color: #14171a;
+}
+.social .box:nth-child(2) {
+  background-color: #1876f27c;
+  color: #1877f2;
+}
+.social .box:nth-child(2) .icon {
+  background-color: #1877f2;
+}
+
+.social .box:nth-child(2) .btn {
+  background-color: #1877f2;
+}
+.social .box:nth-child(3) {
+  background-color: #ff00007a;
+  color: #ff0000;
+}
+.social .box:nth-child(3) .icon {
+  background-color: #ff0000;
+}
+
+.social .box:nth-child(3) .btn {
+  background-color: #ff0000;
+}
+.social .box:nth-child(4) {
+  background-color: #0a66c279;
+  color: #0a66c2;
+}
+.social .box:nth-child(4) .icon {
+  background-color: #0a66c2;
+}
+
+.social .box:nth-child(4) .btn {
+  background-color: #0a66c2;
 }
