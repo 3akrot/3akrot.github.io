@@ -5,16 +5,15 @@
   box-sizing: border-box;
   text-transform: capitalize;
   min-width: 0px;
-  /* transition: 120.5s; */
+  outline: none;
+  transition: 0.5s;
 }
 /* ::selection {
   color: tr;
 } */
-* {
-  outline: none;
-}
 body {
   font-family: 'Roboto';
+
 }
 
 img {
@@ -34,6 +33,7 @@ a {
 .page {
   display: flex;
   min-height: 100vh;
+
 }
 .aside {
   position: relative;
