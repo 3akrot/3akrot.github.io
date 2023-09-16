@@ -56,8 +56,10 @@
   }
 
   input[type="checkbox"]:checked+label>span {
-    transform: translate(-40px, -50%);
-    top: 50%;
+    /* transform: translate(-40px, -50%);
+    top: 50%; */
+    transition: 0.3s;
+    right: 45px;
   }
 
   input[type="checkbox"]:checked+label>span span:first-child {
