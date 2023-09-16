@@ -201,7 +201,7 @@ header .profile-icon ul::before {
   width: 2px;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(28, 27, 27);
+  background: #0075ff;
 
 }
 @media (height <= 560px) {
@@ -817,7 +817,9 @@ div.posts.card {
 }
 .projects .table-wrapper thead {
   text-align: left;
-  background-color: #eeeeee;
+  background-color: #44b2d4b0;
+  background-color: #0075ff;
+  color: white;
 }
 .projects .table-wrapper thead th {
  padding: 15px 20px;
