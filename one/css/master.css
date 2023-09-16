@@ -570,9 +570,9 @@ header .profile-icon ul::before {
 .files .box:not(:last-child) {
   border-bottom: 1px solid #eee;
 }
-.card .box:last-child {
+/* .card .box:last-child {
   padding-bottom: 0px;
-}
+} */
 .card.project-prog span {
   padding: 15px 0px;
   padding-left: 30px;
