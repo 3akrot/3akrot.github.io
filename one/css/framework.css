@@ -50,7 +50,7 @@
     transform: translate(-50%, -50%) rotate(-45deg);
     transition: .1s;
   }
-
+  
   input[type="checkbox"]:checked+label {
     background-color: #0077ffb9;
   }
@@ -79,6 +79,7 @@
   #check {
     position: absolute;
     right: 100000px;
+    display: none !important;
   }
 
   .btncheck2 {
