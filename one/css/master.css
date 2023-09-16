@@ -292,7 +292,7 @@ header .profile-icon ul::before {
   border: 3px solid white;
   border-radius: 50%;
 }
-.info {
+.welcome .info {
   border: 1px solid;
   border-color: #eee transparent #eee;
   display: flex;
@@ -301,17 +301,17 @@ header .profile-icon ul::before {
   padding: 15px 0px;
   justify-content: center;
 }
-.info h2 {
+.welcome  .info h2 {
   font-size: 17px;
   margin: 0px 0px 15px;
   text-align: center;
   font-weight: 500;
 }
-.info p {
+.welcome .info p {
   color:#989898;
   font-size: 15px;
 }
-.info .col {
+.welcome .info .col {
   text-align: center;
 }
 .card-foot {
@@ -797,4 +797,71 @@ div.posts.card {
 
 .social .box:nth-child(4) .btn {
   background-color: #0a66c2;
+}
+/* @media (width > 1250px) {
+  .projects {
+    grid-column: span 2;
+  }
+} */
+
+.projects .table-wrapper {
+  overflow-x: auto;
+}
+.projects .table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  /* border-radius: 10px; */
+  /* overflow: hidden; */
+  border: 1px solid #eee;
+  min-width: 880px;
+}
+.projects .table-wrapper thead {
+  text-align: left;
+  background-color: #eeeeee;
+}
+.projects .table-wrapper thead th {
+ padding: 15px 20px;
+}
+.projects .table-wrapper  td {
+ padding: 15px 20px;
+ border-bottom: 1px solid #eee;
+ border-left: 1px solid #eee;
+ z-index: 10;
+}
+.table-wrapper  th , .table-wrapper td , .table-wrapper .btn {
+  font-size: 15px;
+}
+.table-wrapper .btn {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.table-wrapper .teams img {
+  max-width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+
+}
+.table-wrapper .teams img:not(:first-child) {
+  margin-left: -15px;
+}
+.pend {
+  background-color: #f59e0b;
+}
+.com {
+  background-color: #22c55e;
+}
+.rej {
+  background-color: #f44336;
+}
+.table-wrapper tr:not(thead tr){
+  transition: 0.3s;
+}
+.table-wrapper tr:not(thead tr):hover {
+  background-color: #faf7f7;
+}
+.card-content-overflow {
+  overflow-x: auto;
+}
+.card-content-overflow > div {
+ min-width: 230px;
 }

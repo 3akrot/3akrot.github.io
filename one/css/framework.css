@@ -3,7 +3,156 @@
     --main-transtion:.3s;
 }
 /* components */
+.btncheck {
+    display: block;
+    margin: 15px 5px;
+    position: relative;
+    min-width: 70px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: #fea29b;
+  }
 
+  .btncheck>span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .btncheck>span>span:first-child {
+    position: absolute;
+    display: block;
+    height: 1px;
+    background-color: #f44336;
+    width: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: .1s;
+
+  }
+
+  .btncheck>span>span:last-child {
+    position: absolute;
+    display: block;
+    height: 1px;
+    background-color: #f44336;
+    width: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: .1s;
+  }
+
+  input[type="checkbox"]:checked+label {
+    background-color: #0077ffb9;
+  }
+
+  input[type="checkbox"]:checked+label>span {
+    transform: translate(-40px, -50%);
+    top: 50%;
+  }
+
+  input[type="checkbox"]:checked+label>span span:first-child {
+    width: 4px;
+  transform: translate(-5.6px, 2.9px) rotate(45deg);
+  background-color: #0075ff;
+
+  }
+
+  input[type="checkbox"]:checked+label>span span:last-child {
+    transform: translate(-4px, 1px) rotate(-40deg);
+    width: 10px;
+    background-color: #0075ff;
+
+  }
+
+  #check {
+    position: absolute;
+    right: 100000px;
+  }
+
+  .btncheck2 {
+    display: block;
+    margin: 15px 5px;
+    position: relative;
+    min-width: 110px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    background-color: #fea29b;
+  }
+  .btncheck2>span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+
+  .btncheck2>span>span:first-child {
+    position: absolute;
+    display: block;
+    height: 1px;
+    background-color: #f44336;
+    width: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: .1s;
+
+  }
+
+  .btncheck2>span>span:last-child {
+    position: absolute;
+    display: block;
+    height: 1px;
+    background-color: #f44336;
+    width: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: .1s;
+  }
+
+  input[type="checkbox"].checkbox2:checked+label {
+    background-color: #0077ffb9;
+  }
+
+  input[type="checkbox"].checkbox2:checked+label>span {
+    transform: translate(-85px, -50%);
+    top: 50%;
+  }
+
+  input[type="checkbox"].checkbox2:checked+label>span span:first-child {
+    width: 4px;
+    transform: translate(-5px, 1px) rotate(45deg);
+    background-color: #0075ff;
+
+  }
+
+  input[type="checkbox"].checkbox2:checked+label>span span:last-child {
+    transform: translate(-3px, 0px) rotate(-40deg);
+    width: 8px;
+    background-color: #0075ff;
+
+  }
+
+  #check2 {
+    position: absolute;
+    right: 100000px;
+  }
 /* components */
 /* rules */
 .bg-blue {
@@ -105,6 +254,9 @@
 .mg-bottom-10px {
     margin-bottom: 10px;
 }
+.mg-bottom-5px {
+    margin-bottom: 5px;
+}
 .mg-bottom-15px {
     margin-bottom: 15px;
 }
@@ -120,6 +272,9 @@
 .flex-colom{
     display: flex;
     flex-direction: column;
+}
+.justifiy-center {
+    justify-content: center;
 }
 .grid {
     display: grid;
@@ -197,6 +352,9 @@
 }
 .width-60px {
     width: 60px;
+}
+.widthfull {
+    width: 100%;
 }
 /* width */
 /* height */
@@ -336,3 +494,6 @@
 
 
 
+.resize-none {
+    resize: none;
+}
