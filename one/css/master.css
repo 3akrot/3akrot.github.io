@@ -809,10 +809,9 @@ div.posts.card {
 }
 .projects .table-wrapper table {
   width: 100%;
-  border-collapse: collapse;
   /* border-radius: 10px; */
   /* overflow: hidden; */
-  border: 1px solid #eee;
+  border-spacing: 0px;
   min-width: 880px;
 }
 .projects .table-wrapper thead {
@@ -832,6 +831,9 @@ div.posts.card {
 }
 .table-wrapper  th , .table-wrapper td , .table-wrapper .btn {
   font-size: 15px;
+}
+.table-wrapper td:last-child {
+  border-right: 1px solid #eee;
 }
 .table-wrapper .btn {
   padding: 5px 10px;
