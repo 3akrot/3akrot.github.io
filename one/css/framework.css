@@ -165,7 +165,7 @@
     background-color: red;
 }
 .bg-main {
-    background-color: #f1f5f9;
+    background-color: #f1f5f9 !important;
 }
 .bg-white {
     background-color: #fff;
@@ -235,6 +235,12 @@
 }
 .p-bottom-none {
     padding-bottom: 0px;
+}
+.p-bottom-15px {
+    padding-bottom: 15px;
+}
+.p-bottom-10px {
+    padding-bottom: 10px;
 }
 /* padding */
 /* margin */
@@ -396,6 +402,9 @@
 .border-bottom-gray {
     border-bottom: 1px solid #8787873f;
 }
+.border-bottom-eee {
+    border-bottom: 1px solid #eee;
+}
 /* border */
 .line-height-1 {
     line-height: 1.5;
@@ -403,7 +412,7 @@
 
 
 .color-black {
-    color: black!important;
+    color: black !important;
 }
 .color-gray-main {
     color: #888888!important;
@@ -430,10 +439,10 @@
     font-size: 15px;
 }
 .font-size-16 {
-    font-size: 16px;
+    font-size: 16px !important;
 }
 .font-size-16 {
-    font-size: 17px;
+    font-size: 17px ;
 }
 .font-size-18 {
     font-size: 18px;
