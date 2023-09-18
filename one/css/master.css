@@ -3,7 +3,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   min-width: 0px;
   outline: none;
 }
