@@ -319,9 +319,13 @@ header .profile-icon ul::before {
 }
 .welcome .btn {
   margin-right: 15px;
+  margin-left: auto;
+}
+.draft .btn {
+  margin-left: auto;
 }
 .btn {
-  margin-left: auto;
+  width: fit-content;
   color: white;
   background-color: #0075ff;
   border-radius: 5px;
@@ -331,6 +335,12 @@ header .profile-icon ul::before {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btn.hover {
+  transition: 0.5s;
+}
+.btn.hover:hover {
+  background-color: #0a66c2;
 }
 @media (max-width: 400px) { 
   .wrapper {
