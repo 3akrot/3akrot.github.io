@@ -335,6 +335,7 @@ header .profile-icon ul::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .btn.hover {
   transition: 0.5s;
