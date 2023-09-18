@@ -273,7 +273,7 @@ header .profile-icon ul::before {
 }
 .card:not(div.welcome) {
   padding: 20px;
-  width: fit-content;
+ 
 }
 .content .welcome .text img {
   max-width: 200px;
@@ -428,6 +428,7 @@ header .profile-icon ul::before {
 }
 .col-1:not(.welcome .col-1) {
   margin-bottom: 15px;
+  width: fit-content;
 }
 .targets .content .target {
   align-items: center;
