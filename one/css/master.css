@@ -353,6 +353,15 @@ header .profile-icon ul::before {
     padding: 15px 10px;
   }
 }
+@media (min-width:0px) and (max-width:700px) {
+  .res-font-size-h {
+    font-size: 15px;
+  }
+  .res-font-size-p {
+    font-size: 12px;
+  }
+}
+
 
 @media (min-width:400px) and (max-width:700px) {
   .page >.content > .wrapper {
