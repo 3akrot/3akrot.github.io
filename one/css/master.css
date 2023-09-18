@@ -14,7 +14,7 @@ body {
   /* font-family: 'Roboto'; */
 
 }
-
+/*  
 img {
   max-width: 100%;
 }
@@ -123,7 +123,7 @@ header .profile-icon i + ul:hover {
   transition: 0.4s;
 }
 header .profile-icon ul {
-  /* display: none; */
+  /* display: none; 
   visibility: hidden;
   position: absolute;
   top: 55px;
@@ -252,7 +252,7 @@ header .profile-icon ul::before {
     width:140px ;
   }
 }
-
+*/
 /* responsive media */
 .content .card {
   border-radius: 10px;
