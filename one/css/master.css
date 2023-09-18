@@ -883,3 +883,20 @@ div.posts.card {
 .card-content-overflow > div {
  min-width: 230px;
 }
+.social-box:focus-within i {
+color: black !important;
+}
+.social-setting  i {
+transition: 0.5s;
+width: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.social-setting  .icon {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

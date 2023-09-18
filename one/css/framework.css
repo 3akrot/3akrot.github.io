@@ -173,7 +173,9 @@
 .bg-gray {
     background-color: #eee !important;
 }
-
+.bg-main2 {
+    background-color: #f6f6f6;
+}
 /* position */
 .position-relative { 
     position: relative;
@@ -396,6 +398,9 @@
 .border-color-gray {
     border: 1px solid #98989882;
 }
+.border-right-gray {
+    border-right: 1px solid #98989882;
+}
 .border-none {
     border: none;
 }
@@ -511,4 +516,7 @@
 
 .resize-none {
     resize: none;
+}
+.overflow-hidden {
+    overflow: hidden;
 }
