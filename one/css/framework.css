@@ -76,7 +76,7 @@
 
   }
 
-  #check {
+  input[type="checkbox"] {
     position: absolute;
     right: 100000px;
     display: none !important;
