@@ -578,7 +578,7 @@ header .profile-icon ul::before {
 /* .card .box:last-child {
   padding-bottom: 0px;
 } */
-/*
+
 .card.project-prog span {
   padding: 15px 0px;
   padding-left: 30px;
@@ -723,11 +723,10 @@ border: 2px solid white;
 }
 div.posts.card {
   padding-bottom: 0px;
-  /* height: fit-content; 
+  /* height: fit-content; */
 }
-
 .reactions {
-  /* margin-top: 30px; 
+  /* margin-top: 30px; */
   flex: 1;
 }
 .posts .post p {
@@ -805,7 +804,7 @@ div.posts.card {
 .social .box:nth-child(4) .btn {
   background-color: #0a66c2;
 }
-@media (width > 1250px) {
+/* @media (width > 1250px) {
   .projects {
     grid-column: span 2;
   }
