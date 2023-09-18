@@ -171,7 +171,7 @@
     background-color: #fff;
 }
 .bg-gray {
-    background-color: #eee;
+    background-color: #eee !important;
 }
 
 /* position */
@@ -271,6 +271,9 @@
 }
 .flex {
     display: flex;
+}
+.flex-1 {
+    flex:1;
 }
 .flex-colom{
     display: flex;
@@ -400,16 +403,16 @@
 
 
 .color-black {
-    color: black;
+    color: black!important;
 }
 .color-gray-main {
-    color: #888888;
+    color: #888888!important;
 }
 .color-gray-alt {
-    color: #989898;
+    color: #989898!important;
 }
 .color-eee {
-    color: #eee;
+    color: #eee !important;
 }
 .font-size-14 {
     font-size: 14px;

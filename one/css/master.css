@@ -6,7 +6,6 @@
   text-transform: capitalize;
   min-width: 0px;
   outline: none;
-  transition: 0.5s;
 }
 /* ::selection {
   color: tr;
@@ -33,6 +32,7 @@ a {
 .page {
   display: flex;
   min-height: 100vh;
+  transition: 0.5s;
 
 }
 .aside {
