@@ -252,8 +252,6 @@ header .profile-icon ul::before {
   }
 }
 
-/* ssssssssssssssssssssssssssssssssssssssss */
-/* responsive media 
 .content .card {
   border-radius: 10px;
   position: relative;
@@ -326,9 +324,9 @@ header .profile-icon ul::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; 
+
 }
-*/
+/*
 .btn.hover {
   transition: 0.5s;
 }
@@ -381,7 +379,7 @@ header .profile-icon ul::before {
     position: relative;
   }
   .form:hover input[type="search"] , .form input[type="search"]:focus {
-    /* display: block; */
+    /* display: block; 
     visibility: visible;
     opacity: 1;
     top: 50px;
@@ -389,7 +387,7 @@ header .profile-icon ul::before {
 
   }
   header input[type="search"] {
-    /* display: none; */
+    /* display: none; 
     visibility: hidden;
     position: absolute;
     border: 2px solid #eee;
