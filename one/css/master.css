@@ -428,7 +428,6 @@ header .profile-icon ul::before {
 }
 .col-1:not(.welcome .col-1) {
   margin-bottom: 15px;
-  width: fit-content;
 }
 .targets .content .target {
   align-items: center;
