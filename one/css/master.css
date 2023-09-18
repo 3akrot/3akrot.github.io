@@ -3,7 +3,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
   min-width: 0px;
   outline: none;
 }
@@ -273,6 +273,7 @@ header .profile-icon ul::before {
 }
 .card:not(div.welcome) {
   padding: 20px;
+  width: fit-content;
 }
 .content .welcome .text img {
   max-width: 200px;
