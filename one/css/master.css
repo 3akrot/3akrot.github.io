@@ -415,7 +415,10 @@ header .profile-icon ul::before {
 .content .input.input[type="text"] {
   margin-bottom: 20px;
 }
-.content .input::placeholder {
+::placeholder{
+  font-size: 12px;
+}
+.content input::placeholder {
   color: #6c6c6c;
 }
 .col-1:not(.welcome .col-1) {
