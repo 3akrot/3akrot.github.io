@@ -6,6 +6,7 @@
   text-transform: capitalize;
   min-width: 0px;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 /* ::selection {
   color: tr;
