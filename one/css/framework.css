@@ -219,6 +219,8 @@
     width: fit-content;
     padding-left: 30px;
     position: relative;
+    cursor: pointer;
+
   }
   .cirle {
     content: "";
@@ -245,6 +247,33 @@
   input[type="radio"]:checked + label .fill {
     height: 12px;
     width: 12px;
+  }
+  .rad-box{
+    padding: 10px;
+    display: inline-block;
+    background-color: white;
+    height: 90px;
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .rad-box-content {
+    width: fit-content;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 10px;
+  }
+  .rad-box-content i {
+    display: block;
+  }
+  input[type="radio"]:checked + .rad-box {
+    border: 2px solid #0075ff;
   }
 /* components */
 /* rules */

@@ -61,6 +61,32 @@
   .radio {
     margin: 60px 0px;
   }
+  .rad-box{
+    padding: 10px;
+    display: inline-block;
+    background-color: white;
+    height: 90px;
+    width: 170px;
+    border-radius: 10px;
+    border: 4px solid #888;
+    transition: 0.5s ease-in-out;
+  }
+  .rad-box-content {
+    width: fit-content;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 10px;
+  }
+  .rad-box-content i {
+    display: block;
+  }
+  input[type="radio"]:checked + .rad-box {
+    border: 4px solid #0075ff;
+  }
 </style>
 
 <body>
@@ -93,7 +119,33 @@
           <span class="fill"></span>
         </span>
       </label>
-
+    </div>
+    <div class="radio2">
+      <input type="radio" name="group2" id="rad2-1">
+      <label class="rad-box" for="rad2-1">
+        <div class="rad-box-content">
+          <i class="fa-solid fa-server"></i>
+          <p>Megaman</p>
+        </div>
+      </label>
+    </div>
+    <div class="radio2">
+      <input type="radio" name="group2" id="rad2-2">
+      <label class="rad-box" for="rad2-2">
+        <div class="rad-box-content">
+          <i class="fa-solid fa-server"></i>
+          <p>Megaman</p>
+        </div>
+      </label>
+    </div>
+    <div class="radio2">
+      <input type="radio" name="group2" id="rad2-3">
+      <label class="rad-box" for="rad2-3">
+        <div class="rad-box-content">
+          <i class="fa-solid fa-server"></i>
+          <p>Megaman</p>
+        </div>
+      </label>
     </div>
   
   </div>
