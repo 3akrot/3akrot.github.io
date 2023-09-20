@@ -216,7 +216,7 @@
     left: -9999px;
   }
   .radio-cirle {
-    width: fit-content;
+    display: block;
     padding-left: 30px;
     position: relative;
     cursor: pointer;
