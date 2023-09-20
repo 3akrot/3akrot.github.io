@@ -893,3 +893,6 @@ align-items: center;
   justify-content: center;
   align-items: center;
 }
+input[disabled] {
+  cursor:not-allowed
+}

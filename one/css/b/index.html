@@ -97,7 +97,9 @@
   #check {
     position: absolute;
     right: 100000px;
+    display: none;
   }
+
 
   .btncheck2 {
     display: block;
@@ -172,6 +174,60 @@
   #check2 {
     position: absolute;
     right: 100000px;
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    right: 100000px;
+    display: none;
+  }
+  .check-label {
+    position: relative;
+    margin: 10px 0px;
+    padding-left: 30px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .check-label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border: 2px solid #888;
+    transition: 0.3s;
+    left: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .check-label:hover::after {
+    border: 2px solid #0d69d5;
+  }
+  .check-label::before {
+    content: "\f00c";
+    background-color: #0075ff;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    height: 19px;
+    width: 19px;
+    left: 0px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    z-index: 1;
+  }
+  #Chek:checked + .check-label::before {
+    transform: translateY(-50%) scale(1) rotate(-360deg);
+  
   }
 </style>
 
@@ -194,10 +250,16 @@
       </span>
     </label>
   </div>
+  <div class="btn-wrapper">
+    <label for="Chek">
+      <input type="checkbox" name="" id="Chek">
+      <div class="check-label">Quick Draft</div>
+    </label>
+  </div>
   <!-- <div>
     iam perfectly centered pethch
   </div> -->
-
+  <script src="https://kit.fontawesome.com/4b0768c77c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
