@@ -210,6 +210,42 @@
     transform: translateY(-50%) scale(1) rotate(-360deg);
   
   }
+  input[type="radio"] {
+    display: none;
+    position: absolute;
+    left: -9999px;
+  }
+  .radio-cirle {
+    width: fit-content;
+    padding-left: 30px;
+    position: relative;
+  }
+  .cirle {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 2px solid #888;
+    background-color: #fff;
+  }
+  .fill{
+    height: 0px;
+    width: 0px;
+    transition: 0.2s linear ;
+    border-radius: 50%;
+    background-color: #0075ff;
+  }
+  input[type="radio"]:checked + label .fill {
+    height: 12px;
+    width: 12px;
+  }
 /* components */
 /* rules */
 .bg-blue {
