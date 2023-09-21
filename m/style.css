@@ -5,23 +5,41 @@
 }
 body {
   min-height: 100vh;
-position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
   background-color: rgb(30, 27, 27);
   overflow: hidden;
   -webkit-overflow: hidden;
   -moz-overflow: hidden;
+  position: relative;
 }
-.marquee {
+.container {
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   position: absolute;
+
   top: 50%;
   left: 50%;
-  width: 300vw;
-  transform: translate(-50% , -50%) rotate(30deg);
+  gap: 15px;
+  transform:translate(-50%,-50%) scale(1.5) rotate(30deg) ;
+  width: 150vw;
+
+}
+.marquee {
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  width: 150vw;
+  /* transform: translate(-50% , -50%) rotate(30deg); */
   overflow: hidden;
   display: flex;
   gap: 2rem;
   background-color: #e74c3c;
   padding: 10px 0px;
+  flex-shrink: 0;
 }
 .two {
   top: 65%;
