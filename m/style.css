@@ -24,13 +24,18 @@ body {
   position: relative;
 }
 .container {
-  width:250vw;
+  width:150vw;
   overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(30deg);
 }
+/* @media (width > 1200px) {
+  .container {
+    width:150vh;
+  }
+} */
 @media (width <= 520px) {
   .container {
     width:150vh;
