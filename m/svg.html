@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svg</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .circle-wrapper{
+      position: relative;
+    }
+    .circle-wrapper > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 60px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #6bdba7;
+      font-weight: bold;
+    }
+    body {
+      flex-direction: column;
+      gap: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <svg width="150" height="100px">
+    <rect width="100%" height="100%" fill="#fff"/>
+    <circle r = "25px" cx="75px" cy="50px" fill="red"/>
+  </svg>
+  <div class="circle-wrapper">
+    <svg width="170px" height="170px" style="transform: rotate(-90deg);">
+      <circle r="76px" cx="85" cy="85" fill="transparent" stroke="#e0e0e0" stroke-width="3px"/>
+      <circle r="79px" cx="85px" cy="85" fill="transparent"stroke-width="10px" stroke="#6bdba7" stroke-dasharray="471.23px" stroke-dashoffset="47px" stroke-linecap="round"/>
+    </svg>
+    <span>90%</span>
+  </div>
+
+</body>
+</html>
