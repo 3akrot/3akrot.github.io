@@ -31,16 +31,16 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) rotate(30deg);
 }
-@media (width <= 468px) {
+@media (width <= 400px) {
   .container {
-    width:500vw;
+    width:250vw;
   }
 }
 .marquee {
   /* position: absolute;
   top: 50%;
   left: 50%; */
-  min-width: 150vw;
+  min-width: 140vw;
   /* transform: translate(-50% , -50%) rotate(30deg); */
   overflow: hidden;
   display: flex;
