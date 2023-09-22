@@ -24,16 +24,16 @@ body {
   position: relative;
 }
 .container {
-  width:150vw;
+  width:500vh;
   overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(30deg);
 }
-@media (width <= 400px) {
+@media (width <= 520px) {
   .container {
-    width:250vw;
+    width:150vh;
   }
 }
 .marquee {
