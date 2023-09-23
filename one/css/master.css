@@ -995,3 +995,6 @@ flex-wrap: wrap;
     flex: 1;
   }
 }
+.profile-skills li > div {
+  width: fit-content;
+}
