@@ -997,4 +997,5 @@ flex-wrap: wrap;
 }
 .profile-skills li > div {
   width: fit-content;
+  background-color: red;
 }
