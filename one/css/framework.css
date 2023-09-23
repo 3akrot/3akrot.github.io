@@ -433,7 +433,7 @@
     grid-template-columns: repeat(2,1fr);
 }
 .justifiy-spacebetween {
-    justify-content: space-between;
+    justify-content: space-between ;
 }
 .align-items-center {
     align-items: center;
