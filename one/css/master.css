@@ -975,7 +975,7 @@ flex-wrap: wrap;
 .proflie-content .profile-last-activites{
   flex: 4 530px;
 }
-@media (width <= 620px) {
+@media (width <= 638px) {
   .proflie-content .profile-skills {
     text-align: center;
   }
@@ -997,5 +997,10 @@ flex-wrap: wrap;
 }
 .profile-skills li > div {
   width: fit-content;
-  background-color: red;
+  display: block;
+  /* background-color: red; */
+}
+.profile-skills li > div > span {
+display: inline-block;
+  /* background-color: red; */
 }
