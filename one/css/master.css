@@ -1002,5 +1002,6 @@ flex-wrap: wrap;
 }
 .profile-skills li > div > span {
 display: inline-block;
+margin: 3px 0px;
   /* background-color: red; */
 }
