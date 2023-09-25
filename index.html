@@ -41,6 +41,7 @@
         background-color: white;
         flex-direction: column;
         justify-content: space-around;
+        overflow: hidden;
     }
     a:hover {
         box-shadow: #e1f3f4 0 0 10px,
@@ -56,6 +57,8 @@
     a img {
         display: block;
         height: 100%;
+        position: relative;
+        z-index: 1;
     }
     a p {
         border-top: 1px solid #1e1e1e;
@@ -134,6 +137,25 @@
             width: 1170px;
         }
     }
+    .div {
+        width: 366px;
+        height: 167px;
+        position: relative;
+        background-color: rgb(180, 176, 176);
+        animation: loading 2s linear infinite;
+    }
+ 
+    @keyframes loading {
+        50% {
+        background-color: rgba(180, 176, 176, 0.494);
+
+        }
+        100% {
+            background-color: rgb(178, 173, 173);
+
+        }
+        
+    }
 </style>
 <body>
     <div class="container">
@@ -143,31 +165,45 @@
         <img src="a.jpeg" alt="">
         <h2>Ali sayed</h2>
         <a href="one/a.html">
-            <img src="one/Capture.PNG" alt="">
+            <div class="div">
+                <img src="one/Capture.PNG" alt="">
+            </div>
             <p>Elzero template 1</p>
         </a>
         <a href="one/b.html">
-            <img src="one/Capture2.PNG" alt="">
+            <div class="div">
+                <img src="one/Capture2.PNG" alt="">
+            </div>
             <p>Elzero template 2</p>
         </a>
         <a href="one/c.html">
-            <img src="one/Capture3.PNG" alt="">
+            <div class="div">
+                <img src="one/Capture3.PNG" alt="">
+            </div>
             <p>Elzero template 3<br></p>
         </a>
         <a href="one/dashboard.html">
-            <img src="one/Capture4.PNG" alt="">
+            <div class="div">
+                <img src="one/Capture4.PNG" alt="">
+            </div>
             <p>Elzero template 4<br>(In progress)</p>
         </a>
         <a href="two/index.html">
-            <img src="Cape.PNG" alt="">
+            <div class="div">
+                <img src="Cape.PNG" alt="">
+            </div>
             <p>simple portfolio</p>
         </a>
         <a href="f/one/index.html">
-            <img src="5.PNG" alt="">
+            <div class="div">
+                <img src="5.PNG" alt="">
+            </div>
             <p>Figma design</p>
         </a>
         <a href="test.html">
-            <img src="Capture6.PNG" alt="">
+            <div class="div">
+                <img src="Capture6.PNG" alt="">
+            </div>
             <p>Image slider</p>
         </a>
     </div>
