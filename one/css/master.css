@@ -50,6 +50,10 @@ a {
 .aside .active-li {
   background-color: #f6f6f6;
 }
+.main-title 
+{
+  /* font-weight: 700; */
+}
 .content {
   flex-basis:84%;
 }
@@ -1038,4 +1042,35 @@ div.project-card.card {
 }
 .skills-holder + .flex .bar {
   height: 8px;
+}
+.course {
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  position: relative;
+}
+.course-profile {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  outline: 1px solid white;
+}
+.course  .image img {
+  width: 100%;
+}
+.course-info {
+  padding: 25px;
+  padding-bottom: 30px;
+}
+@media (width <= 450px) {
+  .course-info {
+    padding: 25px 17px 30px 17px;
+  }
+}
+.course-info + .flex {
+  margin-top: -12.5px;
+}
+.course-info + .flex + .flex {
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
