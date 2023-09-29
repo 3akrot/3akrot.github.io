@@ -1078,6 +1078,13 @@ div.project-card.card {
   position: relative;
   padding: 20px;
   background-color: white;
+  padding-bottom: 0px;
+}
+.friend-options {
+  padding: 13px 0px;
+}
+.friend-stats {
+  padding: 0px;
 }
 .friends-contact {
   position: absolute;
