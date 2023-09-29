@@ -1074,3 +1074,54 @@ div.project-card.card {
   padding-top: 5px;
   padding-bottom: 15px;
 }
+.friend {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+}
+.friends-contact {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  gap: 5px;
+}
+.friends-contact i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #eee;
+  transition: 0.5s;
+  font-size: 15px;
+  color: #666;
+}
+.friends-contact i:hover {
+  background-color: #0075ff;
+  color: white;
+}
+.friend-info {
+  width: fit-content;
+  margin: 15px auto 0px;
+  text-align: center;
+}
+.friend-intractions i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+}
+.friend-stats {
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.friend-plan img {
+  opacity: 0.2;
+}
+.friend-plan {
+  height: 100px;
+  width: 100px;
+}
