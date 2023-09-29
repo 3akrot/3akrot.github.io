@@ -1103,9 +1103,11 @@ div.project-card.card {
   color: white;
 }
 .friend-info {
-  width: fit-content;
-  margin: 15px auto 0px;
+  margin: 15px 0px;
   text-align: center;
+}
+.friend-info h2 , .friend-info p {
+  white-space: nowrap;
 }
 .friend-intractions i {
   display: flex;
