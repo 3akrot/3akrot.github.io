@@ -1134,3 +1134,77 @@ div.project-card.card {
   height: 100px;
   width: 100px;
 }
+.file-stats {
+  flex-basis: 270px;
+  /* background-color: white;
+  padding:25px 20px 15px 20px; */
+  flex-shrink: 0;
+  flex-shrink: 0;
+}
+.file-stats .image {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.file-stats .stats-box {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.pdf {
+  background-color: #cce3ff;
+  color: #0075ff;
+}
+.images {
+  background-color: #d2f4df;
+  color: #22c55e;
+}
+.word {
+  background-color: #fdd9d6;
+  color: #f44336;
+}
+.csv {
+  background-color: #fdecce;
+  color: #f59e0b;
+}
+.files-upload {
+  padding: 10px 15px;
+  gap: 10px;
+  margin: 0px auto;
+  font-size: 14px;
+}
+.btn.files-upload:hover i {
+  animation: upload 1s infinite;
+}
+@keyframes upload {
+  50% {
+    transform: translateY(-3px);
+  }
+  
+}
+.stick {
+  position: sticky;
+  top: calc((100vh - 429px) / 2);
+  background-color: white;
+  padding:25px 20px 15px 20px;
+  border-radius: 10px;
+}
+i.download-file {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #888;
+}
+.file img {
+  transition: 0.3s;
+}
+.file .text-align-center:hover img {
+  transform: rotate(5deg);
+}
+@media (width < 768px) {
+.wrapper.flex {
+  flex-direction: column-reverse;
+}
+}

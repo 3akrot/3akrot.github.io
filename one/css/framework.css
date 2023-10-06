@@ -404,6 +404,12 @@
 .mg-bottom-20px {
     margin-bottom: 20px;
 }
+.mg-top-10px {
+    margin-top: 10px;
+}
+.mg-top-15px {
+    margin-top: 15px;
+}
 /* margin */
 
 /* display */
@@ -431,6 +437,9 @@
 }
 .responsive-grid-3columns {
     grid-template-columns: repeat(auto-fit , minmax(300px, 1fr));
+}
+.responsive-grid-3columns-files {
+    grid-template-columns: repeat(auto-fit , minmax(230px, 1fr));
 }
 .responsive-grid-2columns {
     grid-template-columns: repeat(2,1fr);
@@ -567,6 +576,9 @@
 }
 .border-bottom-eee {
     border-bottom: 1px solid #eee;
+}
+.border-top-eee {
+    border-top: 1px solid #eee;
 }
 /* border */
 .line-height-1 {
