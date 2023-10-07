@@ -1210,3 +1210,48 @@ i.download-file {
   padding-right: 20px !important;
 }
 }
+.planinfo {
+  background-color: #22c55e;
+  padding: 30px 0px;
+  border: 3px solid white;
+  outline: 3px solid #22c55e;
+}
+.dollar {
+  position: absolute;
+  top: -5px;
+  left: -18px;
+}
+.planinfo +ul li i {
+  display: block;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan:nth-child(2) .planinfo {
+  background-color: #0075ff;
+  outline: 3px solid #0075ff;
+}
+.plan:nth-child(3) .planinfo {
+  background-color: #f59e0b;
+  outline: 3px solid #f59e0b;
+}
+div.plan-select{
+  padding: 15px 0px 0px 0px;
+  border-top: 1px solid #eee;
+  display: flex;
+}
+div.current-plan {
+  padding: 15px 0px 0px 0px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+@media (width < 350px) {
+  .plan {
+    padding: 10px;
+    font-size: 13px !important;
+  }
+}
+/* div.plan-select{
+ma
+} */

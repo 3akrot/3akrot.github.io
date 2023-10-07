@@ -337,6 +337,9 @@
 .p-10px {
     padding: 10px;
 }
+.p-20px {
+    padding: 20px;
+}
 .p-5px {
     padding: 5px;
 }
@@ -379,6 +382,10 @@
 .m-vartical-10 {
     margin-top:10px ;
     margin-bottom: 10px;
+}
+.m-left-right-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 .m-vartical-15 {
     margin-top:15px ;
@@ -503,6 +510,9 @@
 .width-10px {
     width: 10px;
 }
+.width-fit {
+    width: fit-content;
+}
 .width-15px {
     width: 15px;
 }
@@ -588,6 +598,9 @@
 
 .color-black {
     color: black !important;
+}
+.color-white {
+    color: white !important;
 }
 .color-gray-main {
     color: #888888!important;
@@ -710,4 +723,10 @@
 }
 .bg-green-1{
     background-color: #22c55e !important;
+}
+.color-green {
+    color: #2bc764;
+}
+.color-red {
+    color: #f44336;
 }
