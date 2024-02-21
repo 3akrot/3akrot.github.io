@@ -345,10 +345,13 @@ header .mega-menu  ul  li:not(:last-child) {
 .mega-menu i {
     margin: 0px 10px;
 }
-.nav > ul > li:last-child:hover .mega-menu ,
+/* .nav > ul > li:last-child:hover .mega-menu ,
 .nav > ul > li:last-child:focus .mega-menu {
     animation: popup var(--main-transition) forwards;
     -webkit-animation: popup var(--main-transition) forwards;
+} */
+.nav ul > li > a {
+    cursor: pointer;
 }
 
 /* 
