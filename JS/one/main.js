@@ -6,10 +6,15 @@ window.onload = function () {
   eltypr.value = "Div"
 }
 myselection.oninput = function () {
+  let eltex = document.querySelector("input[name=texts]");
   if (myselection.value === "iframe") {
     vidid.classList.remove("hidden");
+    eltex.classList.add("hidden")
+ 
+
   } else {
     vidid.classList.add("hidden");
+    eltex.classList.remove("hidden")
   }
 };
 create.onclick = function (e) {
