@@ -1443,6 +1443,10 @@ flex-wrap: wrap;
     border-radius: 8px;
     border: 1px solid #d4d4d4;
     transition: var(--main-transition);
+    text-align: center;
+ }
+ .events .container .countdown .box h3 {
+    min-width: 85.6px;
  }
  .events .container .countdown .box:hover {
     border: 1px solid var(--main-color);
@@ -1533,9 +1537,10 @@ flex-wrap: wrap;
     text-transform: capitalize;
 }
 @media (max-width: 467px) { 
-    .events .container .countdown h3 { 
+    .events .container .countdown .box h3 { 
         padding: 5px 20px;
         font-size: xx-large;
+        min-width: 75.6px;
     }
     .events .container .countdown h5 { 
         padding: 5px 0px;
@@ -1579,9 +1584,11 @@ flex-wrap: wrap;
     }
 }
 @media (max-width:350px) {
-    .events .container .countdown h3 { 
+    .events .container .countdown .box h3 { 
+        min-width: 75.6px;
         padding: 5px 20px;
         font-size: x-large;
+        min-width: 75.6px;
     }
 }
 
