@@ -29,6 +29,7 @@ document.getElementById("Other links").onclick = function () {
 
             // Calculate the remaining time
             var distance = countDownDate - now;
+            console.log(distance /1000 / 60 / 60 / 24);
 
             // Calculate days, hours, minutes, and seconds
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
