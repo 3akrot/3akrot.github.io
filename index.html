@@ -1,216 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ali sayed</title>
-    <link rel="prefetch" href="one/a.html">
-    <link rel="prefetch" href="one/b.html">
-    <link rel="prefetch" href="one/c.html">
-    <link rel="prefetch" href="one/dashboard.html">
-    <link rel="prefetch" href="two/index.html">
-    <link rel="prefetch" href="files.html">
-    <link rel="prefetch" href="plans.html">
-</head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    <link rel="prefetch" href="one/a.html" />
+    <link rel="prefetch" href="one/b.html" />
+    <link rel="prefetch" href="one/c.html" />
+    <link rel="prefetch" href="one/dashboard.html" />
+    <link rel="prefetch" href="two/index.html" />
+    <link rel="prefetch" href="files.html" />
+    <link rel="prefetch" href="plans.html" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        text-transform: capitalize;
-        -webkit-tap-highlight-color: transparent;
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      text-transform: capitalize;
+      -webkit-tap-highlight-color: transparent;
     }
     body {
-        min-height: 100vh;
-        background-color: #1e1e1e;
-        font-family: 'Rubik', sans-serif;
+      min-height: 100vh;
+      background-color: #1e1e1e;
+      font-family: "Rubik", sans-serif;
     }
     .container {
-        margin: 180px auto 90px;
-        position: relative;
+      margin: 180px auto 90px;
+      position: relative;
     }
-    a{
-        display: flex;
-        outline: 5px solid #1e1e1e;
-        border-radius: 10px;
-        transition: 0.5s;
-        flex: 0 1 365px;
-        text-decoration: none;
-        color: black;
-        background-color: white;
-        flex-direction: column;
-        justify-content: space-around;
-        overflow: hidden;
+    a {
+      display: flex;
+      outline: 5px solid #1e1e1e;
+      border-radius: 10px;
+      transition: 0.5s;
+      flex: 0 1 365px;
+      text-decoration: none;
+      color: black;
+      background-color: white;
+      flex-direction: column;
+      justify-content: space-around;
+      overflow: hidden;
     }
     a:hover {
-        box-shadow: #e1f3f4 0 0 10px,
-                    #e1f3f4 0 0 15px,
-                    #e1f3f4 0 0 20px,
-                    #e1f3f4 0 0 30px,
-                    #e1f3f4 0 0 40px,
-                    #e1f3f4 0 0 50px,
-                    #e1f3f4 0 0 60px,
-                    #e1f3f4 0 0 70px
-        ;
+      box-shadow: #e1f3f4 0 0 10px, #e1f3f4 0 0 15px, #e1f3f4 0 0 20px,
+        #e1f3f4 0 0 30px, #e1f3f4 0 0 40px, #e1f3f4 0 0 50px, #e1f3f4 0 0 60px,
+        #e1f3f4 0 0 70px;
     }
     a img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        z-index: 1;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
     }
     a p {
-        border-top: 1px solid #1e1e1e;
-        background-color: white;
-        text-align: center;
-        padding: 10px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 56px;
+      border-top: 1px solid #1e1e1e;
+      background-color: white;
+      text-align: center;
+      padding: 10px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 56px;
     }
     img {
-        max-width: 100%;
+      max-width: 100%;
     }
     .content > img:first-child {
-        position: absolute;
-        width: 250px;
-        border-radius: 50%;
-        top: -125px;
-        left: 50%;
-        transform: translateX(-50%);
+      position: absolute;
+      width: 250px;
+      border-radius: 50%;
+      top: -125px;
+      left: 50%;
+      transform: translateX(-50%);
     }
     .content {
-        padding: 250px 60px 100px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        background-color: #353232;
-        gap: 20px;
-        border-radius: 20px;
+      padding: 250px 60px 100px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #353232;
+      gap: 20px;
+      border-radius: 20px;
     }
     .content h2 {
-    position: absolute;
-    top: 140px;
-    left: 50%;
-    transform: translateX(-50%);
-    letter-spacing: 6px;
-    white-space: nowrap;
-    color: white;
+      position: absolute;
+      top: 140px;
+      left: 50%;
+      transform: translateX(-50%);
+      letter-spacing: 6px;
+      white-space: nowrap;
+      color: white;
     }
-    @media (max-width:768px) {
-        .content > img:first-child {
+    @media (max-width: 768px) {
+      .content > img:first-child {
         position: absolute;
         width: 130px;
         border-radius: 50%;
         top: -65px;
-        }
-        .content {
-            padding-top: 135px;
-        }
-        .content h2 {
+      }
+      .content {
+        padding-top: 135px;
+      }
+      .content h2 {
         top: 70px;
         left: 50%;
-        }
-        .container {
-            margin-top: 60px;
-            padding-top: 50px;
-            margin-bottom: 30px;
-            padding-bottom: 25px;
-            padding-inline: 20px;
-        }
+      }
+      .container {
+        margin-top: 60px;
+        padding-top: 50px;
+        margin-bottom: 30px;
+        padding-bottom: 25px;
+        padding-inline: 20px;
+      }
     }
-    @media (min-width: 768px) { 
-        .container {
-            width: 750px;
-        }
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
     }
-    @media (min-width: 992px) { 
-        .container {
-            width: 970px;
-        }
+    @media (min-width: 992px) {
+      .container {
+        width: 970px;
+      }
     }
-    @media (min-width: 1200px) { 
-        .container {
-            width: 1170px;
-        }
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
     }
     .div {
-        position: relative;
-        background-color: rgb(180, 176, 176);
-        animation: loading 2s linear infinite;
+      position: relative;
+      background-color: rgb(180, 176, 176);
+      animation: loading 2s linear infinite;
     }
- 
+
     @keyframes loading {
-        50% {
+      50% {
         background-color: rgba(180, 176, 176, 0.494);
-
-        }
-        100% {
-            background-color: rgb(178, 173, 173);
-
-        }
-        
+      }
+      100% {
+        background-color: rgb(178, 173, 173);
+      }
     }
-</style>
-<body>
+    .popup {
+      box-sizing: content-box;
+      opacity: 0;
+      transition: 0.3s;
+      padding: 30px 10px;
+      width: clamp(200px, 60vw, 400px);
+      font-family: Arial, Helvetica, sans-serif;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      background-color: #eee;
+    }
+    .popup > h1,
+    .popup > p {
+      text-align: center;
+      white-space: normal;
+      margin: 0px;
+    }
+    .popup > h1 {
+      font-size: clamp(10px, 5vw, 30px);
+      margin-bottom: 15px;
+    }
+    .popup > p {
+      font-size: clamp(10px, 3vw, 20px);
+    }
+    .popupc {
+      box-sizing: border-box;
+      position: absolute;
+      right: -7px;
+      top: -7px;
+      background-color: rgb(255, 60, 0);
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      border-radius: 50%;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      align-items: center;
+      color: white;
+      transition: 0.5s;
+    }
+    .show {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  </style>
+  <body>
     <div class="container">
-
-
-    <div class="content">
-        <img src="a.jpeg" alt="">
+      <div class="content">
+        <img src="a.jpeg" alt="" />
         <h2>Ali sayed</h2>
         <a href="one/a.html">
-            <div class="div">
-                <img src="one/Capture.PNG" alt="">
-            </div>
-            <p>Elzero template 1</p>
+          <div class="div">
+            <img src="one/Capture.PNG" alt="" />
+          </div>
+          <p>Elzero template 1</p>
         </a>
         <a href="one/b.html">
-            <div class="div">
-                <img src="one/Capture2.PNG" alt="">
-            </div>
-            <p>Elzero template 2</p>
+          <div class="div">
+            <img src="one/Capture2.PNG" alt="" />
+          </div>
+          <p>Elzero template 2</p>
         </a>
         <a href="one/c.html">
-            <div class="div">
-                <img src="one/Capture3.PNG" alt="">
-            </div>
-            <p>Elzero template 3<br></p>
+          <div class="div">
+            <img src="one/Capture3.PNG" alt="" />
+          </div>
+          <p>Elzero template 3<br /></p>
         </a>
         <a href="one/dashboard.html">
-            <div class="div">
-                <img src="one/Capture4.PNG" alt="">
-            </div>
-            <p>Elzero template 4<br></p>
+          <div class="div">
+            <img src="one/Capture4.PNG" alt="" />
+          </div>
+          <p>Elzero template 4<br /></p>
         </a>
         <a href="two/index.html">
-            <div class="div">
-                <img src="Cape.PNG" alt="">
-            </div>
-            <p>simple portfolio</p>
+          <div class="div">
+            <img src="Cape.PNG" alt="" />
+          </div>
+          <p>simple portfolio</p>
         </a>
         <a href="f/one/index.html">
-            <div class="div">
-                <img src="5.PNG" alt="">
-            </div>
-            <p>Figma design</p>
+          <div class="div">
+            <img src="5.PNG" alt="" />
+          </div>
+          <p>Figma design</p>
         </a>
         <a href="test.html">
-            <div class="div">
-                <img src="Capture6.PNG" alt="">
-            </div>
-            <p>Image slider</p>
+          <div class="div">
+            <img src="Capture6.PNG" alt="" />
+          </div>
+          <p>Image slider</p>
         </a>
-    </div>
-
+      </div>
     </div>
     <script>
-        window.alert(innerWidth);
-        window.alert(innerHeight);
+      setTimeout(function () {
+        let popup = document.createElement("div");
+        popup.className = "popup";
+        let head = document.createElement("h1");
+        head.innerHTML = "ALERT";
+        let p = document.createElement("p");
+        p.innerHTML = `your device width is ${window.innerWidth} <br>
+        your device Height is ${window.innerHeight} `;
+        let popclose = document.createElement("span");
+        popclose.className = "popupc";
+        popclose.innerHTML = "x";
+
+        popup.appendChild(head);
+        popup.appendChild(p);
+        popup.appendChild(popclose);
+        document.body.appendChild(popup);
+        setTimeout(function () {
+          popup.classList.add("show");
+        }, 100);
+        popclose.onclick = function () {
+          popup.classList.remove("show");
+          // head.innerHTML = ""
+          // p.innerHTML = ""
+          setTimeout(function () {
+            popup.remove();
+          }, 1000);
+        };
+      }, 2000);
     </script>
-</body>
+  </body>
 </html>

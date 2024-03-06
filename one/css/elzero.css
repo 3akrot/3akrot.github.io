@@ -2438,11 +2438,11 @@ body div {
     margin: 0px;
   }
   .popup > h1 {
-    font-size: clamp(10px,7vw,30px);
+    font-size: clamp(10px,5vw,30px);
     margin-bottom: 15px;
   }
   .popup > p {
-    font-size: clamp(10px,4vw,20px);
+    font-size: clamp(10px,3vw,20px);
   }
   .popupc{
     box-sizing: border-box;
