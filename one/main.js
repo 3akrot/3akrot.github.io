@@ -51,4 +51,33 @@ document.getElementById("Other links").onclick = function () {
                 document.getElementById("countdown").innerHTML = "EXPIRED";
             }
         }, 1000);
-    
+        setTimeout(function () {
+          let popup = document.createElement("div");
+          popup.className = "popup";
+          let head = document.createElement("h1");
+          head.innerHTML  = "Welcome";
+          let p = document.createElement("p");
+          p.innerHTML  = "Welcome to Elzero Web school";
+          let popclose = document.createElement("span")
+          popclose.className = "popupc";
+          popclose.innerHTML = "X";
+          
+          popup.appendChild(head);
+          popup.appendChild(p);
+          popup.appendChild(popclose);
+          document.body.appendChild(popup);
+          setTimeout(function(){
+            popup.classList.add("show")
+          },100)
+          popclose.onclick = function () {
+            popup.classList.remove("show");
+            // head.innerHTML = ""
+            // p.innerHTML = ""
+            setTimeout(function(){
+              popup.remove();
+          },1000)
+            
+          }
+  
+          
+        }, 4000);
