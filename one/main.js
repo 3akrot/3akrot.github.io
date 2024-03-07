@@ -1,4 +1,4 @@
-document.getElementById("Other links").onclick = function () {
+document.getElementById("Otherlinks").onclick = function () {
   document.getElementById("mega").style.animation =
     "popup var(--main-transition) forwards";
 };
@@ -6,14 +6,17 @@ document.getElementById("Other links").onclick = function () {
 //   document.getElementById("mega").style.animation = "";
 // }
 var megaVisible = true; // Initial state
+var megaElement = document.getElementById("mega");
 
-document.getElementById("Other links").onclick = function () {
-  var megaElement = document.getElementById("mega");
+document.getElementById("Otherlinks").onclick = function () {
+  
 
   if (megaVisible) {
     megaElement.style.animation = "popup var(--main-transition) forwards";
+    document.getElementById("Otherlinks").classList.add("ahov")
   } else {
     megaElement.style.animation = "";
+    document.getElementById("Otherlinks").classList.remove("ahov")
   }
 
   megaVisible = !megaVisible; // Toggle the state
@@ -81,15 +84,24 @@ setTimeout(function () {
 window.onscroll = function () {
   if (scrollY >= 248) {
     document.querySelector("header").classList.add("trans");
-    let x = document.querySelectorAll(".nav > ul li a");
+    let x = document.querySelectorAll(".nav > ul > li > a");
     document.querySelector(".logo").style.color = "white"
     document.querySelector(".lang").style.color = "white"
-    x.forEach((e) => e.style.color = "white")
+    megaElement.style.backgroundColor = "#3994ff"
+    let megalinks = document.querySelectorAll(".mega-menu a")
+    megalinks.forEach((e) => e.style.color = "white")
+    x.forEach((e) => {e.style.color = "white"
+    
+  })
+    
   } else {
     document.querySelector("header").classList.remove("trans");
-    let x = document.querySelectorAll(".nav > ul li a");
+    let x = document.querySelectorAll(".nav > ul> li > a");
     document.querySelector(".logo").style.color = "black"
     document.querySelector(".lang").style.color = "black"
+    megaElement.style.backgroundColor = "#fff"
+    let megalinks = document.querySelectorAll(".mega-menu a")
+    megalinks.forEach((e) => e.style.color = "black")
     x.forEach((e) => e.style.color = "black")
   }
 };
