@@ -4,7 +4,7 @@
 var megaVisible = true; // Initial state
 var megaElement = document.getElementById("mega");
 megaElement.style.display = "none";
-
+document.querySelector(".logo").style.color = "black"
 
 document.getElementById("Otherlinks").onclick = function () {
   
