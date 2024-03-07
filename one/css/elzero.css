@@ -224,6 +224,10 @@ header {
     width: 100% !important;
     
 } */
+.active {
+    opacity: 1 !important;
+    top: 100% !important;
+}
 .lang {
     /* position: absolute;
     right: 25px; */
@@ -295,7 +299,7 @@ flex: 1 1;
 header .mega-menu {
     width: 100%;
     position: absolute;
-    top: 120%;
+    top: 20px;
     left: 0px;
     opacity: 0;
     display: flex;
@@ -309,6 +313,7 @@ header .mega-menu {
     -o-transition: var(--main-transition);
     background-color: var(--white);
     z-index: -1;
+    transition: var(--main-transition);
 }
 
 .mega-menu .col-1,

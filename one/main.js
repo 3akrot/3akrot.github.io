@@ -1,21 +1,25 @@
-document.getElementById("Otherlinks").onclick = function () {
-  document.getElementById("mega").style.animation =
-    "popup var(--main-transition) forwards";
-};
-// document.onclick = function () {
-//   document.getElementById("mega").style.animation = "";
-// }
+
+
+
 var megaVisible = true; // Initial state
 var megaElement = document.getElementById("mega");
+megaElement.style.display = "none";
+
 
 document.getElementById("Otherlinks").onclick = function () {
   
 
   if (megaVisible) {
-    megaElement.style.animation = "popup var(--main-transition) forwards";
+    megaElement.style.display = "flex";
+    setTimeout(function(){
+      megaElement.classList.add("active")
+    },50)
     document.getElementById("Otherlinks").classList.add("ahov")
   } else {
-    megaElement.style.animation = "";
+    megaElement.classList.remove("active")
+    setTimeout(function(){
+      megaElement.style.display = "none";
+    },100)
     document.getElementById("Otherlinks").classList.remove("ahov")
   }
 
