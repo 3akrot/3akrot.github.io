@@ -217,13 +217,22 @@ header {
     color: white !important;
 }
 /*   background-color: #2488ff !important; */
-/* .ahov {
-    background-color: #fafafa !important;
+.ahov {
+    background-color: #4587dd !important;
+    color: white !important;
 }
 .ahov::after {
     width: 100% !important;
     
-} */
+}
+.ahov2 {
+    background-color: #066ba5 !important;
+}
+.ahov2::after {
+    background-color: #009688 !important;
+    width: 100% !important;
+    
+}
 .active {
     opacity: 1 !important;
     top: 100% !important;

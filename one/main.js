@@ -6,6 +6,48 @@ var megaElement = document.getElementById("mega");
 megaElement.style.display = "none";
 document.querySelector(".logo").style.color = "black"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let y = document.querySelectorAll(".nav > ul > li > a");
+y.forEach((e) => {
+  e.onmouseover = function (){
+    e.classList.add("ahov");
+  }
+  e.onmouseout = function(){
+
+    e.classList.remove("ahov")
+  }
+})
+
+let megalinkso = document.querySelectorAll(".mega-menu a")
+megalinkso.forEach((e) => e.style.color = "black")
+
+
+
+
+
+
 document.getElementById("Otherlinks").onclick = function () {
   
 
@@ -87,6 +129,7 @@ setTimeout(function () {
 }, 4000);
 window.onscroll = function () {
   if (scrollY >= 248) {
+    
     document.querySelector("header").classList.add("trans");
     let x = document.querySelectorAll(".nav > ul > li > a");
     document.querySelector(".logo").style.color = "white"
@@ -97,10 +140,12 @@ window.onscroll = function () {
     x.forEach((e) => {e.style.color = "white"
     
   })
+  megaElement.onmouseout
     
   } else {
     document.querySelector("header").classList.remove("trans");
     let x = document.querySelectorAll(".nav > ul> li > a");
+
     document.querySelector(".logo").style.color = "black"
     document.querySelector(".lang").style.color = "black"
     megaElement.style.backgroundColor = "#fff"
