@@ -4,10 +4,13 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+h3 {
+  text-align: center;
+  padding: 15px 0px;
+}
 .container {
   padding: 20px 15px;
-  padding-top: 40px;
+  padding-top: 0px;
   margin: 50px;
   border-radius: 10px;
   background-color: #eee;
@@ -18,22 +21,24 @@
   justify-content: center;
   gap: 10px;
   
+  
 
 
 }
+
 .tasks {
   display: flex;
   overflow: hidden;
   padding: 40px 0px 0px 0px;
   flex-direction: column;
-  transition: 5s;
+  transition: 0.3s;
 }
 .task {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  padding: 15px 20px;
+  padding: 10px 14px;
   background-color: #fafafa;
   border-radius: 5px;
   
@@ -49,11 +54,12 @@
   }
 }
 @keyframes del {
-  from{
+  0%{
     opacity: 1;
     transform: translateX(0%);
   }
-  to {
+  100% {
+
     opacity: 0;
     transform: translateX(-100%);
   }
@@ -72,7 +78,7 @@ input[type = "text"]{
   outline: none;
   border: none;
   background-color: #fafafa;
-  padding: 7px;
+  padding: 10px;
   border-radius: 5px;
 }
 .form button {
