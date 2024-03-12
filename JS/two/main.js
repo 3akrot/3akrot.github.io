@@ -6,8 +6,12 @@ document.querySelector(".container").addEventListener("click", function (e) {
   let val = inputfield.value;
 
   sessionStorage.setItem("val", inputfield.value);
-  if (val == "") {
-  } else if (e.target === button) {
+  if (val === "") {
+  }
+  else if (val === "clrlocal"){
+    localStorage.clear()
+  }
+   else if (e.target === button) {
     let b = document.createElement("div");
     b.textContent = val;
     let del = document.createElement("span");
