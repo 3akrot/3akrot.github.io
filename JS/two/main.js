@@ -48,7 +48,7 @@ window.onload = function () {
   for (let i = 0; i < localStorage.length; i++) {
     let b = document.createElement("div");
     b.classList.add("task");
-    b.textContent = localStorage.getItem(localStorage.key(i));
+    b.textContent = localStorage.getItem(`task${i}`);
     let del = document.createElement("button");
     del.innerHTML = "remove";
     del.classList.add("del");
@@ -60,7 +60,7 @@ window.onload = function () {
       }, 300);
     };
     b.appendChild(del);
-  b.setAttribute("data-cont",localStorage.getItem(localStorage.key(i)));
+  b.setAttribute("data-cont",localStorage.getItem(`task${i}`));
   // b.style.cssText = "animation: add 0.5s forwards;";
   document.querySelector(".tasks").appendChild(b);
   }
