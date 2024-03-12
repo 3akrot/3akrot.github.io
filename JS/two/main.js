@@ -6,9 +6,10 @@ document.querySelector(".container").addEventListener("click", function (e) {
   let val = inputfield.value;
 
   sessionStorage.setItem("val", inputfield.value);
+  val = sessionStorage.getItem("val")
   if (val === "") {
   }
-  else if (val === "clrlocal"){
+  if (val === "clrlocal"){
     localStorage.clear()
   }
    else if (e.target === button) {
