@@ -8,7 +8,7 @@ document.querySelector(".container").addEventListener("click",function(e){
   
   val = sessionStorage.getItem("val")
 
-  if (e.target === button &&val !== ""){
+  if (e.target === button && val !== ""){
     let b = document.createElement("div");
     b.textContent = val;
     let del = document.createElement("span");
