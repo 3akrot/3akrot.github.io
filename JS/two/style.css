@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
 }
 h3 {
   text-align: center;
@@ -33,7 +34,7 @@ h3 {
   flex-direction: column;
   transition: 0.3s;
 }
-.task {
+.tasks div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,8 +42,22 @@ h3 {
   padding: 10px 14px;
   background-color: #fafafa;
   border-radius: 5px;
+  padding-left: 30px;
+  overflow: hidden;
+  padding-right: 57px;
   
 }
+.tasks div.checked {
+text-decoration: line-through;
+background-color:#d8d7d7 ;
+color: #555;
+}
+/* .tasks div > span {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+} */
 @keyframes add {
   from{
     opacity: 0;
@@ -64,7 +79,7 @@ h3 {
     transform: translateX(-100%);
   }
 }
-.task:not(:first-child) {
+.tasks div:not(:first-child) {
   margin-top: 15px;
 }
 .text {
@@ -90,13 +105,21 @@ input[type = "text"]{
   border-radius: 5px;
 }
 .del{
-  outline: none;
-  border: none;
-  background-color: #ff2600;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 0px 5px;
+
+  font-size: 14px;
+  background-color: rgb(252, 54, 54);
 }
+
 @media  (width < 550px){
   .container {
     margin: 16px;
