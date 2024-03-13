@@ -2,8 +2,11 @@ let inputfield = document.querySelector("input[type = text]");
 let button = document.querySelector(".form button");
 let tasks = document.querySelector(".tasks");
 let appered = false;
-inputfield.oninput = function(){
+setInterval(function(){
   sessionStorage.setItem("val",inputfield.value);
+},100)
+inputfield.oninput = function(){
+  
 }
 
 document.querySelector(".container").addEventListener("click", function (e) {
