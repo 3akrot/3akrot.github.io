@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Cairo' ,sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   user-select: none;
 }
 h3 {
@@ -44,15 +44,8 @@ h3 {
   border-radius: 5px;
   padding-left: 30px;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   padding-right: 57px;
   
-}
-div > .detail{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .tasks div.checked {
 text-decoration: line-through;

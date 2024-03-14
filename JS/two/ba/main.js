@@ -17,10 +17,7 @@ document.querySelector(".container").addEventListener("click", function (e) {
   if (e.target === button) {
     if (val !== "") {
       let b = document.createElement("div");
-      let text = document.createElement("p");
-      text.className = "detail"
-      text.innerHTML = val
-      b.appendChild(text)
+      b.textContent = val;
       let del = document.createElement("span");
       del.innerHTML = "remove";
       del.classList.add("del");
@@ -71,35 +68,6 @@ document.querySelector(".container").addEventListener("click", function (e) {
  
   } else if (e.target.tagName === "DIV") {
     e.target.classList.toggle("checked");
-  }
-  else if (e.target.tagName === "P"){
-    if (document.querySelector(".popup") === null) {
-      let popup = document.createElement("div");
-    popup.className = "popup";
-    let head = document.createElement("h1");
-    head.innerHTML  = "";
-    let p = document.createElement("p");
-    p.innerHTML  = e.target.innerHTML;
-    let popclose = document.createElement("span")
-    popclose.className = "popupc";
-    popclose.innerHTML = "X";
-    popup.appendChild(head);
-    popup.appendChild(p);
-    popup.appendChild(popclose);
-    document.body.appendChild(popup);
-    setTimeout(function(){
-      popup.classList.add("show")
-    },100)
-    popclose.onclick = function () {
-      popup.classList.remove("show");
-      // head.innerHTML = ""
-      // p.innerHTML = ""
-      setTimeout(function(){
-        popup.remove();
-    },500)
-      
-    }
-    }
   }
   console.log(e.target);
   sav();
