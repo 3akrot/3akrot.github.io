@@ -53,7 +53,6 @@ div > .detail{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: clamp(13px,3vw,17px);
 }
 .tasks div.checked {
 text-decoration: line-through;
