@@ -73,9 +73,9 @@ document.querySelector(".container").addEventListener("click", function (e) {
     e.target.classList.toggle("checked");
   }
   else if (e.target.tagName === "P"){
-    if (document.querySelector(".popup") === null) {
+    if (document.querySelector(".popup2") === null) {
       let popup = document.createElement("div");
-    popup.className = "popup";
+    popup.className = "popup2";
     let head = document.createElement("h1");
     head.innerHTML  = "";
     let p = document.createElement("p");

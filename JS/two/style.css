@@ -53,6 +53,7 @@ div > .detail{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: clamp(13px,3vw,17px);
 }
 .tasks div.checked {
 text-decoration: line-through;
@@ -157,6 +158,33 @@ input[type = "text"]{
 }
 .popup > p {
   font-size: clamp(10px,4vw,20px);
+}
+.popup2 {
+  max-height: 70vh;
+  opacity: 0;
+  transition: 0.3s;
+  padding: 20px 10px;
+  width: clamp(200px,80vw,650px);
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  
+  background-color: #fafafa;
+}
+.popup2 > h1 , .popup2 > p {
+  text-align: center;
+}
+.popup2 > h1 {
+  font-size: clamp(10px,7vw,30px);
+}
+.popup2 > p {
+  max-height: 70vh;
+  background-color: #fafafa;
+  font-size: clamp(13px,3vw,17px);
+  overflow-y: auto;
 }
 .popupc{
   box-sizing: border-box;
