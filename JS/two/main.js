@@ -70,6 +70,11 @@ document.querySelector(".container").addEventListener("click", function (e) {
     }, 300);
  
   } else if (e.target.tagName === "DIV") {
+    if (e.target.classList.contains("checked") === false) {
+      document.getElementById("sound").load();
+      document.getElementById("sound").play();
+
+    }
     e.target.classList.toggle("checked");
   }
   else if (e.target.tagName === "P"){
