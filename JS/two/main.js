@@ -16,6 +16,8 @@ document.querySelector(".container").addEventListener("click", function (e) {
 
   if (e.target === button) {
     if (val !== "") {
+      document.getElementById("sound-add").load();
+      document.getElementById("sound-add").play();
       let b = document.createElement("div");
       b.className = "task";
       let text = document.createElement("p");
