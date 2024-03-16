@@ -17,6 +17,7 @@ document.querySelector(".container").addEventListener("click", function (e) {
   if (e.target === button) {
     if (val !== "") {
       let b = document.createElement("div");
+      b.className = "task";
       let text = document.createElement("p");
       text.className = "detail"
       text.innerHTML = val
@@ -70,7 +71,7 @@ document.querySelector(".container").addEventListener("click", function (e) {
     }, 300);
  
   } else if (e.target.tagName === "DIV") {
-    if (e.target.classList.contains("checked") === false) {
+    if (e.target.classList.contains("checked") === false && e.target.classList.contains("task")) {
       document.getElementById("sound").load();
       document.getElementById("sound").play();
 
