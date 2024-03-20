@@ -19,6 +19,12 @@ html {
   padding: 0px 15px;
   margin: 0px auto;
 }
+body {
+  background: url(food.jpg)  ;
+  background-size: cover;
+  background-position: 50% 5%;
+  background-attachment: fixed;
+}
 /* componend */
 /* .main-heading {
   text-align: center;
@@ -157,8 +163,8 @@ header .icon {
  .landing {
   position: relative;
   min-height: calc(100vh - 67px);
-  background: url(food.jpg) ;
-  background-size: cover;
+ 
+
 }
 
 
@@ -191,42 +197,49 @@ header .icon {
   line-height: 30px;
   font-weight: 200;
 }
-.dots {
-  position: absolute;
+/* video start */
+.video {
+  position: relative;
   display: flex;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
 }
-.dots span {
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border: 1px solid white;
-  margin: 0px 5px;
-  border-radius: 50%;
+.video::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.534);
 }
-.dots span.selected {
-  background: #19c8fa;
-  border: none;
-}
-.right i , .left i {
+.video .text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  background-color: var(--tranparent-color);
+  padding:50px ;
   color: white;
 }
-.right {
-  position: absolute;
-  right: 2%;
-  top: 50%;
-  transform: translateY(-50%);
-  
-
+.video .text h2 {
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
-.left {
-  position: absolute;
-  left: 2%;
-  top: 50%;
-  transform: translateY(-50%);
+.video .text p {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  font-weight: normal;
 }
+.video .text a {
+  padding: 10px 20px;
+  background-color: black;
+}
+.text .more {
+  margin: 0px auto;
+}
+.video video {
+  max-width: 100%;
+}
+/* video end */
 
 
 
@@ -306,6 +319,22 @@ header .icon {
     header ul a {
       padding: 15px;
     }
+        /* video start */
+        .video .text {
+          padding: 1em;
+          font-size: 0.7em;
+        }
+        .video .text a {
+          padding: 1em;
+          font-size: 1em;
+        }
+        .video .text h2 {
+          margin-bottom: 0.5em;
+        }
+        .video .text p {
+          margin-bottom: 0.5em;
+        }
+        /* video end */
   }
   
   /* Header end */
