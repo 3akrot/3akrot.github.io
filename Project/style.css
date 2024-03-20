@@ -156,7 +156,7 @@ header .icon {
 
  .landing {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 67px);
   background: url(food.jpg) ;
   background-size: cover;
 }
