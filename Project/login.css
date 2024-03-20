@@ -1,0 +1,82 @@
+body{
+ margin: O;
+ padding: 0;
+ font-family: sans-serif;
+background: url(food.jpg);
+background-size: cover;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    height: 420px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+h2{
+color: white;
+margin-top: 50px;
+text-align: center;
+
+}
+input[type="text"],[type="password"]{
+position: absolute;
+outline: none;
+border: none;
+width: 215px;
+height: 30px;
+border-bottom: 2px solid cornflowerblue;
+background: none;
+color: white;
+padding: 5px;
+}
+input[type="text"]{
+ top: 130px;
+ left: 70px;
+ 
+}
+input[type="password"]{
+ top: 200px;
+ left: 70px; 
+}
+::placeholder{
+    color: white;
+}
+input[ value="Login"]{
+  position: absolute;
+  top: 305px;
+  left: 110px;
+  color: white;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 15px;
+  width: 130px;
+  height: 35px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+input[ value="Login"]:hover{
+    color: cornflowerblue;
+    background: white;
+}
+p.forgotpassword{
+    position: absolute;
+    top: 360px;
+    left: 50px;
+    color: white;
+    cursor: pointer;
+}
+p.Register{
+    position: absolute;
+    top: 360px;
+    left: 240px;
+    color: white;
+    cursor: pointer;
+}
+p.forgotpassword:hover{
+    color: cornflowerblue;
+}

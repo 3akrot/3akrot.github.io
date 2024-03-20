@@ -1,0 +1,87 @@
+body{
+    margin: O;
+    padding: 0;
+    font-family: sans-serif;
+   background: url(food.jpg);
+   background-size: cover;
+   }
+   form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    height: 550px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+h2{
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    
+    }
+    input[type="text"],[type="password"] {
+        position: absolute;
+        outline: none;
+        border: none;
+        width: 215px;
+        height: 30px;
+        border-bottom: 2px solid cornflowerblue;
+        background: none;
+        color: white;
+        padding: 5px;
+        }
+        input[type="email"]{
+            position: absolute;
+            outline: none;
+            border: none;
+            width: 215px;
+            height: 30px;
+            border-bottom: 2px solid cornflowerblue;
+            background: none;
+            color: white;
+            padding: 5px;
+
+        }
+        input.fname{
+            top: 130px;
+            left: 70px;
+            
+           }
+           input.lname{
+            top: 190px;
+            left: 70px;
+            
+           }
+           input.email{
+            top: 250px;
+            left: 70px;
+            
+           }
+           input[type="password"]{
+            top: 300px;
+            left: 70px; 
+           }
+           ::placeholder{
+            color: white;
+        }
+           input[ value="Register"]{
+            position: absolute;
+            top: 400px;
+            left: 110px;
+            color: white;
+            background-color: cornflowerblue;
+            border: none;
+            border-radius: 15px;
+            width: 130px;
+            height: 35px;
+            font-size: 20px;
+            outline: none;
+            border: none;
+        }
+        input[ value="Register"]:hover{
+            color: cornflowerblue;
+            background: white;
+        }
