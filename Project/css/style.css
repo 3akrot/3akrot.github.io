@@ -246,6 +246,7 @@ header .icon {
 }
 .video video {
   max-width: 100%;
+  flex: 1;
 }
 /* video end */
 /* feat start */
