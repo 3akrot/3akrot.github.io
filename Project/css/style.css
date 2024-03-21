@@ -20,7 +20,7 @@ html {
   margin: 0px auto;
 }
 body {
-  background: url(food.jpg)  ;
+  background:url(../assets/food.jpg);
   background-size: cover;
   background-position: 50% 5%;
   background-attachment: fixed;
