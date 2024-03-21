@@ -291,10 +291,26 @@ flex-wrap: wrap;
   display: block;
   width: 100%;
   height: 300px;
+  transition: 0.5s;
 }
+.box .image::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(46, 46, 47, 0.38);
+  width: 100%;
+  height: 100%;
+}
+.box:hover img {
+  transform: scale(1.2);
+}
+
+
 .feat .container .box h2 {
   position: relative;
-  margin: 50px 0px 60px;
+  margin: 50px 0px 25px;
+  padding-top: 30px;
   font-size: 2.5rem;
 }
 .feat .container .box p {
@@ -312,7 +328,7 @@ flex-wrap: wrap;
   text-decoration: none;
   border-radius: 10px;
   background-color: var(--primary-black);
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
   color: white;
   font-weight: bold;
@@ -320,158 +336,48 @@ flex-wrap: wrap;
 }
 .feat .container .text {
   padding: 0px 20px;
+
   margin-top: -50px;
   background-color: var(--secondary-black);
   color: white;
   padding-bottom: 30px;
 }
 
-/* <<<<<<<<<<<<<<<<RED>>>>>>>>>>>>>>>> */
-.feat .container .red .image::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: rgb(244 64 54 / 60%);
-  height: 100%;
-  width: 100%;
-}
-.feat .container .red h2::after {
-  content: "";
-  position: absolute;
-  bottom: -18px;
-  height: 4px;
-  width: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #f44036;
-}
-.feat .container .red a {
-background-color: transparent;
-color: #f44036;
-border: 3px solid #f44036;
-}
-
-.feat .container .red a::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  width: 0px;
-  left: 0px;
-  background-color: #f44036;
-  height: 100%;
-  transition: var(--main-transition);
-  z-index: -3;
-}
 
 
-.feat .container .red:hover a {
-  color: var(--white);
-}
-.feat .container .red:hover a::after {
-  width: 100%;
-}
-
-/* <<<<<<<<<<<<<<<<RED>>>>>>>>>>>>>>>> */
-/* <<<<<<<<<<<<<<<<Green>>>>>>>>>>>>>>>> */
-.feat .container .green .image::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: rgb(0 150 136 / 60%);
-  height: 100%;
-  width: 100%;
-}
-.feat .container .green h2::after {
-  content: "";
-  position: absolute;
-  bottom: -18px;
-  height: 4px;
-  width: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #009688;
-}
-.feat .container .green a {
-background-color: transparent;
-color: #009688;
-border: 3px solid #009688;
-position: relative;
-}
-
-.feat .container .green a::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  width: 0px;
-  left: 0px;
-  background-color: #009688;
-  height: 100%;
-  transition: var(--main-transition);
-  z-index: -1;
-}
-.feat .container .green:hover a {
-  color: var(--white);
-}
-.feat .container .green:hover a::after {
-  width: 100%;
-}
-/* <<<<<<<<<<<<<<<<Green>>>>>>>>>>>>>>>> */
-/* <<<<<<<<<<<<<<<<BLue>>>>>>>>>>>>>>>> */
-.feat .container .blue .image::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: rgb(3 169 244 / 60%);
-  width: 100%;
-  height: 100%;
-}
-.feat .container .blue h2::after {
-  content: "";
-  position: absolute;
-  bottom: -18px;
-  height: 4px;
-  width: 35%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #03a9f4;
-}
-.feat .container .blue a {
-background-color: transparent;
-color: #03a9f4;
-border: 3px solid #03a9f4;
-}
-
-.feat .container .blue a::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  width: 0px;
-  left: 0px;
-  background-color: #03a9f4;
-  height: 100%;
-  transition: var(--main-transition);
-  z-index: -1;
-}
-.feat .container .blue:hover a {
-  color: var(--white);
-}
-.feat .container .blue:hover a::after {
-  width: 100%;
-}
-/* <<<<<<<<<<<<<<<<BLue>>>>>>>>>>>>>>>> */
 .feat .container .box .text h2 {
   width: fit-content;
   margin-left: auto;
   margin-right:auto ;
 }
 .feat .container .box .text h2::after {
+  content: "";
+  position: absolute;
   transform: initial;
+  background-color: var(--main-color);
   left: 7px;
-  width: calc(100% - 14px);}
+  width: calc(100% - 14px);
+  bottom: 0px;
+  height: 2px;}
 
+  .feat .container .box a::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    left: 0px;
+    background-color: var(--main-color);
+    height: 100%;
+    transition: var(--main-transition);
+    z-index: 0;
+    transition: 0.5s;
+  }
+  .on {
+    position: relative;
+    z-index: 4;
+  }
+  .feat .container .box:hover a::after {
+    width: 100%;}
   /* feat end */
 
 
