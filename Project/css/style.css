@@ -5,10 +5,11 @@
   font-family: "Cairo" , sans-serif;
 }
 :root {
-  --main-color:#00ADB5;
+
   --tranparent-color:#126276d2;
   --section-padding:100px;
   --white:#EEEEEE;
+  --main-color:#00ADB5;
   --secondary-black:#393E46;
   --primary-black:#222831;
   --transpernt-black:#393E46d2;
