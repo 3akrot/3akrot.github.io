@@ -18,6 +18,9 @@ document.querySelector(".container").addEventListener("click", function (e) {
     if (val !== "") {
       document.getElementById("sound-add").load();
       document.getElementById("sound-add").play();
+      let w = document.createElement("div");
+      w.className = "wraper"
+      document.querySelector(".tasks").appendChild(w);
       let b = document.createElement("div");
       b.className = "task";
       let text = document.createElement("p");
@@ -28,11 +31,15 @@ document.querySelector(".container").addEventListener("click", function (e) {
       del.innerHTML = "remove";
       del.classList.add("del");
       b.appendChild(del);
+      
+      w.appendChild(b)
+      
       b.style.cssText = "animation: add 0.5s forwards;";
-      document.querySelector(".tasks").appendChild(b);
     }
     else {
         if (document.querySelector(".popup") === null) {
+          document.getElementById("sound-not").load();
+          document.getElementById("sound-not").play();
           let popup = document.createElement("div");
         popup.className = "popup";
         let head = document.createElement("h1");
@@ -66,9 +73,11 @@ document.querySelector(".container").addEventListener("click", function (e) {
       
     }
   } else if (e.target.tagName === "SPAN") {
+    document.getElementById("sound-del").load();
+    document.getElementById("sound-del").play();
     e.target.parentElement.style.cssText = "animation: del 0.3s forwards;";
     setTimeout(function () {
-      e.target.parentElement.remove();
+      e.target.parentElement.parentElement.remove();
       sav();
     }, 300);
  
