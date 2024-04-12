@@ -69,14 +69,16 @@ document.querySelector(".container").addEventListener("click", function (e) {
     e.target.parentElement.style.cssText = "animation: del 5s forwards;";
     e.target.parentElement.classList.add("ondel");
     // if(e.target.parentElement.parentElement.nextSibling !== null){
-      if(isfull()){
-      e.target.parentElement.parentElement.style.cssText =
-      "animation: wrap 5s forwards;";
-      }
-      else {
+
+      if (isfull() == false && e.target.parentElement.parentElement.nextSibling === null){ 
         e.target.parentElement.parentElement.style.cssText =
         "animation: spec 5s forwards;";
       }
+      else{
+        console.log(isfull())
+        e.target.parentElement.parentElement.style.cssText =
+        "animation: wrap 5s forwards;";
+        }
     // }
 
     //nextSibling 
@@ -138,6 +140,9 @@ function sav() {
 }
 function load() {
   tasks.innerHTML = localStorage.getItem("data");
+  setInterval(() => {
+    console.log(isfull());
+  },1000);
 }
 load();
  function isfull(){
@@ -148,7 +153,7 @@ load();
   // console.log("elmentheigh : " + elmentheight);
   // console.log("contaienrhight : " + containerhight);
   // console.log("contaienrhight minus : " + (Number(containerhight)  - (65 + 52 +37.5 + 10)));
-  if(elmentheight > (Number(containerhight)  - (65 + 52 +37.5 + 10))){
+  if(elmentheight >= (Number(containerhight)  - (65 + 52 +37.5 + 10))){
     return true;
   }
   else
