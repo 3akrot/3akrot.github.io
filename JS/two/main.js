@@ -67,6 +67,7 @@ document.querySelector(".container").addEventListener("click", function (e) {
     document.getElementById("sound-del").load();
     document.getElementById("sound-del").play();
     e.target.parentElement.style.cssText = "animation: del 0.3s forwards;";
+    e.target.parentElement.classList.add("ondel");
     e.target.parentElement.parentElement.style.cssText =
       "animation: wrap 0.3s forwards;";
     setTimeout(function () {
@@ -74,14 +75,18 @@ document.querySelector(".container").addEventListener("click", function (e) {
       sav();
     }, 300);
   } else if (e.target.tagName === "DIV") {
-    if (
-      e.target.classList.contains("checked") === false &&
-      e.target.classList.contains("task")
-    ) {
-      document.getElementById("sound").load();
-      document.getElementById("sound").play();
+    if (e.target.classList.contains("ondel")) {
+      return;
+    } else {
+      if (
+        e.target.classList.contains("task") &&
+        e.target.classList.contains("ondel") === false
+      ) {
+        document.getElementById("sound").load();
+        document.getElementById("sound").play();
+      }
+      e.target.classList.toggle("checked");
     }
-    e.target.classList.toggle("checked");
   } else if (e.target.tagName === "P") {
     if (document.querySelector(".popup2") === null) {
       let popup = document.createElement("div");

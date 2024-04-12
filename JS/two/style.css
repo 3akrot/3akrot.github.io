@@ -1,8 +1,8 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Cairo' ,sans-serif;
+  font-family: "Cairo", sans-serif;
   user-select: none;
 }
 h3 {
@@ -21,10 +21,6 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 10px;
-  
-  
-
-
 }
 
 .tasks {
@@ -48,17 +44,16 @@ h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-right: 57px;
-  
 }
-div > .detail{
+div > .detail {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .tasks div.checked {
-text-decoration: line-through;
-background-color:#d8d7d7 ;
-color: #555;
+  text-decoration: line-through;
+  background-color: #d8d7d7;
+  color: #555;
 }
 .wraper {
   display: flex;
@@ -73,10 +68,10 @@ color: #555;
   transform: translateY(-50%);
 } */
 @keyframes add {
-  from{
+  from {
     opacity: 0;
     width: 0px;
-    height: 0px ;
+    height: 0px;
   }
   to {
     opacity: 1;
@@ -85,26 +80,28 @@ color: #555;
   }
 }
 @keyframes del {
-  0%{
+  0% {
+    padding: 10px 14px;
     opacity: 1;
     width: 100%;
     height: 50px;
   }
   100% {
+    padding: 0px;
     opacity: 0;
     width: 0px;
-    height: 0px ;
+    height: 0px;
   }
 }
 .tasks div:not(:first-child) {
   margin-top: 15px;
 }
 .text {
-  font-size: clamp(13px,3vw,17px);
+  font-size: clamp(13px, 3vw, 17px);
   text-wrap: balance;
 }
-input[type = "text"]{
-  font-size: clamp(13px,3vw,17px);
+input[type="text"] {
+  font-size: clamp(13px, 3vw, 17px);
   flex: 1;
   max-width: 500px;
   outline: none;
@@ -121,7 +118,7 @@ input[type = "text"]{
   padding: 5px 10px;
   border-radius: 5px;
 }
-.del{
+.del {
   position: absolute;
   top: 50%;
   right: 0px;
@@ -137,65 +134,64 @@ input[type = "text"]{
   background-color: rgb(252, 54, 54);
 }
 
-@media  (width < 550px){
+@media (width < 550px) {
   .container {
     margin: 16px;
   }
 }
 
-
 .popup {
-        
   opacity: 0;
   transition: 0.3s;
   padding: 20px 10px;
-  width: clamp(200px,60vw,400px);
+  width: clamp(200px, 60vw, 400px);
   font-family: Arial, Helvetica, sans-serif;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  
+  transform: translate(-50%, -50%);
+
   background-color: #fafafa;
 }
-.popup > h1 , .popup > p {
+.popup > h1,
+.popup > p {
   text-align: center;
   white-space: nowrap;
 }
 .popup > h1 {
-  font-size: clamp(10px,7vw,30px);
+  font-size: clamp(10px, 7vw, 30px);
 }
 .popup > p {
-  font-size: clamp(10px,4vw,20px);
+  font-size: clamp(10px, 4vw, 20px);
 }
 .popup2 {
   max-height: 70vh;
   opacity: 0;
   transition: 0.3s;
   padding: 20px 10px;
-  width: clamp(200px,80vw,650px);
+  width: clamp(200px, 80vw, 650px);
   font-family: Arial, Helvetica, sans-serif;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  
-  
+  transform: translate(-50%, -50%);
+
   background-color: #fafafa;
 }
-.popup2 > h1 , .popup2 > p {
+.popup2 > h1,
+.popup2 > p {
   text-align: center;
 }
 .popup2 > h1 {
-  font-size: clamp(10px,7vw,30px);
+  font-size: clamp(10px, 7vw, 30px);
 }
 .popup2 > p {
   max-height: 70vh;
   background-color: #fafafa;
-  font-size: clamp(13px,3vw,17px);
+  font-size: clamp(13px, 3vw, 17px);
   overflow-y: auto;
 }
-.popupc{
+.popupc {
   box-sizing: border-box;
   position: absolute;
   right: -7px;
@@ -214,16 +210,19 @@ input[type = "text"]{
 }
 .show {
   opacity: 1;
-  transform:translate(-50%,-50%) scale(1.1) ;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 .task {
   position: relative;
 }
 @keyframes wrap {
-  from{
-    height:100%;
+  from {
+    height: 100%;
+    margin-top: 15px;
   }
   to {
-    height:0px;
+    
+    height: 0px;
+    margin-top: 0px;
   }
 }
