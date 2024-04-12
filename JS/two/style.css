@@ -32,6 +32,7 @@ h3 {
   display: flex;
   overflow: hidden;
   flex-direction: column;
+  transition: 0.5s;
 
 }
 .tasks div:not(.wraper) {

@@ -66,15 +66,20 @@ document.querySelector(".container").addEventListener("click", function (e) {
   } else if (e.target.tagName === "SPAN") {
     document.getElementById("sound-del").load();
     document.getElementById("sound-del").play();
-    e.target.parentElement.style.cssText = "animation: del 0.3s forwards;";
+    e.target.parentElement.style.cssText = "animation: del 0.5s forwards;";
     e.target.parentElement.classList.add("ondel");
-    e.target.parentElement.parentElement.style.cssText =
-      "animation: wrap 0.3s forwards;";
+    // if(e.target.parentElement.parentElement.nextSibling !== null){
+      e.target.parentElement.parentElement.style.cssText =
+      "animation: wrap 0.5s forwards;";
+    // }
+
+    //nextSibling 
+      
 
     setTimeout(function () {
       e.target.parentElement.parentElement.remove();
       sav();
-    }, 300);
+    }, 500);
   } else if (e.target.tagName === "DIV") {
     if (e.target.classList.contains("ondel")) {
       return;
