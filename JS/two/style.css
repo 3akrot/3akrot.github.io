@@ -20,6 +20,7 @@ h3 {
   background-color: #eee;
   min-height: 100vh;
 }
+
 .form {
   display: flex;
   justify-content: center;
@@ -229,6 +230,14 @@ input[type="text"] {
     
     height: 0px;
     margin-top: 0px;
+    margin-bottom: 0;
+  }
+}
+@keyframes spec {
+
+  to {
+    
+    height: 0px;
     margin-bottom: 0;
   }
 }

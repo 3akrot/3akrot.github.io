@@ -66,11 +66,17 @@ document.querySelector(".container").addEventListener("click", function (e) {
   } else if (e.target.tagName === "SPAN") {
     document.getElementById("sound-del").load();
     document.getElementById("sound-del").play();
-    e.target.parentElement.style.cssText = "animation: del 0.5s forwards;";
+    e.target.parentElement.style.cssText = "animation: del 5s forwards;";
     e.target.parentElement.classList.add("ondel");
     // if(e.target.parentElement.parentElement.nextSibling !== null){
+      if(isfull()){
       e.target.parentElement.parentElement.style.cssText =
-      "animation: wrap 0.5s forwards;";
+      "animation: wrap 5s forwards;";
+      }
+      else {
+        e.target.parentElement.parentElement.style.cssText =
+        "animation: spec 5s forwards;";
+      }
     // }
 
     //nextSibling 
@@ -79,7 +85,7 @@ document.querySelector(".container").addEventListener("click", function (e) {
     setTimeout(function () {
       e.target.parentElement.parentElement.remove();
       sav();
-    }, 500);
+    }, 5000);
   } else if (e.target.tagName === "DIV") {
     if (e.target.classList.contains("ondel")) {
       return;
@@ -134,3 +140,19 @@ function load() {
   tasks.innerHTML = localStorage.getItem("data");
 }
 load();
+ function isfull(){
+  let containerhight = document.querySelector(".container").offsetHeight;
+  let elmentheight = tasks.offsetHeight; //
+  let taskscount = Array.from(document.querySelectorAll(".task")).length;
+  // console.log("tasks count: " + taskscount);
+  // console.log("elmentheigh : " + elmentheight);
+  // console.log("contaienrhight : " + containerhight);
+  // console.log("contaienrhight minus : " + (Number(containerhight)  - (65 + 52 +37.5 + 10)));
+  if(elmentheight > (Number(containerhight)  - (65 + 52 +37.5 + 10))){
+    return true;
+  }
+  else
+  return false;
+
+}
+
