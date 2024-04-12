@@ -70,6 +70,7 @@ document.querySelector(".container").addEventListener("click", function (e) {
     e.target.parentElement.classList.add("ondel");
     e.target.parentElement.parentElement.style.cssText =
       "animation: wrap 0.3s forwards;";
+
     setTimeout(function () {
       e.target.parentElement.parentElement.remove();
       sav();
