@@ -90,7 +90,7 @@ document.querySelector(".container").addEventListener("click", function (e) {
       sav();
     }, 500);
   } else if (e.target.tagName === "DIV") {
-    if (e.target.classList.contains("ondel")) {
+    if (e.target.classList.contains("ondel") || e.target.classList.contains("wraper")) {
       return;
     } else {
       if (
