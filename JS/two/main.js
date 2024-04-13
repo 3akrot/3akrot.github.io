@@ -146,15 +146,28 @@ function load() {
   }, 1000);
 }
 load();
-function isfull() {
+// function isfull() {
+//   let containerhight = document.querySelector(".container").offsetHeight;
+//   let elmentheight = tasks.offsetHeight; //
+//   let taskscount = Array.from(document.querySelectorAll(".task")).length;
+//   // console.log("tasks count: " + taskscount);
+//   // console.log("elmentheigh : " + elmentheight);
+//   // console.log("contaienrhight : " + containerhight);
+//   // console.log("contaienrhight minus : " + (Number(containerhight)  - (65 + 52 +37.5 + 10)));
+//   if (elmentheight >= Number(containerhight) - (65 + 52 + 37.5 + 10)) {
+//     return true;
+//   } else return false;
+// }
+function isfull(){
   let containerhight = document.querySelector(".container").offsetHeight;
-  let elmentheight = tasks.offsetHeight; //
-  let taskscount = Array.from(document.querySelectorAll(".task")).length;
-  // console.log("tasks count: " + taskscount);
-  // console.log("elmentheigh : " + elmentheight);
-  // console.log("contaienrhight : " + containerhight);
-  // console.log("contaienrhight minus : " + (Number(containerhight)  - (65 + 52 +37.5 + 10)));
-  if (elmentheight >= Number(containerhight) - (65 + 52 + 37.5 + 10)) {
+  let taskshight = tasks.offsetHeight;
+  let realcontainerhight = Number(containerhight - taskshight - 65 - 52 - 20);
+
+  if (realcontainerhight === 0 ) {
     return true;
-  } else return false;
+  }
+  else 
+  {
+    return false;
+  }
 }
