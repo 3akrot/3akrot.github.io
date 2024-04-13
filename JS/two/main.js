@@ -162,7 +162,6 @@ function isfull(){
   let containerhight = document.querySelector(".container").offsetHeight;
   let taskshight = tasks.offsetHeight;
   let realcontainerhight = Number(containerhight - taskshight - Number(document.querySelector("h3").offsetHeight) - Number(inputfield.offsetHeight) - 20);
-  console.log(realcontainerhight)
 
   if (realcontainerhight === 0 ) {
     return true;
