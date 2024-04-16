@@ -1,0 +1,54 @@
+*{
+  margin: 0px;
+}
+pre {
+  outline: none;
+  position: relative;
+  background-color: #141212;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--offsetX)) rotateY(var(--offsetY))  perspective(3000px);
+  transition:.1s linear;
+
+}
+span {
+  outline: none;
+  text-shadow: 0px 0px 15px currentColor;
+}
+pre::after,
+pre::before {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+pre::after {
+  inset: -5px;
+  background-image: linear-gradient(-45deg,rgb(181, 181, 201),rgb(62, 156, 19));
+  transform: translateZ(-42px);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+}
+
+.color1 {
+  color:#E91E63;
+}
+.color2 {
+color: #00BCD4;
+}
+.color3 {
+  color: #FBC02D;
+}
+.color4 {
+  color: #448AFF;
+}
+.color5 {
+  color: #FFC107;
+}
