@@ -25,13 +25,15 @@ window.onload = function() {
     return 
   }
   dayscount =  (Math.floor(reamingin / (1000 * 60 * 60 * 24)))
-  hourscount = (Math.floor(reamingin % (1000 * 60 * 60 * 24) / 1000 / 60 / 60))
+  hourscount = (Math.ceil(reamingin / 1000 / 60 / 60 % 24)) - 3
   minutescount = (Math.ceil(reamingin / 1000 / 60 % 60))
   secondscount = (Math.ceil(reamingin / 1000 % 60))
   days.textContent =  String(dayscount);
   hours.textContent =  String(hourscount);
   minutes.textContent = String(minutescount);
   seconds.textContent = String(secondscount);
+  
+  console.log(new Date(datepicker.value))
   },1);
   
 
