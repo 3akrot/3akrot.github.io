@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contianer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+.dateinput-container , .contdown {
+  display: flex;
+  justify-content: center;
+}
+.dateinput-container {
+  margin-top: 40px;
+}
+input[type="date"] {
+  padding: 10px 30px;
+  border: none;
+  background-color: #eee;
+  outline: none;
+  color: white;
+  background: #717cb9;
+  border-radius: 10px;
+}
+.contdown {
+  gap: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+p {
+  border-bottom: 1px solid #58479c;
+}
+.contdown > div{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  border: 1px solid #58479c;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  margin-top: -75px;  
+}
+.wraper p {
+  padding: 5px 10px;
+}
+.wraper div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+@media (width <= 468px) {
+  .contdown > div{
+    font-size: 0.9rem;
+  }
+  .wraper div {
+    font-size: 1.3rem;
+  }
+  
+}
