@@ -65,6 +65,9 @@ p {
   .contdown > div{
     font-size: 0.9rem;
   }
+  input[type ="date"] {
+    padding: 10px 0px;
+  }
   .wraper div {
     font-size: 1.3rem;
   }
