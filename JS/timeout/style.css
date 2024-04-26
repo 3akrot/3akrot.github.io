@@ -19,8 +19,9 @@ body {
 }
 .dateinput-container {
   margin-top: 40px;
+  gap: 10px;
 }
-input[type="date"] {
+input[type="date"] , input[type="time"] {
   padding: 10px 20px;
   border: none;
   background-color: #eee;
@@ -65,7 +66,7 @@ p {
   .contdown > div{
     font-size: 0.9rem;
   }
-  input[type ="date"] {
+  input[type ="date"] ,input[type="time"] {
     padding: 10px 0px;
   }
   .wraper div {
