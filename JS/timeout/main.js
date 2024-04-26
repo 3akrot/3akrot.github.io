@@ -14,18 +14,18 @@ window.onload = function() {
 
   setInterval(()=> {
     if(datepicker.value === "") return
-  comingevent = new Date(datepicker.value);
-  currentatimg = new Date();
-  reamingin = comingevent - currentatimg;
-  if (reamingin < 0) {
+  comingevent = new Date(datepicker.value).getTime();
+  currentatimg = new Date().getTime();
+  reamingin = comingevent - currentatimg - (3 * 60 * 60 * 1000);
+  if (reamingin <= 0) {
     days.textContent = "0" ;
     hours.textContent = "0" ;
     minutes.textContent = "0";
     seconds.textContent = "0";
     return 
   }
-  dayscount =  (Math.floor(reamingin / (1000 * 60 * 60 * 24)))
-  hourscount = (Math.ceil(reamingin / 1000 / 60 / 60 % 24)) - 3
+  dayscount =  (Math.floor(reamingin / 1000 / 60 / 60 /24))
+  hourscount = (Math.ceil(reamingin / 1000 / 60 / 60 % 24)) 
   minutescount = (Math.ceil(reamingin / 1000 / 60 % 60))
   secondscount = (Math.ceil(reamingin / 1000 % 60))
   days.textContent =  String(dayscount);
@@ -33,7 +33,6 @@ window.onload = function() {
   minutes.textContent = String(minutescount);
   seconds.textContent = String(secondscount);
   
-  console.log(new Date(datepicker.value))
   },1);
   
 
