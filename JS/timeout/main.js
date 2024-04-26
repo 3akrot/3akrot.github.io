@@ -10,6 +10,10 @@ datepicker.onchange = function() {
   localStorage.setItem("currentdate", datepicker.value)
   localStorage.setItem("currenttime", timepicke.value)
 }
+timepicke.onchange = function() {
+  localStorage.setItem("currentdate", datepicker.value)
+  localStorage.setItem("currenttime", timepicke.value)
+}
 window.onload = function() {
   datepicker.value = localStorage.getItem("currentdate");
   timepicke.value = localStorage.getItem("currenttime");
