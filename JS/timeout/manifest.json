@@ -1,0 +1,19 @@
+{
+  "background_color": "#343737",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "aliwebapp.netlify",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "aliwebapp.netlify",
+  "start_url": "/",
+  "theme_color": "#5a5757",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "type": "image/png"
+    }
+  ],
+  "id": "timeout",
+  "description": "Progressive Web App that help user trak there coming events"
+}
