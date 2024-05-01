@@ -126,9 +126,9 @@ addbtn.onclick = function () {
     if(min.nextElementSibling != null){
       document.querySelector(".countdowns").insertBefore(div, min.nextElementSibling);
     }
-    else
+  }
+    else{
     document.querySelector(".countdowns").insertBefore(div, min);
-
   }
   SavetolocalStorage();
 };
