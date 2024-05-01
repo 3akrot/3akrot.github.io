@@ -1,6 +1,25 @@
 const datepicker = document.getElementById("datepick");
 const timepicke = document.getElementById("timepick");
 let countdownConainer = document.createElement("div");
+const quotes = [
+  "الوقت كالماء في الجريان، لا يعود مرتين.",
+  "استغلال الوقت بشكل صحيح هو مفتاح النجاح في الحياة.",
+  "فكل لحظة تمضي دون استفادة منها تعتبر فرصة ضائعة لا يمكن استعادتها.",
+  "الوقت الذي تستمتع بإضاعته ليس ضياعاً.",
+  "لا يوجد وقت مناسب أبدًا لفعل شيء، الوقت المناسب هو الآن.",
+  "إن استغلال الوقت هو أحد أهم القوى في العالم.",
+  "من ينجح في إدارة وقته ينجح في كل شيء.",
+  "الوقت ليس مرآة تعكس الأحداث بل مُصمم لخلقها.",
+  "كن سيد وقتك، وليس عبداً له.",
+  "قد لا تعترف الدقائق بعمرها إلا عندما تفقد.",
+  "الوقت لا ينتظر أحداً، فلا تنتظر أبداً.",
+  "إدارة الوقت هي فن يجب تعلمه وتطويره.",
+  "الوقت هو سيف مزدوج الحدين، إما تستخدمه لصالحك أو يستخدم لك.",
+  "احرص على توجيه سفينتك باتجاه الرياح، لا يمكنك تغيير اتجاه الرياح ولكن يمكنك تعديل الشراع.",
+  "اجعل الوقت يعمل لصالحك، لا تكن عبداً له."
+];
+let randomqto = quotes[Math.floor(Math.random() * quotes.length)]
+document.getElementsByClassName("quote").textContent = randomqto;
 countdownConainer.setAttribute("class", "countdown-container");
 countdownConainer.setAttribute(
   "data-date",
