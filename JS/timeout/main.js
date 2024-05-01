@@ -120,7 +120,7 @@ addbtn.onclick = function () {
   let min = getmindateelment(new Date(datepicker.value));
   if(min) {
     console.log(min)
-    document.querySelector(".countdowns").insertBefore(div,min);
+    document.querySelector(".countdowns").insertBefore(div, min);
 
   }
   else{
