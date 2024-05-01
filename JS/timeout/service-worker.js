@@ -6,7 +6,7 @@ const urlsToCache = [
   '/images/logo.png',
 ];
 
-self.addEventListener('install', event => {
+self.addEventListener('load', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => cache.addAll(urlsToCache))
