@@ -118,13 +118,17 @@ addbtn.onclick = function () {
   div.className = "countdown-container";
   div.innerHTML = markup;
   let min = getmindateelment(new Date(datepicker.value));
-  if(min) {
+  if (fardate(div)) {
+    document.querySelector(".countdowns").append(div);
+  }
+  else if(min && !fardate(min)){
     console.log(min)
+    if(min.nextElementSibling != null){
+      document.querySelector(".countdowns").insertBefore(div, min.nextElementSibling);
+    }
+    else
     document.querySelector(".countdowns").insertBefore(div, min);
 
-  }
-  else{
-    document.querySelector(".countdowns").append(div);
   }
   SavetolocalStorage();
 };
@@ -141,6 +145,17 @@ arrofcounter.forEach((e)=>{
   }
 })
 return min;
+}
+function fardate(elment) {
+  boolfardate = true;
+  let arrofcounter = Array.from(document.querySelectorAll(".countdowns .countdown-container"))
+  arrofcounter.forEach((e) => {
+    if (new Date(e.getAttribute("data-date")) >  new Date(elment.getAttribute("data-date"))) {
+      boolfardate = false;
+    }
+  })
+  return boolfardate;
+
 }
 
 
