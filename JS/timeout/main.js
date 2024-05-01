@@ -84,7 +84,7 @@ addbtn.onclick = function () {
   let div = document.createElement("div");
   console.log("not retuned");
   if (timepicke.value === "") {
-    div.setAttribute("data-date", `${datepicker.value} 12:00`);
+    div.setAttribute("data-date", `${datepicker.value} 00:00`);
   } else {
     div.setAttribute("data-date", `${datepicker.value} ${timepicke.value}`);
   }
