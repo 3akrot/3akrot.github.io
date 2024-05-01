@@ -57,6 +57,7 @@ setInterval(() => {
   arrayofdel.forEach((e) => {
     e.addEventListener("click", function () {
       this.parentElement.parentElement.remove();
+      SavetolocalStorage();
     });
   });
 }, 1000);
@@ -109,4 +110,5 @@ function SavetolocalStorage() {
 
 function remove() {
   this.parentElement.remove();
+  SavetolocalStorage();
 }
