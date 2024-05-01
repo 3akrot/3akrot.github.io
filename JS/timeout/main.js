@@ -2,6 +2,20 @@ const datepicker = document.getElementById("datepick");
 const timepicke = document.getElementById("timepick");
 let countdownConainer = document.createElement("div");
 
+const quotes = [
+  "استخدم وقتك بحكمة، فالوقت هو أغلى ما نملك",
+  "كل دقيقة تعتبر فرصة جديدة لتحقيق النجاح",
+  "عش كل لحظة كما لو كانت آخر لحظة في حياتك",
+  "لا تضيع الوقت في الأمور السطحية، بل اجعله يعمل لصالحك",
+  "الوقت الذي تستثمره في تطوير نفسك هو أفضل استثمار",
+  "قيمة الوقت تكمن في كيفية استخدامه، فاجعل كل دقيقة تعتبر",
+  "استغلال الوقت بشكل صحيح يقود إلى النجاح والتحقيقات الكبيرة",
+  "احرص على تحقيق أهدافك في الوقت المناسب، فلا يعود الزمن مرة أخرى",
+  "التركيز على اللحظة الحالية يمنحك القدرة على التأثير على المستقبل",
+  "إدارة الوقت هي مهارة يجب تعلمها لتحقيق النجاح في الحياة"
+];
+let randomqto = quotes[Math.floor(Math.random() * quotes.length)]
+document.getElementsByClassName("quote")[0].innerHTML = randomqto;
 
 countdownConainer.setAttribute("class", "countdown-container");
 countdownConainer.setAttribute(
@@ -10,16 +24,16 @@ countdownConainer.setAttribute(
 );
 let addbtn = document.querySelector(".add");
 datepicker.value = new Date();
-window.onload = function () {
+
   document.querySelector(".countdowns").innerHTML =
-    localStorage.getItem("dataCount");
+  localStorage.getItem("dataCount");
   datepicker.value = localStorage.getItem("dateC");
-};
+
 datepicker.onchange = function () {
   localStorage.setItem("dateC", datepicker.value);
 };
 
- //this methoud for traking times on the divs
+//  this methoud for traking times on the divs
 setInterval(() => {
   //first we get an array of divs
 
@@ -103,30 +117,34 @@ addbtn.onclick = function () {
 `;
   div.className = "countdown-container";
   div.innerHTML = markup;
-  document.querySelector(".countdowns").appendChild(div);
+  let min = getmindateelment(new Date(datepicker.value));
+  if(min) {
+    console.log(min)
+    document.querySelector(".countdowns").insertBefore(div,min);
+
+  }
+  else{
+    document.querySelector(".countdowns").append(div);
+  }
   SavetolocalStorage();
 };
 function SavetolocalStorage() {
   localStorage.setItem("dataCount", document.querySelector(".countdowns").innerHTML);
 }
 
-function remove() {
-  this.parentElement.remove();
-  SavetolocalStorage();
+function getmindateelment(date){
+let arrofcounter = Array.from(document.querySelectorAll(".countdowns .countdown-container"))
+min = arrofcounter[0];
+arrofcounter.forEach((e)=>{
+  if( new Date(e.getAttribute("data-date")).getTime() < date ){
+    min = e;
+  }
+})
+return min;
 }
-const quotes = [
-  "استخدم وقتك بحكمة، فالوقت هو أغلى ما نملك",
-  "كل دقيقة تعتبر فرصة جديدة لتحقيق النجاح",
-  "عش كل لحظة كما لو كانت آخر لحظة في حياتك",
-  "لا تضيع الوقت في الأمور السطحية، بل اجعله يعمل لصالحك",
-  "الوقت الذي تستثمره في تطوير نفسك هو أفضل استثمار",
-  "قيمة الوقت تكمن في كيفية استخدامه، فاجعل كل دقيقة تعتبر",
-  "استغلال الوقت بشكل صحيح يقود إلى النجاح والتحقيقات الكبيرة",
-  "احرص على تحقيق أهدافك في الوقت المناسب، فلا يعود الزمن مرة أخرى",
-  "التركيز على اللحظة الحالية يمنحك القدرة على التأثير على المستقبل",
-  "إدارة الوقت هي مهارة يجب تعلمها لتحقيق النجاح في الحياة"
-];
-let randomqto = quotes[Math.floor(Math.random() * quotes.length)]
-document.getElementsByClassName("quote")[0].innerHTML = randomqto;
-console.log(document.getElementsByClassName("quote"));
-console.log(randomqto);
+
+
+
+
+
+
