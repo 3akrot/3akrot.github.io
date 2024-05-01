@@ -152,6 +152,12 @@ addbtn.onclick = function () {
   else if(min && !fardate(min)){
     console.log(min)
     if(min.nextElementSibling != null){
+      if(new Date(datepicker.value) < new Date(min.getAttribute("data-date"))){
+        document.querySelector(".countdowns").insertBefore(div, min);
+        console.log("con")
+
+      }
+      else
       document.querySelector(".countdowns").insertBefore(div, min.nextElementSibling);
     }
   }
