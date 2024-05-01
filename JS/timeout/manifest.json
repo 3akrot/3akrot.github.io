@@ -1,0 +1,17 @@
+{
+  "name": "Event Traking App",
+  "short_name": "CountDown",
+  "description": "Progressive Web App that help user trak there coming events",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+
+  ],
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "theme_color": "#B12A34",
+  "background_color": "#B12A34"
+}
