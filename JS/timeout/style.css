@@ -81,6 +81,15 @@ h3 {
   display: flex;
   justify-content: center;
 }
+#install {
+  padding: 10px 5px;
+  background: #58479c;
+  border-radius: 10px;
+  color: white;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+}
 .contdown {
   gap: 10px;
   flex: 1;

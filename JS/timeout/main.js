@@ -4,6 +4,14 @@ let countdownConainer = document.createElement("div");
 let emptymessage = document.createElement("p");
 emptymessage.classList.add("emptyM");
 emptymessage.innerHTML = "No Events Coming<br>Add Some";
+let installPrompt = null;
+const installButton = document.querySelector("#install");
+
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  installPrompt = event;
+  installButton.removeAttribute("hidden");
+});
 
 
 const quotes = [
@@ -190,6 +198,19 @@ function fardate(elment) {
   })
   return boolfardate;
 
+}
+installButton.addEventListener("click", async () => {
+  if (!installPrompt) {
+    return;
+  }
+  const result = await installPrompt.prompt();
+  console.log(`Install prompt was: ${result.outcome}`);
+  disableInAppInstallPrompt();
+});
+
+function disableInAppInstallPrompt() {
+  installPrompt = null;
+  installButton.setAttribute("hidden", "");
 }
 
 
