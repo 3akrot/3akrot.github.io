@@ -1,6 +1,10 @@
 const datepicker = document.getElementById("datepick");
 const timepicke = document.getElementById("timepick");
 let countdownConainer = document.createElement("div");
+let emptymessage = document.createElement("p");
+emptymessage.classList.add("emptyM");
+emptymessage.innerHTML = "No Events Coming<br>Add Some";
+
 
 const quotes = [
   "استخدم وقتك بحكمة، فالوقت هو أغلى ما نملك",
@@ -32,9 +36,23 @@ datepicker.value = new Date();
 datepicker.onchange = function () {
   localStorage.setItem("dateC", datepicker.value);
 };
+let isshown = false;
+if(document.querySelector(".emptyM"))
+isshown = true;
+window.onload = function () {
+  if(document.querySelectorAll(".countdown-container").length === 0 && isshown === false){
+    document.querySelector(".countdowns").appendChild(emptymessage);
+    isshown = true;
+  }
+  else{
+  emptymessage.remove();
+  isshown = false;
+  }
+}
 
 //  this methoud for traking times on the divs
 setInterval(() => {
+  console.log(isshown)
   //first we get an array of divs
 
   let arrofcounter = Array.from(
@@ -72,14 +90,23 @@ setInterval(() => {
   let arrayofdel = Array.from(document.querySelectorAll(".del"));
   arrayofdel.forEach((e) => {
     e.addEventListener("click", function () {
-      this.parentElement.parentElement.remove();
+      this.parentElement.remove();
+      if(document.querySelectorAll(".countdown-container").length === 0 && !isshown){
+        document.querySelector(".countdowns").appendChild(emptymessage);
+        isshown = true;
+      }
       SavetolocalStorage();
     });
   });
-}, 1000);
+}, 100);
 addbtn.onclick = function () {
+
   if (desc.value === "" || datepicker.value === "") {
     return;
+  }
+  if(document.querySelector(".emptyM")){
+    document.querySelector(".emptyM").remove();
+    isshown = false;
   }
   let div = document.createElement("div");
   console.log("not retuned");
@@ -94,7 +121,7 @@ addbtn.onclick = function () {
     document.getElementById("desc").value
   }<br><span>${div.getAttribute(
     "data-date"
-  )}</span><div class="del">remove</div></h2>
+  )}</span></h2>
 <div class="contdown">
   <div class="wraper">
     <p>days</p>
@@ -114,6 +141,7 @@ addbtn.onclick = function () {
   </div>
 
 </div>
+<div class="del">remove</div>
 `;
   div.className = "countdown-container";
   div.innerHTML = markup;
