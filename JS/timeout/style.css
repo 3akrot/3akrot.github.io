@@ -122,8 +122,8 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: calc((100% - (3 * 10)) / 4);
-    height: 90px;
+  width: calc((100% - 30px) / 4);
+  height: 90px;
   border: 1px solid #58479c;
   border-radius: 10px;
   font-size: 1.1rem;
@@ -166,7 +166,7 @@ h2 {
   }
   .countdown-container{
     margin-inline: initial;
-    min-width: 300px;
+    min-width: 350px;
     margin-bottom: 0px;
   }
   .countdown-container:last-child {
