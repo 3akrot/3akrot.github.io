@@ -1,9 +1,10 @@
 const CACHE_NAME = 'countdown-v1';
 const urlsToCache = [
-  'index.html',
-  'style.css',
-  'main.js',
-  '/images/logo.png',
+  './index.html',
+  './style.css',
+  './main.js',
+  './images/logo.png',
+  './images/stopwatch.png',
 ];
 
 self.addEventListener('install', event => {
