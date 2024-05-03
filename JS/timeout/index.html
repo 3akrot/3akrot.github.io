@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>count down</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="images/logo.png">
-  <link rel="manifest" href="manifest.json" />
-
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"> -->
 </head>
+
 <body>
   <div class="contianer">
     <div class="dateinput-container">
-      <input type="date"  id="datepick">
+      <input type="date" onblur="lunceswee" id="datepick">
       <input type="time" name="" id="timepick">
-      <input  type="text" id="desc">
+      <input type="text" id="desc">
       <div class="add">add</div>
       <button id="install" hidden>Install</button>
 
     </div>
     <h3 class="quote"></h3>
-      <div  class="countdowns">
+    <div class="countdowns">
 
-      </div>
+    </div>
 
-   
+
 
   </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="main.js"></script>
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(registration => {
-            console.log('Service Worker registered with scope:', registration.scope);
-          })
-          .catch(error => {
-            console.error('Service Worker registration failed:', error);
-          });
-      });
+    function lunceswee() {
+
     }
+    // lunceswee()
   </script>
-  
+
+
+
 </body>
+
 </html>
 <!-- <div class="countdown-container">
   <h2 class="desc">COUNT DOWN NAME</h2>

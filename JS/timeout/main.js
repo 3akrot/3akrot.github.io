@@ -57,7 +57,12 @@ window.onload = function () {
   isshown = false;
   }
 }
-
+function setCSSLink() {
+  var ss = document.createElement('link');
+  ss.rel = "stylesheet";
+  ss.href = "//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css";
+  document.head.appendChild(ss);
+}
 //  this methoud for traking times on the divs
 setInterval(() => {
   console.log(isshown)
@@ -109,7 +114,16 @@ setInterval(() => {
 }, 100);
 addbtn.onclick = function () {
 
+
   if (desc.value === "" || datepicker.value === "") {
+    Swal.fire({
+      willOpen: () => {
+        setCSSLink()
+      },
+      title: 'Error!',
+      text: 'Please Enter A Description For The Evnet',
+      icon: 'error',
+    })
     return;
   }
   if(document.querySelector(".emptyM")){
@@ -173,6 +187,25 @@ addbtn.onclick = function () {
     document.querySelector(".countdowns").insertBefore(div, min);
   }
   SavetolocalStorage();
+  const Toast = Swal.mixin({
+    willOpen: () => {
+      setCSSLink()
+    },
+    toast: true,
+    position: "top",
+    showConfirmButton: false,
+    timer: 1000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    }
+
+  });
+  Toast.fire({
+    icon: "success",
+    title: "Added Event " + document.getElementById("desc").value
+  });
 };
 function SavetolocalStorage() {
   localStorage.setItem("dataCount", document.querySelector(".countdowns").innerHTML);
@@ -212,9 +245,3 @@ function disableInAppInstallPrompt() {
   installPrompt = null;
   installButton.setAttribute("hidden", "");
 }
-
-
-
-
-
-
