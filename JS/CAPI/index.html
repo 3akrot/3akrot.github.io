@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API</title>
+</head>
+<body>
+  <div style="display: grid;grid-template-columns: repeat(2,1fr); width: 300px; column-gap: 5px;">
+    <input placeholder="USD" type="text" id="usdvalue"><span>USD</span>
+    <input  placeholder="EGP" type="text" id="EGYVALUE"><span>EGP</span>
+  </div>
+  <h1 hidden id="load" style="text-align: center;">LOADING....</h1>
+
+  <script>
+    let usdvalue  = document.getElementById("usdvalue")
+    let EGYVALUE  = document.getElementById("EGYVALUE")
+    let load = document.getElementById("load")
+    let datarate;
+    load.removeAttribute("hidden")
+    getDate().then((data) => {
+      datarate = data;
+    }).then(() => {
+      load.setAttribute("hidden","")
+    })
+    function getDate() {
+      return new Promise((fullfiled , rejected) => {
+        let myreq = new XMLHttpRequest();
+        myreq.open('GET',`https://api.currencyfreaks.com/v2.0/rates/latest?apikey=f7c16ec874fc4849af6ad80351d7dc20 `);
+        myreq.send();
+        myreq.onload = function() {
+          if(myreq.status === 200) fullfiled(JSON.parse(myreq.responseText));
+          else rejected(console.error("error fetching"));
+        };
+      })
+    }
+    function update(dataobj){
+      EGYVALUE.value = Number(dataobj["rates"]["EGP"] * Number(usdvalue.value)).toFixed(2) ;
+    }
+    function update2(dataobj){
+      usdvalue.value =(Number(EGYVALUE.value)  /  Number(dataobj["rates"]["EGP"])).toFixed(3);
+    }
+    usdvalue.oninput = function() {
+      update(datarate)
+}
+    EGYVALUE.oninput = function() {
+      update2(datarate)
+}
+
+  </script>
+</body>
+</html>

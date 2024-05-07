@@ -74,7 +74,7 @@
           let archead = document.createElement("h1");
           archead.textContent = arr[i]["title"];
           let arccontent = document.createElement("p");
-          arccontent.textContent = arr[i]["content"];
+          arccontent.textContent = arr[i]["content"].replace(/… [[0-9a-z \+]+\]/gm, '');
           myartc.append(img,archead, arccontent);
           cont.appendChild(myartc);
         }

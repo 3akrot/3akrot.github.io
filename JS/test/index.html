@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiple Event Listeners Example</title>
+<style>
+    .btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+</style>
+</head>
+<body>
+
+<button id="myButton">Click Me</button>
+
+<script>
+    // Get the button element
+    const button = document.getElementById('myButton');
+
+    // First event listener: change button text color
+    button.addEventListener('click', function() {
+        button.style.color = 'red';
+    });
+
+    // Second event listener: change button background color
+    button.addEventListener('click', function() {
+        button.style.backgroundColor = 'green';
+    });
+
+    // Third event listener: display an alert
+    button.addEventListener('click', function() {
+        alert('Button clicked!');
+    });
+</script>
+
+</body>
+</html>
