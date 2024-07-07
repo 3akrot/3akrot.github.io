@@ -950,5 +950,100 @@
 
     <script src="https://kit.fontawesome.com/4b0768c77c.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script>
+  let spacetoautoscroll = 100
+
+function inrange(pointofaction,ScrollY){
+    
+    return ScrollY <= (pointofaction + spacetoautoscroll + 100) && ScrollY >= pointofaction
+}
+function waitforsections() {
+  return new Promise((resovle)=>{
+    function registertimeout(time){
+      setTimeout(()=>{let sections = [document.querySelector(".landing-2"),...document.querySelectorAll("section")]
+        if(sections.includes(null)){
+          registertimeout(time);
+        }
+        else{
+          resovle(sections)
+        }
+      },time)
+    }
+    registertimeout(100)
+  })
+}
+window.onload = function(){
+  let fired = false;
+  let lastscroled = 0;
+  let obj;
+  let  sections =  [...document.querySelectorAll("section")]
+  for (let section of sections){
+    section.setAttribute("style", `height:${section.offsetHeight}px`)
+  }
+  addEventListener("resize", (event) => {
+    for (let section of sections){
+    section.removeAttribute("style")
+    console.log("d")
+  }
+    for (let section of sections){
+    section.setAttribute("style", `height:${section.offsetHeight}px`)
+    console.log("d")
+  }
+  });
+  console.log(sections)
+  let sum = 0;
+  let points = sections.map((e) => {
+  let padstr = window.getComputedStyle(e).getPropertyValue('padding-top')
+  let obj = {sectionlocation:sum + Number(padstr.slice(0 ,padstr.length - 2)) + 74,pointofaction:(sum + e.offsetHeight) - spacetoautoscroll}
+  // if(e.getAttribute("id" ) === "TeamMembers"){
+  //   obj = {sectionlocation:sum + 26,pointofaction:(sum + e.offsetHeight) - spacetoautoscroll}
+  // }
+  sum += e.offsetHeight
+  return obj
+})
+window.onscroll = () => {
+if (window.scrollY > lastscroled) obj = {dir:"down"}
+else obj = {dir:"up"}
+lastscroled = window.scrollY
+}
+
+// window.onscrollend = () =>{
+
+// }
+let isScrolling;
+
+window.addEventListener('scroll', function() {
+    // Clear the timeout if it exists
+    window.clearTimeout(isScrolling);
+
+    // Set a timeout to run after scrolling ends
+    isScrolling = setTimeout(function() {
+        // Run the callback function
+        onScrollEnd();
+    }, 300); // 200ms timeout, you can adjust this value as needed
+}, false);
+
+function onScrollEnd() {
+  let currentpointofaction = points.find((e)=> inrange(e.pointofaction,Math.round(window.scrollY )) )
+  if(currentpointofaction && obj.dir === "down" && !fired ) {
+    fired = true
+    setTimeout(()=>{fired = false},500)
+      console.log("here")
+      window.scrollTo({
+          top: points[points.indexOf(currentpointofaction) + 1].sectionlocation + 1,behavior:"smooth"
+      })
+      
+  }
+  console.log(points)
+  console.log(window.scrollY)
+  console.log(obj);
+    // Add your code here to handle the end of scrolling
+}
+}
+
+
+
+
+</script>
   </body>
 </html>
