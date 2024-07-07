@@ -955,7 +955,7 @@
 
 function inrange(pointofaction,ScrollY){
     
-    return ScrollY <= (pointofaction + spacetoautoscroll + 100) && ScrollY >= pointofaction
+    return ScrollY <= (pointofaction + spacetoautoscroll) && ScrollY >= pointofaction
 }
 function waitforsections() {
   return new Promise((resovle)=>{
@@ -994,7 +994,7 @@ window.onload = function(){
   let sum = 0;
   let points = sections.map((e) => {
   let padstr = window.getComputedStyle(e).getPropertyValue('padding-top')
-  let obj = {sectionlocation:sum + Number(padstr.slice(0 ,padstr.length - 2)) + 74,pointofaction:(sum + e.offsetHeight) - spacetoautoscroll}
+  let obj = {sectionlocation:sum + 74,pointofaction:(sum + e.offsetHeight) - spacetoautoscroll}
   // if(e.getAttribute("id" ) === "TeamMembers"){
   //   obj = {sectionlocation:sum + 26,pointofaction:(sum + e.offsetHeight) - spacetoautoscroll}
   // }
