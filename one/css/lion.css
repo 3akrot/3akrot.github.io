@@ -344,7 +344,7 @@ img {
 .about-content .text hr {
   width: 50%;
   border-color: var(--main-color);
-  margin: 0;
+  margin: 0 auto;
 }
 .about-content .text p:last-of-type {
   line-height: 2;
