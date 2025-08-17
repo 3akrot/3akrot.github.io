@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard • Analytics</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="logo">⌘</span>
+        <span>My Dashboard</span>
+      </div>
+      <nav class="nav">
+        <a class="nav__link" href="./index.html">Overview</a>
+        <a class="nav__link active" href="./analytics.html">Analytics</a>
+        <a class="nav__link" href="./sales.html">Sales</a>
+        <a class="nav__link" href="./settings.html">Settings</a>
+      </nav>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="content">
+      <header class="topbar">
+        <button class="icon-button" id="toggleSidebar" aria-label="Toggle sidebar">☰</button>
+        <div class="search">
+          <input type="search" placeholder="Search..." />
+        </div>
+        <div class="user">
+          <img src="https://avatars.githubusercontent.com/u/9919?s=40&v=4" alt="user" />
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="card">
+          <header class="card__header">
+            <h3>Traffic Sources</h3>
+          </header>
+          <p style="color: var(--muted)">This is a placeholder analytics page. You can integrate real charts later.</p>
+        </section>
+        <section class="card">
+          <header class="card__header">
+            <h3>Top Pages</h3>
+          </header>
+          <ul style="margin:0; padding-left:18px; color: var(--muted)">
+            <li>/home</li>
+            <li>/products</li>
+            <li>/checkout</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

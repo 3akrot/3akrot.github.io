@@ -1,11 +1,29 @@
 // Simple dashboard interactions and demo data rendering
 
-// Sidebar toggle for small screens
+// Sidebar toggle for small screens + overlay control
 const toggleButton = document.getElementById('toggleSidebar');
 const sidebar = document.getElementById('sidebar');
-if (toggleButton) {
-  toggleButton.addEventListener('click', () => sidebar.classList.toggle('open'));
+const overlay = document.getElementById('overlay');
+
+function closeSidebar() {
+  sidebar?.classList.remove('open');
+  overlay?.classList.remove('show');
 }
+
+if (toggleButton) {
+  toggleButton.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+    overlay.classList.toggle('show');
+  });
+}
+if (overlay) {
+  overlay.addEventListener('click', closeSidebar);
+}
+
+// Close sidebar on ESC
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeSidebar();
+});
 
 // Demo KPI data
 const kpis = {
@@ -51,11 +69,22 @@ function renderOrders() {
   `).join('');
 }
 
-// Simple bar chart without external libraries
+// Simple bar chart without external libraries; responsive to container size
 function renderChart() {
   const canvas = document.getElementById('salesChart');
   if (!canvas) return;
+  const parent = canvas.parentElement;
+  const cssWidth = parent ? parent.clientWidth - 32 : 800; // minus padding
+  const cssHeight = 320;
+  const ratio = window.devicePixelRatio || 1;
+  canvas.width = Math.max(320, cssWidth) * ratio;
+  canvas.height = cssHeight * ratio;
+  canvas.style.width = Math.max(320, cssWidth) + 'px';
+  canvas.style.height = cssHeight + 'px';
+
   const ctx = canvas.getContext('2d');
+  ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+
   const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'];
   const values = [12, 19, 8, 15, 22, 17, 26, 30];
 
@@ -64,8 +93,8 @@ function renderChart() {
 
   // Dimensions
   const padding = 40;
-  const chartW = canvas.width - padding * 2;
-  const chartH = canvas.height - padding * 2;
+  const chartW = canvas.width / ratio - padding * 2;
+  const chartH = canvas.height / ratio - padding * 2;
   const max = Math.max(...values) * 1.2;
   const barW = chartW / values.length * 0.6;
 
@@ -74,15 +103,15 @@ function renderChart() {
   ctx.lineWidth = 1;
   ctx.beginPath();
   ctx.moveTo(padding, padding);
-  ctx.lineTo(padding, canvas.height - padding);
-  ctx.lineTo(canvas.width - padding, canvas.height - padding);
+  ctx.lineTo(padding, padding + chartH);
+  ctx.lineTo(padding + chartW, padding + chartH);
   ctx.stroke();
 
   // Bars
   values.forEach((v, i) => {
     const x = padding + (chartW / values.length) * i + (chartW / values.length - barW) / 2;
     const h = (v / max) * chartH;
-    const y = canvas.height - padding - h;
+    const y = padding + chartH - h;
 
     // Bar
     const grad = ctx.createLinearGradient(0, y, 0, y + h);
@@ -96,7 +125,7 @@ function renderChart() {
     ctx.fillStyle = '#9ca3af';
     ctx.font = '12px system-ui, -apple-system, Segoe UI, Roboto';
     ctx.textAlign = 'center';
-    ctx.fillText(labels[i], x + barW / 2, canvas.height - padding + 14);
+    ctx.fillText(labels[i], x + barW / 2, padding + chartH + 14);
   });
 }
 
@@ -104,16 +133,7 @@ renderKpis();
 renderOrders();
 renderChart();
 
-// Handle resize (redraw chart with correct pixel size on HiDPI if needed)
+// Redraw chart on resize
 window.addEventListener('resize', () => {
-  const canvas = document.getElementById('salesChart');
-  if (!canvas) return;
-  // Keep CSS size, but adjust internal resolution for crispness
-  const rect = canvas.getBoundingClientRect();
-  const ratio = window.devicePixelRatio || 1;
-  canvas.width = rect.width * ratio;
-  canvas.height = 300 * ratio; // keep height approximate
-  const ctx = canvas.getContext('2d');
-  ctx.scale(ratio, ratio);
   renderChart();
 });
