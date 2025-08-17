@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <style>
+      a.nav-link.active {
+        border-radius: 40px;
+        background-color: #eee;
+      }
+      a.nav-link {
+        padding: 5px 15px !important;
+      }
+      .btn-primary {
+        padding: 10px 15px;
+        background-color: #ad343e;
+        border-radius: 30px;
+        color: white;
+        outline: none;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #ce4c57;
+        border-radius: 30px;
+        color: white;
+        outline: none;
+        border: none;
+      }
+      .btn-outline-secondary {
+        padding: 10px 15px;
+        border-radius: 30px;
+        color: black;
+        outline: none;
+        border: 1px solid black;
+      }
+      .btn-outline-secondary:hover {
+        background-color: black;
+        color: white;
+      }
+
+      section.hero {
+        background-image: url("assets/landing.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+      .hero .container {
+        height: 100%;
+      }
+      .hero .container div {
+        max-width: 400px;
+      }
+      .hero-text {
+        font-size: 50px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .services .card-img-top {
+        height: 180px;
+        object-fit: cover;
+      }
+      /* Testimonials */
+      .testimonial-card {
+        background-color: #f8f9fa;
+        border-radius: 12px;
+      }
+      .testimonial-author img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      /* Blog */
+      .blog-feature .card-img-top {
+        height: 320px;
+        object-fit: cover;
+      }
+      .blog-card .card-img-top {
+        height: 160px;
+        object-fit: cover;
+      }
+      @media (min-width: 992px) {
+        .blog-feature .card-img-top { height: 360px; }
+      }
+      /* Delivery collage */
+      .delivery .img-tall {
+        height: 360px;
+        object-fit: cover;
+      }
+      .delivery .img-small {
+        height: 170px;
+        object-fit: cover;
+      }
+      @media (min-width: 992px) {
+        .delivery .img-tall { height: 420px; }
+        .delivery .img-small { height: 200px; }
+      }
+      /* Footer */
+      .site-footer a { color: #dddddd; text-decoration: none; }
+      .site-footer a:hover { color: #ffffff; }
+      .instagram-grid img { height: 80px; object-fit: cover; }
+    </style>
+  </head>
+  <body style="overflow-x: hidden;">
+    <div class="bg-secondary">
+      <header class="container ">
+        <div class="d-flex flex-column flex-sm-row justify-content-between">
+            <div style="max-width: 300px;" class="">
+              <span class="col-6 p-2 text-white">(414) 857 - 0107</span>
+              <span class="col-6 p-2 text-white">yummy@bistrobliss</span>
+            </div>
+          <div style="max-width: 500px;"  class= "d-flex align-items-center justify-content-end">
+              <i class="fa-brands bg-gray-900 p-2 col-3 fa-twitter"></i>
+              <i class="fa-brands p-2 col-3 fa-facebook"></i>
+              <i class="fa-brands p-2 col-3 fa-instagram"></i>
+              <i class="fa-brands p-2 col-3 fa-github"></i>
+          </div>
+        </div>
+      </header>
+    </div>
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a href="" class="navbar-brand">Bistro Bliss</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-target="#navmenu"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navmenu" class="collapse navbar-collapse">
+          <ul class="ms-auto navbar-nav">
+            <li class="nav-item">
+              <a href="" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-secondary">book a table</button>
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <div
+        class="container h-full d-flex justify-content-center align-items-center"
+      >
+        <div class="d-flex flex-column text-center">
+          <h1 class="hero-text">Best food for your taste</h1>
+          <p>
+            Discover delectable cuisine and unforgettable moments in our
+            welcoming, culinary haven.
+          </p>
+          <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-primary">Book a table</button>
+            <button class="btn btn-outline-secondary">Exploure Menu</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5" id="menu">
+      <div class="container">
+        <h2 class="text-center mb-5">Browse Our Menu</h2>
+        <div class="row g-4 justify-content-center">
+          <!-- Breakfast -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body d-flex flex-column align-items-center">
+                <div class="rounded-circle bg-light d-inline-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px;">
+                  <i class="fa-solid fa-mug-saucer"></i>
+                </div>
+                <h5 class="mb-2">Breakfast</h5>
+                <p class="text-muted small mb-3 text-center">In the new era of technology we look in the future with certainty and pride for our life.</p>
+                <a class="text-decoration-none" style="color:#ad343e;" href="#">Explore Menu</a>
+              </div>
+            </div>
+          </div>
+          <!-- Main Dishes -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body d-flex flex-column align-items-center">
+                <div class="rounded-circle bg-light d-inline-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px;">
+                  <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h5 class="mb-2">Main Dishes</h5>
+                <p class="text-muted small mb-3 text-center">In the new era of technology we look in the future with certainty and pride for our life.</p>
+                <a class="text-decoration-none" style="color:#ad343e;" href="#">Explore Menu</a>
+              </div>
+            </div>
+          </div>
+          <!-- Drinks -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body d-flex flex-column align-items-center">
+                <div class="rounded-circle bg-light d-inline-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px;">
+                  <i class="fa-solid fa-wine-glass"></i>
+                </div>
+                <h5 class="mb-2">Drinks</h5>
+                <p class="text-muted small mb-3 text-center">In the new era of technology we look in the future with certainty and pride for our life.</p>
+                <a class="text-decoration-none" style="color:#ad343e;" href="#">Explore Menu</a>
+              </div>
+            </div>
+          </div>
+          <!-- Desserts -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body d-flex flex-column align-items-center">
+                <div class="rounded-circle bg-light d-inline-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px;">
+                  <i class="fa-solid fa-ice-cream"></i>
+                </div>
+                <h5 class="mb-2">Desserts</h5>
+                <p class="text-muted small mb-3 text-center">In the new era of technology we look in the future with certainty and pride for our life.</p>
+                <a class="text-decoration-none" style="color:#ad343e;" href="#">Explore Menu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <!-- Image Column -->
+          <div class="col-12 col-lg-6">
+            <div class="position-relative">
+              <img src="assets/comevisit.jpg" alt="Come and visit us" class="img-fluid rounded" />
+              <div class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-75 text-white p-3 p-md-4 rounded" style="width: min(90%, 420px);">
+                <h6 class="mt-2 mb-4">Come and visit us</h6>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="small mb-0">(414) 857 - 0107</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="small mb-0 text-break">happytummy@restaurant.com</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="small mb-0">837 W. Marshall Lane Marshalltown, IA 50158, Los Angeles</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Text Column -->
+          <div class="col-12 col-lg-6">
+            <h1 class="mb-3">We provide healthy food for your family.</h1>
+            <h6 class="mb-3">Our story began with a vision to create a unique dining experience that merges fine dining, exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim to honor our local roots while infusing a global palate.</h6>
+            <p>At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.</p>
+            <button class="btn btn-outline-secondary">More About Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 50px;" class="services py-5">
+      <div class="container">
+        <h2 class="mb-4">We also offer unique<br />services for your events</h2>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/caterings.jpg" class="card-img-top" alt="Caterings" />
+              <div class="card-body">
+                <h5 class="card-title mb-2">Caterings</h5>
+                <p class="card-text text-muted mb-0">
+                  In the new era of technology we look in the future with certainty for life.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/birthdays.jpg" class="card-img-top" alt="Birthdays" />
+              <div class="card-body">
+                <h5 class="card-title mb-2">Birthdays</h5>
+                <p class="card-text text-muted mb-0">
+                  In the new era of technology we look in the future with certainty for life.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/weddings.jpg" class="card-img-top" alt="Weddings" />
+              <div class="card-body">
+                <h5 class="card-title mb-2">Weddings</h5>
+                <p class="card-text text-muted mb-0">
+                  In the new era of technology we look in the future with certainty for life.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/comevisit.jpg" class="card-img-top" alt="Events" />
+              <div class="card-body">
+                <h5 class="card-title mb-2">Events</h5>
+                <p class="card-text text-muted mb-0">
+                  In the new era of technology we look in the future with certainty for life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Delivery Section -->
+    <section class="delivery py-5">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <!-- Image collage -->
+          <div class="col-12 col-lg-6">
+            <div class="row g-3">
+              <div class="col-7">
+                <img src="assets/9bf8998d6e29f1628a5185751d923324b37b2e8b.jpg" class="w-100 rounded img-tall" alt="Chef" />
+              </div>
+              <div class="col-5 d-flex flex-column gap-3">
+                <img src="assets/21a8d2be604833fae91f948592c67ddb294c043e.jpg" class="w-100 rounded img-small" alt="Dish" />
+                <img src="assets/89b4d296a7fde3e75d1bac246efc62ee5d53073d.jpg" class="w-100 rounded img-small" alt="Grill" />
+              </div>
+            </div>
+          </div>
+          <!-- Text and bullets -->
+          <div class="col-12 col-lg-6">
+            <h2 class="mb-3">Fastest Food<br />Delivery in City</h2>
+            <p class="text-muted mb-4">Our visual designer lets you quickly and drag & drop draw your way to customers for both keep desktop.</p>
+            <ul class="list-unstyled d-grid gap-3">
+              <li class="d-flex align-items-start gap-3"><span class="btn btn-danger rounded-circle p-0 d-inline-flex justify-content-center align-items-center" style="width:32px;height:32px;">1</span> <span>Delivery within 30 minutes</span></li>
+              <li class="d-flex align-items-start gap-3"><span class="btn btn-danger rounded-circle p-0 d-inline-flex justify-content-center align-items-center" style="width:32px;height:32px;">2</span> <span>Best Offer & Prices</span></li>
+              <li class="d-flex align-items-start gap-3"><span class="btn btn-danger rounded-circle p-0 d-inline-flex justify-content-center align-items-center" style="width:32px;height:32px;">3</span> <span>Online Services Available</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">What Our Customers Say</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="p-4 testimonial-card h-100 shadow-sm">
+              <h6 class="text-danger">“The best restaurant”</h6>
+              <p class="text-muted">Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.</p>
+              <div class="d-flex align-items-center gap-2 testimonial-author">
+                <img src="assets/12ee32bfb042d5a646dfa31b6525c38b93b4f0e7.jpg" alt="Sophie" />
+                <div>
+                  <strong class="d-block">Sophie Robson</strong>
+                  <small class="text-muted">Los Angeles, CA</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="p-4 testimonial-card h-100 shadow-sm">
+              <h6 class="text-danger">“Simply delicious”</h6>
+              <p class="text-muted">Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect venue for our anniversary dinner. Each dish was prepared and beautifully presented.</p>
+              <div class="d-flex align-items-center gap-2 testimonial-author">
+                <img src="assets/27e47f55fd165678d8e928260f03b4ead5d6b69a.jpg" alt="Matt" />
+                <div>
+                  <strong class="d-block">Matt Cannon</strong>
+                  <small class="text-muted">San Diego, CA</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="p-4 testimonial-card h-100 shadow-sm">
+              <h6 class="text-danger">“One of a kind restaurant”</h6>
+              <p class="text-muted">The culinary experience at place is first to none. The atmosphere is vibrant, the food – nothing short of extraordinary. The food was the highlight of our evening. Highly recommended.</p>
+              <div class="d-flex align-items-center gap-2 testimonial-author">
+                <img src="assets/1a26c3b3646d0bce4f7a0530beae7fb438dd071d.jpg" alt="Andy" />
+                <div>
+                  <strong class="d-block">Andy Smith</strong>
+                  <small class="text-muted">San Francisco, CA</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="mb-0">Our Blog &amp; Articles</h2>
+          <a href="#" class="btn btn-danger rounded-pill">Read All Articles</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-lg-6">
+            <div class="card blog-feature border-0 shadow-sm h-100 overflow-hidden">
+              <img src="assets/0efe7b56a25c943a4a7c924e9010b2a557ab39f1.jpg" class="card-img-top" alt="Burger" />
+              <div class="card-body">
+                <small class="text-muted d-block mb-2">January 3, 2023</small>
+                <h5 class="card-title">The secret tips &amp; tricks to prepare a perfect burger &amp; pizza for our customers</h5>
+                <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur ad el adipiscing elit.immn semper adipiscing massa gravida risus cram enim quis nibhorn varius amet gravida at facilise neque egestas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="row g-4">
+              <div class="col-12 col-sm-6">
+                <div class="card blog-card border-0 shadow-sm h-100 overflow-hidden">
+                  <img src="assets/21a8d2be604833fae91f948592c67ddb294c043e.jpg" class="card-img-top" alt="Fries" />
+                  <div class="card-body">
+                    <small class="text-muted d-block">January 3, 2023</small>
+                    <h6 class="card-title mb-0">How to prepare the perfect french fries in an air fryer</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="card blog-card border-0 shadow-sm h-100 overflow-hidden">
+                  <img src="assets/9e252a1d19e193e99cb733fe8630e5fffe87d48f.jpg" class="card-img-top" alt="Chicken" />
+                  <div class="card-body">
+                    <small class="text-muted d-block">January 3, 2023</small>
+                    <h6 class="card-title mb-0">How to prepare delicious chicken tenders</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="card blog-card border-0 shadow-sm h-100 overflow-hidden">
+                  <img src="assets/9e2e9da1565f9c6b2dc8497c799ae567dd434cbd.png" class="card-img-top" alt="Cheesecake" />
+                  <div class="card-body">
+                    <small class="text-muted d-block">January 3, 2023</small>
+                    <h6 class="card-title mb-0">7 delicious cheesecake recipes you can prepare</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="card blog-card border-0 shadow-sm h-100 overflow-hidden">
+                  <img src="assets/1748354c4f162c8c18fab19a888f0b7bb1361f13.png" class="card-img-top" alt="Pizza" />
+                  <div class="card-body">
+                    <small class="text-muted d-block">January 3, 2023</small>
+                    <h6 class="card-title mb-0">5 great pizza restaurants you should visit this city</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-lg-4">
+            <h4 class="mb-3">Bistro Bliss</h4>
+            <p class="text-white-50">In the new era of technology we look in the future with certainty and pride to for our company and.</p>
+            <div class="d-flex gap-2">
+              <a class="btn btn-outline-light btn-sm rounded-circle" href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-sm rounded-circle" href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a class="btn btn-outline-light btn-sm rounded-circle" href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a class="btn btn-outline-light btn-sm rounded-circle" href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="mb-3">Pages</h6>
+            <ul class="list-unstyled d-grid gap-2">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Delivery</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="mb-3">Utility Pages</h6>
+            <ul class="list-unstyled d-grid gap-2">
+              <li><a href="#">Start Here</a></li>
+              <li><a href="#">Styleguide</a></li>
+              <li><a href="#">Password Protected</a></li>
+              <li><a href="#">404 Not Found</a></li>
+              <li><a href="#">Licenses</a></li>
+              <li><a href="#">Changelog</a></li>
+              <li><a href="#">View More</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h6 class="mb-3">Follow Us On Instagram</h6>
+            <div class="row row-cols-2 g-2 instagram-grid">
+              <div class="col"><img src="assets/21a8d2be604833fae91f948592c67ddb294c043e.jpg" class="w-100 rounded" alt="insta1" /></div>
+              <div class="col"><img src="assets/9e252a1d19e193e99cb733fe8630e5fffe87d48f.jpg" class="w-100 rounded" alt="insta2" /></div>
+              <div class="col"><img src="assets/9bf8998d6e29f1628a5185751d923324b37b2e8b.jpg" class="w-100 rounded" alt="insta3" /></div>
+              <div class="col"><img src="assets/1748354c4f162c8c18fab19a888f0b7bb1361f13.png" class="w-100 rounded" alt="insta4" /></div>
+
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <p class="text-center text-white-50 mb-0">Copyright © 2023 Hashtag Developer. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4b0768c77c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
