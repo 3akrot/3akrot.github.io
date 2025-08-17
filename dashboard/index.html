@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="logo">⌘</span>
+        <span>My Dashboard</span>
+      </div>
+      <nav class="nav">
+        <a class="nav__link active" href="#">Overview</a>
+        <a class="nav__link" href="#">Analytics</a>
+        <a class="nav__link" href="#">Sales</a>
+        <a class="nav__link" href="#">Settings</a>
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header class="topbar">
+        <button class="icon-button" id="toggleSidebar" aria-label="Toggle sidebar">☰</button>
+        <div class="search">
+          <input type="search" placeholder="Search..." />
+        </div>
+        <div class="user">
+          <img src="https://avatars.githubusercontent.com/u/9919?s=40&v=4" alt="user" />
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="cards">
+          <div class="card kpi">
+            <div class="kpi__label">Revenue</div>
+            <div class="kpi__value" id="kpiRevenue">$0</div>
+            <div class="kpi__delta up" id="kpiRevenueDelta">+0%</div>
+          </div>
+          <div class="card kpi">
+            <div class="kpi__label">Orders</div>
+            <div class="kpi__value" id="kpiOrders">0</div>
+            <div class="kpi__delta up" id="kpiOrdersDelta">+0%</div>
+          </div>
+          <div class="card kpi">
+            <div class="kpi__label">Users</div>
+            <div class="kpi__value" id="kpiUsers">0</div>
+            <div class="kpi__delta down" id="kpiUsersDelta">-0%</div>
+          </div>
+        </section>
+
+        <section class="card chart">
+          <header class="card__header">
+            <h3>Monthly Sales</h3>
+          </header>
+          <canvas id="salesChart" width="800" height="300" aria-label="Monthly Sales Chart"></canvas>
+        </section>
+
+        <section class="card table">
+          <header class="card__header">
+            <h3>Recent Orders</h3>
+          </header>
+          <div class="table__wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Customer</th>
+                  <th>Status</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="ordersBody">
+                <!-- Filled by JS -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

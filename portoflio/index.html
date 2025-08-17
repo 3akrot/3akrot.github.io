@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MERN Stack Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><span class="accent">{ }</span> Portfolio</div>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Your Name</h1>
+        <h2>MERN Stack Developer</h2>
+        <p class="lead">I build responsive, accessible web apps using MongoDB, Express, React, and Node.js.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h3>About</h3>
+        <p>
+          I'm a full‑stack JavaScript developer focused on building performant and delightful user experiences.
+          I enjoy working across the stack, from designing MongoDB schemas to crafting React interfaces and building fast APIs with Express and Node.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h3>Skills</h3>
+        <ul class="skills">
+          <li class="skill">MongoDB</li>
+          <li class="skill">Express.js</li>
+          <li class="skill">React</li>
+          <li class="skill">Node.js</li>
+          <li class="skill">TypeScript</li>
+          <li class="skill">REST APIs</li>
+          <li class="skill">JWT/Auth</li>
+          <li class="skill">Docker</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h3>Projects</h3>
+        <div class="grid">
+          <article class="card">
+            <h4>MERN Blog</h4>
+            <p>Full‑stack blog with JWT auth, CRUD, and image uploads.</p>
+            <div class="actions">
+              <a href="#" class="btn small">Live</a>
+              <a href="#" class="btn small">Code</a>
+            </div>
+          </article>
+          <article class="card">
+            <h4>Task Manager API</h4>
+            <p>REST API with Express, MongoDB, and role‑based access control.</p>
+            <div class="actions">
+              <a href="#" class="btn small">Docs</a>
+              <a href="#" class="btn small">Code</a>
+            </div>
+          </article>
+          <article class="card">
+            <h4>React Dashboard</h4>
+            <p>Responsive dashboard with charts and widgets powered by a Node backend.</p>
+            <div class="actions">
+              <a href="#" class="btn small">Live</a>
+              <a href="#" class="btn small">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>Want to collaborate or have a project in mind?</p>
+        <p>
+          <a class="btn primary" href="mailto:your.email@example.com">Email me</a>
+          <a class="btn" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Your Name — MERN Stack Developer</small>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
